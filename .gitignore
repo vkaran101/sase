@@ -1,4 +1,4 @@
-.DS_Store
+*.DS_Store
 *.swp
 
 app/cache/*
@@ -8,4 +8,7 @@ app/cache/*
 app/logs/*
 !app/logs/index.html
 !app/logs/.htaccess
+
+foundation5/bower_components/*
+foundation5/node_modules/*
 
