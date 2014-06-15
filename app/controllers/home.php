@@ -18,6 +18,8 @@ class Home extends CI_Controller {
   public function index()
   {
     $data['title'] = 'Home | Northeastern SASE';
+
+    $this->load->helper('url');
     $this->load->view('templates/header',$data);
     $this->load->view('home');
     $this->load->view('templates/footer');
