@@ -7,9 +7,7 @@ class Home extends CI_Controller {
    *
    * Maps to the following URL
    *    http://example.com/index.php/home
-   *  - or -
    *    http://example.com/index.php/home/index
-   *  - or -
    * Since this controller is set as the default controller in
    * config/routes.php, it's displayed at http://example.com/
    *
@@ -20,7 +18,9 @@ class Home extends CI_Controller {
   public function index()
   {
     $data['title'] = 'Home | Northeastern SASE';
-    $this->load->view('home',$data);
+    $this->load->view('templates/header',$data);
+    $this->load->view('home');
+    $this->load->view('templates/footer');
   }
 }
 
