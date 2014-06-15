@@ -23,8 +23,8 @@
       <li><a href="<?=base_url()?>programs">Programs</a></li>
       <li class="has-dropdown"><a href="<?=base_url()?>about">About</a>
         <ul class="dropdown">
-          <li><a href="<?=base_url()?>about/eboard">Executive Board</a></li>
-          <li><a href="<?=base_url()?>about/sponsors">Sponsors</a></li>
+          <li><a href="<?=base_url()?>eboard">Executive Board</a></li>
+          <li><a href="<?=base_url()?>sponsors">Sponsors</a></li>
         </ul>
       </li>
       <li><a href="<?=base_url()?>contact">Contact</a></li>
