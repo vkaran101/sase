@@ -21,8 +21,9 @@
       <li><a href="<?=base_url()?>">Home</a></li>
       <li><a href="<?=base_url()?>events">Events</a></li>
       <li><a href="<?=base_url()?>programs">Programs</a></li>
-      <li class="has-dropdown"><a href="<?=base_url()?>about">About</a>
+      <li class="has-dropdown"><a>About</a>
         <ul class="dropdown">
+          <li><a href="<?=base_url()?>about">About Us</a></li>
           <li><a href="<?=base_url()?>eboard">Executive Board</a></li>
           <li><a href="<?=base_url()?>sponsors">Sponsors</a></li>
         </ul>
