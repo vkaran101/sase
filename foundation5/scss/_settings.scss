@@ -62,6 +62,8 @@
 // $success-color: #43AC6A;
 // $warning-color: #f08a24;
 // $info-color: #a0d3e8;
+$sase-blue: #0668b3;
+$sase-green: #7dc242;
 
 // We use these to make sure border radius matches unless we want it different.
 // $global-radius: 3px;
@@ -1179,6 +1181,7 @@
 // Background color for the top bar
 // $topbar-bg-color: #333;
 // $topbar-bg: $topbar-bg-color;
+$topbar-bg-color: #fff;
 
 // Height and margin
 // $topbar-height: 45px;
@@ -1196,6 +1199,7 @@
 // $topbar-dropdown-toggle-size: 5px;
 // $topbar-dropdown-toggle-color: #fff;
 // $topbar-dropdown-toggle-alpha: 0.4;
+$topbar-dropdown-toggle-color: #333;
 
 // Set the link colors and styles for top-level nav
 // $topbar-link-color: #fff;
@@ -1213,6 +1217,9 @@
 // $topbar-link-font-family: $body-font-family;
 // $topbar-link-text-transform: none;
 // $topbar-link-padding: $topbar-height / 3;
+$topbar-link-color: #333;
+$topbar-link-color-active: #333;
+
 
 // $topbar-button-font-size: 0.75rem;
 // $topbar-button-top: 7px;

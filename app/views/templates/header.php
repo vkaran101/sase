@@ -8,27 +8,55 @@
   <script src="<?=base_url()?>public/js/modernizr.js"></script>
 </head>
 <body>
-<nav class="top-bar" data-topbar>
-  <ul class="title-area">
-    <li class="name">
-      <h1><a href="<?=base_url()?>">Northeastern SASE</a></h1>
-    </li>
-    <li class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a></li>
-  </ul>
 
-  <section class="top-bar-section">
-    <ul class="right">
+<div class="off-canvas-wrap" data-offcanvas>
+<div class="inner-wrap">
+  <div class="row">
+    <div class="small-10 small-centered medium-uncentered large-uncentered medium-4 columns">
+      <img src="<?=base_url()?>public/img/sase.png">
+    </div>
+    <div class="hide-for-small medium-8 columns">
+      <nav class="top-bar" data-topbar>
+      <section class="top-bar-section">
+        <ul class="right">
+          <li><a href="<?=base_url()?>">Home</a></li>
+          <li><a href="<?=base_url()?>events">Events</a></li>
+          <li><a href="<?=base_url()?>programs">Programs</a></li>
+          <li class="has-dropdown"><a href="<?=base_url()?>about">About</a>
+            <ul class="dropdown">
+              <li><a href="<?=base_url()?>eboard">Executive Board</a></li>
+              <li><a href="<?=base_url()?>sponsors">Sponsors</a></li>
+            </ul>
+          </li>
+          <li><a href="<?=base_url()?>contact">Contact</a></li>
+        </ul>
+      </section>
+      </nav>
+    </div>
+  </div><!-- end row -->
+
+  <nav class="tab-bar show-for-small">
+    <section class="left-small">
+      <a class="left-off-canvas-toggle menu-icon" href="#"><span></span></a>
+    </section>
+  </nav>
+
+  <aside class="left-off-canvas-menu">
+    <ul class="off-canvas-list">
+      <li><label>Northeastern SASE</label></li>
       <li><a href="<?=base_url()?>">Home</a></li>
       <li><a href="<?=base_url()?>events">Events</a></li>
       <li><a href="<?=base_url()?>programs">Programs</a></li>
-      <li class="has-dropdown"><a>About</a>
+      <li class="has-dropdown"><a href="<?=base_url()?>about">About</a>
         <ul class="dropdown">
-          <li><a href="<?=base_url()?>about">About Us</a></li>
           <li><a href="<?=base_url()?>eboard">Executive Board</a></li>
           <li><a href="<?=base_url()?>sponsors">Sponsors</a></li>
         </ul>
       </li>
       <li><a href="<?=base_url()?>contact">Contact</a></li>
     </ul>
-  </section>
-</nav>
+  </aside>
+  <a class="exit-off-canvas"></a>
+  <section class="main">
+<!-- end header -->
+
