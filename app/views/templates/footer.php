@@ -36,7 +36,7 @@ links
 </div>
 
 <div class="row">
-  <div class="medium-6 medium-centered columns">
+  <div class="small-10 small-centered medium-11 columns" id="copyright">
     <?php date_default_timezone_set('America/New_York'); ?>
     <p><small>&copy; Copyright <?=date("Y")?> Northeastern SASE</small></p>
   </div>

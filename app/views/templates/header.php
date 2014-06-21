@@ -5,7 +5,6 @@
   <meta name="viewport" content="width=device-width,initial-scale=1.0" />
   <title><?=$title?></title>
   <link rel="stylesheet" href="<?=base_url()?>public/css/foundation5.css" />
-  <link rel="stylesheet" href="<?=base_url()?>public/css/sassy.css" />
   <script src="<?=base_url()?>public/js/modernizr.js"></script>
 </head>
 <body>
