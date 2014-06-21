@@ -35,7 +35,7 @@
       </section>
       </nav>
     </div>
-  </div><!-- end row -->
+  </div><!-- end div.row -->
 
   <nav class="tab-bar show-for-small">
     <section class="left-small">
