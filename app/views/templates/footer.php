@@ -27,7 +27,11 @@
 links
   </div>
   <div class="medium-3 medium-pull-9 columns">
-logo
+    <div class="row">
+      <div class="small-8 small-centered columns">
+        <a href="<?=base_url()?>"><img src="<?=base_url()?>public/img/sase_stamp_light.png"></a>
+      </div>
+    </div>
   </div>
 </div>
 
