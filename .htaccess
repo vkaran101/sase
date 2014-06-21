@@ -1,3 +1,4 @@
 RewriteEngine on
+RewriteBase /sase/sase-site/
 RewriteCond $1 !^(index\.php|public)
-RewriteRule ^(.*)$ /sase/sase-site/index.php/$1 [L]
+RewriteRule ^(.*)$ index.php/$1 [L]
