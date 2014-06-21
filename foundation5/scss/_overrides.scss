@@ -1,14 +1,17 @@
 // Overrides and customizations for Foundation 5
 // for use with Northeastern SASE website
 
-.off-canvas-list li.active {
-  background-color: #008CBA;
-  color: #fff;
+.off-canvas-list {
+  li {
+    font-weight: $font-weight-bold;
+  }
+  li.active {
+    background-color: $primary-color;
+    color: #fff;
+  }
+  li.subnav {
+    font-weight: $font-weight-normal;
+    margin-left: rem-calc(20);
+  }
 }
-.off-canvas-list li {
-  font-weight: $font-weight-bold;
-}
-.off-canvas-list li.subnav {
-  font-weight: $font-weight-normal;
-  margin-left: rem-calc(20);
-}
+
