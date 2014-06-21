@@ -49,12 +49,9 @@
       <li class="<?=active_nav('home')?>"><a href="<?=base_url()?>">Home</a></li>
       <li class="<?=active_nav('events')?>"><a href="<?=base_url()?>events">Events</a></li>
       <li class="<?=active_nav('programs')?>"><a href="<?=base_url()?>programs">Programs</a></li>
-      <li class="has-dropdown <?=active_nav('about')?>"><a href="<?=base_url()?>about">About</a>
-        <ul class="dropdown">
-          <li class="<?=active_nav('eboard')?>"><a href="<?=base_url()?>eboard">Executive Board</a></li>
-          <li class="<?=active_nav('sponsors')?>"><a href="<?=base_url()?>sponsors">Sponsors</a></li>
-        </ul>
-      </li>
+      <li class="<?=active_nav('about')?>"><a href="<?=base_url()?>about">About</a></li>
+      <li class="subnav <?=active_nav('eboard')?>"><a href="<?=base_url()?>eboard">Executive Board</a></li>
+      <li class="subnav <?=active_nav('sponsors')?>"><a href="<?=base_url()?>sponsors">Sponsors</a></li>
       <li class="<?=active_nav('contact')?>"><a href="<?=base_url()?>contact">Contact</a></li>
     </ul>
   </aside>
