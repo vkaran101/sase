@@ -30,6 +30,12 @@ footer {
   border-color: $primary-color;
 }
 
+#affiliations {
+  ul {
+    margin-left: 0;
+  }
+}
+
 #copyright {
   text-align: center;
   padding-bottom: rem-calc(20);
@@ -38,6 +44,9 @@ footer {
 @media #{$medium-up} {
   #affiliations {
     text-align: right;
-    padding-right: rem-calc(50);
+    padding-right: rem-calc(30);
+  }
+  #logo-stamp {
+    margin-left: rem-calc(30);
   }
 }

@@ -10,7 +10,7 @@
           <input type="email" id="newsletter-email" placeholder="example@husky.neu.edu" />
         </div>
         <div class="small-4 columns">
-          <input type="submit" href="#" class="button postfix" value="Sign Up!" />
+          <input type="submit" href="#" class="button postfix" value="Sign Up" />
         </div>
       </div>
     </form>
@@ -19,15 +19,15 @@
 </div><!-- close div#newsletter -->
 
 <footer>
-<div class="row">
-  <div class="medium-5 medium-push-4 columns">
+<div class="row collapse">
+  <div class="medium-6 medium-push-3 columns">
     <p>Get involved. Join our SASE chapter or become a national member for free!</p>
-    <a href="<?=base_url()?>join" class="button small">Join SASE!</a>
+    <a href="<?=base_url()?>join" class="button small">Join SASE</a>
     <hr class="divider show-for-small" />
   </div>
-  <div class="medium-3 medium-push-4 columns" id="affiliations">
+  <div class="medium-3 medium-push-3 columns" id="affiliations">
+    <h3>Affiliations</h3>
     <ul>
-      <li><h5>Affiliations</h5></li>
       <li><a href="http://saseconnect.org" target="_blank">SASE National</a></li>
       <li><a href="http://saseneregion.weebly.com" target="_blank">SASE Northeast</a></li>
       <li><a href="http://www.northeastern.edu" target="_blank">Northeastern</a></li>
@@ -38,9 +38,9 @@
     </ul>
     <hr class="divider show-for-small" />
   </div>
-  <div class="medium-4 medium-pull-8 columns">
-    <div class="row">
-      <div class="small-8 small-centered columns">
+  <div class="medium-3 medium-pull-9 columns">
+    <div class="row collapse">
+      <div class="small-8 small-centered columns" id="logo-stamp">
         <a href="<?=base_url()?>"><img src="<?=base_url()?>public/img/sase_stamp_light.png"></a>
       </div>
     </div>
