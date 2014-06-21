@@ -14,7 +14,7 @@
 <div class="inner-wrap">
   <div class="row">
     <div class="small-10 small-centered medium-uncentered large-uncentered medium-4 columns">
-      <img src="<?=base_url()?>public/img/sase.png">
+      <a href="<?=base_url()?>"><img src="<?=base_url()?>public/img/sase.png"></a>
     </div>
     <div class="hide-for-small medium-8 columns">
       <nav class="top-bar" data-topbar>
