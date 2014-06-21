@@ -10,7 +10,7 @@
           <input type="email" id="newsletter-email" placeholder="example@husky.neu.edu" />
         </div>
         <div class="small-4 columns">
-          <input type="submit" href="#" class="button postfix" value="Go!" />
+          <input type="submit" href="#" class="button postfix" value="Sign Up!" />
         </div>
       </div>
     </form>
@@ -20,13 +20,25 @@
 
 <footer>
 <div class="row">
-  <div class="medium-6 medium-push-3 columns">
-    <a href="<?=base_url()?>join" class="button">Join SASE!</a>
+  <div class="medium-5 medium-push-4 columns">
+    <p>Get involved. Join our SASE chapter or become a national member for free!</p>
+    <a href="<?=base_url()?>join" class="button small">Join SASE!</a>
+    <hr class="divider show-for-small" />
   </div>
-  <div class="medium-3 medium-push-3 columns">
-links
+  <div class="medium-3 medium-push-4 columns" id="affiliations">
+    <ul>
+      <li><h5>Affiliations</h5></li>
+      <li><a href="http://saseconnect.org" target="_blank">SASE National</a></li>
+      <li><a href="http://saseneregion.weebly.com" target="_blank">SASE Northeast</a></li>
+      <li><a href="http://www.northeastern.edu" target="_blank">Northeastern</a></li>
+      <li><a href="http://www.coe.neu.edu/coe/index.html" target="_blank">COE</a> | 
+        <a href="http://www.northeastern.edu/cos/" target="_blank">COS</a></li>
+      <li><a href="http://www.northeastern.edu/aac/paac/index.html"
+        target="_blank">PAAC</a></li>
+    </ul>
+    <hr class="divider show-for-small" />
   </div>
-  <div class="medium-3 medium-pull-9 columns">
+  <div class="medium-4 medium-pull-8 columns">
     <div class="row">
       <div class="small-8 small-centered columns">
         <a href="<?=base_url()?>"><img src="<?=base_url()?>public/img/sase_stamp_light.png"></a>
@@ -36,7 +48,8 @@ links
 </div>
 
 <div class="row">
-  <div class="small-10 small-centered medium-11 columns" id="copyright">
+  <div class="small-12 columns" id="copyright">
+    <hr />
     <?php date_default_timezone_set('America/New_York'); ?>
     <p><small>&copy; Copyright <?=date("Y")?> Northeastern SASE</small></p>
   </div>

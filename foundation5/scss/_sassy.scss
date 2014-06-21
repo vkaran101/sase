@@ -9,12 +9,35 @@
 footer {
   background-color: $sase-blue;
   color: #fff;
-  padding-top: rem-calc(20);
+  padding-top: rem-calc(40);
+  text-align: center;
+
+  h1,h2,h3,h4,h5,h6 {
+    color: #fff;
+  }
+  ul {
+    list-style-type: none;
+  }
+  a {
+    color: #fff;
+  }
+  a:hover {
+    color: $sase-green;
+  }
+}
+
+.divider {
+  border-color: $primary-color;
 }
 
 #copyright {
-  border-top: 1px solid #fff;
-  margin-top: rem-calc(10);
-  padding-top: rem-calc(15);
   text-align: center;
+  padding-bottom: rem-calc(20);
+}
+
+@media #{$medium-up} {
+  #affiliations {
+    text-align: right;
+    padding-right: rem-calc(50);
+  }
 }
