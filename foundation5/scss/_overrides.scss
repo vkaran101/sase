@@ -1,0 +1,11 @@
+// Overrides and customizations for Foundation 5
+// for use with Northeastern SASE website
+
+.off-canvas-list li.has-dropdown ul.dropdown {
+  list-style-type: none;
+}
+.off-canvas-list li.active {
+  background-color: #008CBA;
+  color: #fff;
+}
+
