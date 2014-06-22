@@ -10,5 +10,6 @@ app/logs/*
 !app/logs/.htaccess
 
 foundation5/bower_components/*
-foundation5/node_modules/*
 foundation5/.sass-cache/*
+
+font-awesome/.sass-cache/*
