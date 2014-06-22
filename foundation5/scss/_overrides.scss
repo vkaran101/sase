@@ -1,16 +1,6 @@
 // Overrides and customizations for Foundation 5
 // for use with Northeastern SASE website
 
-$sase-blue: #0668b3;
-$sase-green: #7dc242;
-
-$off-canvas-label-padding: 1.0rem rem-calc(15);
-
-$topbar-bg-color: #fff;
-$topbar-link-color: #333;
-$topbar-link-color-active: #fff;
-$topbar-dropdown-toggle-color: #333;
-
 .off-canvas-list {
   li {
     font-weight: $font-weight-bold;
@@ -24,3 +14,4 @@ $topbar-dropdown-toggle-color: #333;
     margin-left: rem-calc(20);
   }
 }
+
