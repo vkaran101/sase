@@ -13,6 +13,7 @@
 <div class="off-canvas-wrap" data-offcanvas>
 <div class="inner-wrap">
   <div class="row">
+  <header>
     <div class="small-10 small-centered medium-uncentered large-uncentered medium-4 columns">
       <a href="<?=base_url()?>"><img src="<?=base_url()?>public/img/sase.png"></a>
     </div>
@@ -35,6 +36,7 @@
       </section>
       </nav>
     </div>
+  </header>
   </div><!-- end div.row -->
 
   <nav class="tab-bar show-for-small">
