@@ -1,5 +1,20 @@
 // styles for Northeastern SASE website
 
+#promo {
+  background: url('../img/northeastern.jpg'); 
+  background-repeat: no-repeat;
+  background-position: center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  color: #fff;
+  h1,h2,h3,h4,h5,h6 {
+    color: #fff;
+  }
+}
+
+
 #newsletter {
   background-color: $sase-green;
   text-align: center;
@@ -42,6 +57,9 @@ footer {
 }
 
 @media #{$medium-up} {
+  #join {
+    padding-left: rem-calc(20);
+  }
   #affiliations {
     text-align: right;
     padding-right: rem-calc(30);

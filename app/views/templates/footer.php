@@ -20,7 +20,7 @@
 
 <footer>
 <div class="row collapse">
-  <div class="medium-6 medium-push-3 columns">
+  <div class="medium-6 medium-push-3 columns" id="join">
     <p>Get involved. Join our SASE chapter or become a national member for free!</p>
     <a href="<?=base_url()?>join" class="button small">Join SASE</a>
     <div class="row">
