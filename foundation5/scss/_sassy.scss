@@ -1,19 +1,21 @@
 // styles for Northeastern SASE website
 
 #promo {
-  background: url('../img/northeastern.jpg'); 
+  background: url('../img/stickman2.png')  #aac46c;
   background-repeat: no-repeat;
-  background-position: center;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  color: #fff;
+  background-position: left bottom;
+  color: #1e497d;
   h1,h2,h3,h4,h5,h6 {
-    color: #fff;
+    color: #1e497d;
   }
 }
 
+#promo-msg {
+  text-align: center;
+  h1 {
+    margin-bottom: rem-calc(30);
+  }
+}
 
 #newsletter {
   background-color: $sase-green;

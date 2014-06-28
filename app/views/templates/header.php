@@ -12,9 +12,8 @@
 
 <div class="off-canvas-wrap" data-offcanvas>
 <div class="inner-wrap">
-  <div class="row">
-  <header>
-    <div class="small-10 small-centered medium-uncentered large-uncentered medium-4 columns">
+  <div class="row" id="header">
+    <div class="small-8 small-centered medium-uncentered large-uncentered medium-4 columns">
       <a href="<?=base_url()?>"><img src="<?=base_url()?>public/img/sase.png"></a>
     </div>
     <div class="hide-for-small medium-8 columns">
@@ -36,14 +35,12 @@
       </section>
       </nav>
     </div>
-  </header>
-  </div><!-- end div.row -->
-
-  <nav class="tab-bar show-for-small">
-    <section class="left-small">
-      <a class="left-off-canvas-toggle menu-icon" href="#"><span></span></a>
-    </section>
-  </nav>
+    <nav class="tab-bar show-for-small small-12 columns">
+      <section class="left-small">
+        <a class="left-off-canvas-toggle menu-icon" href="#"><span></span></a>
+      </section>
+    </nav>
+  </div><!-- end #header -->
 
   <aside class="left-off-canvas-menu">
     <ul class="off-canvas-list">
