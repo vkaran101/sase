@@ -20,10 +20,10 @@ class Home extends CI_Controller {
     $data['title'] = 'Home | Northeastern SASE';
 
     $this->load->view('templates/header',$data);
-    $this->load->view('home');
+    $this->load->view('home_view');
     $this->load->view('templates/footer');
   }
 }
 
-/* End of file home.php */
+/* End of controller home.php */
 /* Location: ./app/controllers/home.php */

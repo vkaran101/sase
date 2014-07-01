@@ -16,7 +16,7 @@ class Contact extends CI_Controller {
     $data['title'] = 'Contact | Northeastern SASE';
 
     $this->load->view('templates/header',$data);
-    $this->load->view('contact');
+    $this->load->view('contact_view');
     $this->load->view('templates/footer');
   }
 }

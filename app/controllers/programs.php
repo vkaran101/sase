@@ -16,7 +16,7 @@ class Programs extends CI_Controller {
     $data['title'] = 'Programs | Northeastern SASE';
 
     $this->load->view('templates/header',$data);
-    $this->load->view('programs');
+    $this->load->view('programs_view');
     $this->load->view('templates/footer');
   }
 }

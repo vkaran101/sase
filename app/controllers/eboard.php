@@ -16,7 +16,7 @@ class Eboard extends CI_Controller {
     $data['title'] = 'Eboard | Northeastern SASE';
 
     $this->load->view('templates/header',$data);
-    $this->load->view('eboard');
+    $this->load->view('eboard_view');
     $this->load->view('templates/footer');
   }
 }

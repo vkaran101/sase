@@ -16,7 +16,7 @@ class About extends CI_Controller {
     $data['title'] = 'About | Northeastern SASE';
 
     $this->load->view('templates/header',$data);
-    $this->load->view('about');
+    $this->load->view('about_view');
     $this->load->view('templates/footer');
   }
 }

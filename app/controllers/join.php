@@ -16,7 +16,7 @@ class Join extends CI_Controller {
     $data['title'] = 'Join | Northeastern SASE';
 
     $this->load->view('templates/header',$data);
-    $this->load->view('join');
+    $this->load->view('join_view');
     $this->load->view('templates/footer');
   }
 }

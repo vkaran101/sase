@@ -16,7 +16,7 @@ class Events extends CI_Controller {
     $data['title'] = 'Events | Northeastern SASE';
 
     $this->load->view('templates/header',$data);
-    $this->load->view('events');
+    $this->load->view('events_view');
     $this->load->view('templates/footer');
   }
 }

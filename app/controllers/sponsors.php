@@ -16,7 +16,7 @@ class Sponsors extends CI_Controller {
     $data['title'] = 'Sponsors | Northeastern SASE';
 
     $this->load->view('templates/header',$data);
-    $this->load->view('sponsors');
+    $this->load->view('sponsors_view');
     $this->load->view('templates/footer');
   }
 }
