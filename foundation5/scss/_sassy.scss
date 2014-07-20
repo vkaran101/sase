@@ -1,5 +1,20 @@
 // styles for Northeastern SASE website
 
+#pillar-container {
+  background: #eee;
+}
+.pillar {
+  padding-top: rem-calc(50);
+  padding-bottom: rem-calc(30);
+  text-align: center;
+  img {
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    margin-bottom: rem-calc(20);
+  }
+}
+
 #promo {
   background: url('../img/stickman2.png')  #aac46c;
   background-repeat: no-repeat;
