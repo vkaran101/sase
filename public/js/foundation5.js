@@ -8,12 +8,15 @@ function setPromoHeight() {
   var headerHeight = $('#header').outerHeight();
 
   var imgHeight = 220;
+  var maxHeight = 900;
   var msgHeight = $('#promo-msg').outerHeight();
   var minHeight = msgHeight + imgHeight;
 
   var promoHeight = viewportHeight - headerHeight;
   if (promoHeight < minHeight) {
     promoHeight = minHeight;
+  } else if (promoHeight > maxHeight) {
+    promoHeight = maxHeight;
   }
   $('#promo').css('height', promoHeight);
 

@@ -42,7 +42,7 @@ end
 
 task :icons do
   puts "[build] font-awesome"
-  
+
   Dir.chdir "font-awesome"
   sh "compass compile"
   Dir.chdir ".."
