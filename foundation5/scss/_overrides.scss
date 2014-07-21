@@ -18,3 +18,26 @@
 nav.top-bar {
   margin-top: rem-calc(30);
 }
+
+.events-table {
+  @include pricing-table-container;
+  margin-bottom: rem-calc(30);
+  .title {
+    @include pricing-table-title;
+    text-align: left;
+  }
+  .description {
+    @include pricing-table-description;
+    border-bottom: 0;
+  }
+  .entry {
+    @include pricing-table-bullet;
+    padding-top: rem-calc(10);
+    padding-bottom: rem-calc(10);
+    border-bottom: 0;
+    text-align: left;
+  }
+  .btn {
+    @include pricing-table-cta;
+  }
+}
