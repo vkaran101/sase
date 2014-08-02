@@ -111,3 +111,18 @@ footer {
     padding-top: rem-calc(10);
   }
 }
+
+.event-placeholder {
+  margin: rem-calc(10);
+  padding: rem-calc(30);
+
+  border: dashed 5px #999;
+  -webkit-border-radius: 25px;
+  -moz-border-radius: 25px;
+  border-radius: 25px;
+
+  background-color: #eee;
+
+  text-align: center;
+  font-weight: $font-weight-bold;
+}

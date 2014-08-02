@@ -11,15 +11,7 @@
   <div class="small-12 medium-6 columns">
     <ul class="events-table">
       <li class="title">Upcoming</li>
-      <li class="entry">
-        <h4>event title</h4>
-        <div class="event-info">
-          <i class="fa fa-fw fa-calendar"></i><span>9/25/14</span>
-          <i class="fa fa-fw fa-clock-o"></i><span>18:35</span>
-          <i class="fa fa-fw fa-map-marker"></i><span>348 Curry Student Center</span>
-        </div>
-        <p>event description</p>
-      </li>
+      <li class="entry"></li>
     </ul>
   </div>
   <div class="small-12 medium-6 columns">
@@ -27,7 +19,15 @@
       <div class="small-12 columns">
         <ul class="events-table">
           <li class="title">General Meetings</li>
-          <li class="entry"></li>
+          <li class="entry">
+            <h4>event title</h4>
+            <div class="event-info">
+              <i class="fa fa-fw fa-calendar"></i><span>9/25/14</span>
+              <i class="fa fa-fw fa-clock-o"></i><span>18:35</span>
+              <i class="fa fa-fw fa-map-marker"></i><span>348 Curry Student Center</span>
+            </div>
+            <p>event description</p>
+          </li>
         </ul>
       </div>
     </div>
@@ -35,7 +35,11 @@
       <div class="small-12 columns">
         <ul class="events-table">
           <li class="title">Community Service</li>
-          <li class="entry"></li>
+          <li class="entry">
+            <div class="event-placeholder">
+              No events planned yet. Check back soon!
+            </div>
+          </li>
         </ul>
       </div>
     </div>
