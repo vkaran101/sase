@@ -8,7 +8,7 @@ class Migration_Add_event_columns extends CI_Migration {
         'type' => 'BOOL',
         'null' => 'FALSE'
       ),
-      'community_service' => array(
+      'service' => array(
         'type' => 'BOOL',
         'null' => 'FALSE'
       )
@@ -19,6 +19,6 @@ class Migration_Add_event_columns extends CI_Migration {
 
   public function down() {
     $this->dbforge->drop_column('events', 'meeting');
-    $this->dbforge->drop_column('events', 'community_service');
+    $this->dbforge->drop_column('events', 'service');
   }
 }
