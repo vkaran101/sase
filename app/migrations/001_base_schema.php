@@ -31,6 +31,14 @@ class Migration_Base_schema extends CI_Migration {
       'year' => array(
         'type' => 'YEAR'
       ),
+      'meeting' => array(
+        'type' => 'BOOL',
+        'null' => 'FALSE'
+      ),
+      'service' => array(
+        'type' => 'BOOL',
+        'null' => 'FALSE'
+      ),
       'created' => array(
         'type' => 'DATETIME',
         'null' => 'FALSE'
