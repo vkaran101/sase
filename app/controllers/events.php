@@ -5,12 +5,19 @@ class Events extends CI_Controller {
   public function __construct()
   {
     parent::__construct();
+    $this->load->model('events_model');
     $this->load->helper('url');
   }
 
   public function index()
   {
+    $semester = 'fall';
+    $year = 2014;
+
     $data['title'] = 'Events | Northeastern SASE';
+    $data['upcoming'] = $this->events_model->get_upcoming_events($semester,$year);
+    $data['meetings'] = $this->events_model->get_upcoming_meetings($semester,$year);
+    $data['services'] = $this->events_model->get_upcoming_services($semester,$year);
 
     $this->load->view('templates/header', $data);
     $this->load->view('events_view');
@@ -27,5 +34,4 @@ class Events extends CI_Controller {
   }
 }
 
-/* End of file events.php */
-/* Location: ./app/controllers/events.php */
+/* End of file */

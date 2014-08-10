@@ -20,6 +20,41 @@ class Events_model extends CI_Model {
     return $this->db->get('events');
   }
 
+  function get_upcoming_events($semester,$year)
+  {
+    $today = date('Y-m-d');
+    $this->db->where('date >=',$today);
+    $this->db->where('semester',$semester);
+    $this->db->where('year',$year);
+    $this->db->order_by('date','asc');
+    $this->db->order_by('time','asc');
+    return $this->db->get('events');
+  }
+
+  function get_upcoming_meetings($semester,$year)
+  {
+    $today = date('Y-m-d');
+    $this->db->where('date >=',$today);
+    $this->db->where('meeting',1);
+    $this->db->where('semester',$semester);
+    $this->db->where('year',$year);
+    $this->db->order_by('date','asc');
+    $this->db->order_by('time','asc');
+    return $this->db->get('events');
+  }
+
+  function get_upcoming_services($semester,$year)
+  {
+    $today = date('Y-m-d');
+    $this->db->where('date >=',$today);
+    $this->db->where('service',1);
+    $this->db->where('semester',$semester);
+    $this->db->where('year',$year);
+    $this->db->order_by('date','asc');
+    $this->db->order_by('time','asc');
+    return $this->db->get('events');
+  }
+
   function get_by_id($id)
   {
     $this->db->where('id',$id);
@@ -67,7 +102,7 @@ class Events_model extends CI_Model {
     $time .= ':' . $input['time_minute'];
     $time .= ' ' . $input['time_oclock'];
     $parsed_time = date('H:i:s', strtotime($time));
-    
+
     // current time
     $datetime = date('Y-m-d H:i:s');
 

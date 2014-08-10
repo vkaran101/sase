@@ -11,7 +11,23 @@
   <div class="small-12 medium-6 columns">
     <ul class="events-table">
       <li class="title">Upcoming</li>
-      <li class="entry"></li>
+      <?php if ($upcoming->num_rows() == 0): ?>
+        <li class="entry">
+          <div class="event-placeholder">No events planned yet. Check back soon!</div>
+        </li>
+      <?php else: ?>
+        <?php foreach ($upcoming->result() as $entry): ?>
+          <li class="entry">
+            <h4><?=$entry->title?></h4>
+            <div class="event-info">
+              <i class="fa fa-fw fa-calendar-o"></i><span><?=date('n/j/y',strtotime($entry->date))?></span>
+              <i class="fa fa-fw fa-clock-o"></i><span><?=date('g:i a',strtotime($entry->time))?></span>
+              <i class="fa fa-fw fa-map-marker"></i><span><?=$entry->location?></span>
+            </div>
+            <p><?=$entry->description?></p>
+          </li>
+        <?php endforeach; ?>
+      <?php endif; ?>
     </ul>
   </div>
   <div class="small-12 medium-6 columns">
@@ -19,15 +35,23 @@
       <div class="small-12 columns">
         <ul class="events-table">
           <li class="title">General Meetings</li>
-          <li class="entry">
-            <h4>event title</h4>
-            <div class="event-info">
-              <i class="fa fa-fw fa-calendar"></i><span>9/25/14</span>
-              <i class="fa fa-fw fa-clock-o"></i><span>18:35</span>
-              <i class="fa fa-fw fa-map-marker"></i><span>348 Curry Student Center</span>
-            </div>
-            <p>event description</p>
-          </li>
+          <?php if ($meetings->num_rows() == 0): ?>
+            <li class="entry">
+              <div class="event-placeholder">No general meetings planned yet. Check back soon!</div>
+            </li>
+          <?php else: ?>
+            <?php foreach ($meetings->result() as $entry): ?>
+              <li class="entry">
+                <h4><?=$entry->title?></h4>
+                <div class="event-info">
+                  <i class="fa fa-fw fa-calendar-o"></i><span><?=date('n/j/y',strtotime($entry->date))?></span>
+                  <i class="fa fa-fw fa-clock-o"></i><span><?=date('g:i a',strtotime($entry->time))?></span>
+                  <i class="fa fa-fw fa-map-marker"></i><span><?=$entry->location?></span>
+                </div>
+                <p><?=$entry->description?></p>
+              </li>
+            <?php endforeach; ?>
+          <?php endif; ?>
         </ul>
       </div>
     </div>
@@ -35,11 +59,23 @@
       <div class="small-12 columns">
         <ul class="events-table">
           <li class="title">Community Service</li>
-          <li class="entry">
-            <div class="event-placeholder">
-              No events planned yet. Check back soon!
-            </div>
-          </li>
+          <?php if ($services->num_rows() == 0): ?>
+            <li class="entry">
+              <div class="event-placeholder">No community services planned yet. Check back soon!</div>
+            </li>
+          <?php else: ?>
+            <?php foreach ($services->result() as $entry): ?>
+              <li class="entry">
+                <h4><?=$entry->title?></h4>
+                <div class="event-info">
+                  <i class="fa fa-fw fa-calendar-o"></i><span><?=date('n/j/y',strtotime($entry->date))?></span>
+                  <i class="fa fa-fw fa-clock-o"></i><span><?=date('g:i a',strtotime($entry->time))?></span>
+                  <i class="fa fa-fw fa-map-marker"></i><span><?=$entry->location?></span>
+                </div>
+                <p><?=$entry->description?></p>
+              </li>
+            <?php endforeach; ?>
+          <?php endif; ?>
         </ul>
       </div>
     </div>
