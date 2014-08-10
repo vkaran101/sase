@@ -37,6 +37,29 @@ $config = array(
     ),
     array('field' => 'meeting','label' => 'General meeting checkbox','rules' => ''),
     array('field' => 'service','label' => 'Community service checkbox','rules' => '')
+  ),
+  'eboards' => array(
+    array('field' => 'name','label' => 'Name',
+      'rules' => 'trim|required|max_length[65500]'
+    ),
+    array('field' => 'position','label' => 'Position',
+      'rules' => 'trim|required|max_length[65500]'
+    ),
+    array('field' => 'major','label' => 'Major',
+      'rules' => 'trim|required|max_length[65500]'
+    ),
+    array('field' => 'grad_year','label' => 'Graduation Year',
+      'rules' => 'required|integer|exact_length[4]|greater_than[2012]'
+    ),
+    array('field' => 'bio','label' => 'Bio',
+      'rules' => 'trim|required|max_length[65500]'
+    ),
+    array('field' => 'semester','label' => 'Semester',
+      'rules' => 'required'
+    ),
+    array('field' => 'year','label' => 'Year',
+      'rules' => 'required|integer|exact_length[4]|greater_than[2012]'
+    )
   )
 );
 

@@ -93,7 +93,7 @@
     var response = confirm('Warning: data will be lost!\n\nContinue to delete event entry?');
     if (response) {
       window.location.href = '<?=base_url()?>admin/events/destroy/<?=$entry->id?>';
-      alert('Event entry has been destroyed.');
+      alert('Event entry has been deleted.');
     }
   });
 </script>
