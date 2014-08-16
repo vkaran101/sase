@@ -19,6 +19,33 @@ class Eboards_model extends CI_Model {
     return $this->db->get('eboards');
   }
 
+  // returns an array of eboard members sorted in specified order
+  function get_current_eboard($yr,$sem)
+  {
+    $order = array(
+      'President','Vice President',
+      'Treasurer','Secretary',
+      'External Public Relations','Internal Public Relations',
+      'Corporate Relations','Programs Chair',
+      'Community Service Chair','Fundraising Chair',
+      'Webmaster'
+    );
+
+    $count = 0;
+    $eboard = array();
+    foreach ($order as $pos)
+    {
+      $query = $this->db->get_where('eboards',array('year'=>$yr,'semester'=>$sem,'position'=>$pos));
+      if ($query->num_rows() > 0)
+      {
+        $eboard[$count] = $query->row();
+        $count++;
+      }
+    }
+
+    return $eboard;
+  }
+
   function get_by_id($id)
   {
     $this->db->where('id',$id);

@@ -40,6 +40,39 @@ nav.top-bar {
   }
 }
 
+.eboard-table {
+  @include pricing-table-container;
+  margin-bottom: rem-calc(30);
+  border: 0;
+  border-bottom: solid 1px #ddd;
+  .position {
+    @include pricing-table-title;
+    border: solid 1px #333;
+  }
+  .name {
+    @include pricing-table-price;
+    border-left: solid 1px #ddd;
+    border-right: solid 1px #ddd;
+  }
+  .item {
+    @include pricing-table-bullet;
+    border-left: solid 1px #ddd;
+    border-right: solid 1px #ddd;
+  }
+  .bio {
+    @include pricing-table-description;
+    border-left: solid 1px #ddd;
+    border-right: solid 1px #ddd;
+    border-bottom: 0;
+  }
+  .pic {
+    @include pricing-table-cta;
+    padding-bottom: rem-calc(20);
+    border-left: solid 1px #ddd;
+    border-right: solid 1px #ddd;
+  }
+}
+
 .midfix {
   @include prefix-postfix-base();
   @include prefix();
