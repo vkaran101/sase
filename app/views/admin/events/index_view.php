@@ -80,6 +80,7 @@
           <?php endforeach; ?>
         </tbody>
       </table>
+      <p>Total <?=$query->num_rows()?> entries</p>
     <?php endif; ?>
   </div>
 </div>
