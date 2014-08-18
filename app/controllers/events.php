@@ -24,8 +24,20 @@ class Events extends CI_Controller {
     $this->load->view('templates/footer');
   }
 
-  public function past()
+  public function past($yr=NULL,$sem=NULL)
   {
+    $semester = 'fall';
+    $year = 2014;
+
+    if (!$sem)
+      $sem = $semester;
+    if (!$yr)
+      $yr = $year;
+
+    $data['query'] = $this->events_model->get_all($sem,$yr);
+    $data['semester_list'] = $this->events_model->get_all_semesters();
+    $data['semester'] = $sem;
+    $data['year'] = $yr;
     $data['title'] = 'Past Events | Northeastern SASE';
 
     $this->load->view('templates/header', $data);

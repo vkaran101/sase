@@ -10,13 +10,29 @@ class Events_model extends CI_Model {
   }
 
   // get all entries from table
+  // if semester+year is specified, return those events only
   // sorted by year > semester > date > time
-  function get_all()
+  function get_all($sem=NULL,$yr=NULL)
   {
     $this->db->order_by('year','asc');
     $this->db->order_by('semester','asc');
     $this->db->order_by('date','asc');
     $this->db->order_by('time','asc');
+
+    if ($sem && $yr) {
+      $this->db->where('semester',$sem);
+      $this->db->where('year',$yr);
+    }
+
+    return $this->db->get('events');
+  }
+
+  function get_all_semesters()
+  {
+    $this->db->order_by('year','desc');
+    $this->db->order_by('semester','asc');
+    $this->db->distinct();
+    $this->db->select('semester,year');
     return $this->db->get('events');
   }
 
