@@ -14,6 +14,7 @@
   <div class="small-12 columns">
     <h1><a href="<?=base_url()?>admin">Admin Dashboard</a></h1>
     <hr />
+    <p><a href="<?=base_url()?>">view site</a></p>
     <p><a href="<?=base_url()?>admin/events">manage events</a></p>
     <p><a href="<?=base_url()?>admin/eboards">manage eboards</a></p>
     <p><a href="<?=base_url()?>admin/migrate">migrate database to current</a></p>
