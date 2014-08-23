@@ -1,6 +1,5 @@
 <?php if ( ! defined('BASEPATH')) exit('No direct script access allowed');
 
-
 class Bcrypt {
   private $rounds;
   private $salt_prefix;
@@ -108,6 +107,5 @@ class Bcrypt {
     return $output;
   }
 }
-
 
 /***** End of BCrypt.php ***********/

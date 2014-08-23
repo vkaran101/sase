@@ -5,7 +5,7 @@
 * Version: 2.5.2
 *
 * Author: Ben Edmunds
-*		  ben.edmunds@gmail.com
+*     ben.edmunds@gmail.com
 *         @benedmunds
 *
 * Added Awesomeness: Phil Sturgeon
@@ -14,7 +14,8 @@
 *
 * Created:  10.01.2009
 *
-* Description:  Modified auth system based on redux_auth with extensive customization.  This is basically what Redux Auth 2 should be.
+* Description:  Modified auth system based on redux_auth with extensive customization.
+* This is basically what Redux Auth 2 should be.
 * Original Author name has been kept but that does not mean that the method has not been modified.
 *
 * Requirements: PHP5 or above
@@ -65,12 +66,12 @@ $config['join']['groups'] = 'group_id';
  | salt_prefix: Used for bcrypt. Versions of PHP before 5.3.7 only support "$2a$" as the salt prefix
  | Versions 5.3.7 or greater should use the default of "$2y$".
  */
-$config['hash_method']    = 'bcrypt';	// sha1 or bcrypt, bcrypt is STRONGLY recommended
-$config['default_rounds'] = 8;		// This does not apply if random_rounds is set to true
+$config['hash_method']    = 'bcrypt'; // sha1 or bcrypt, bcrypt is STRONGLY recommended
+$config['default_rounds'] = 8;    // This does not apply if random_rounds is set to true
 $config['random_rounds']  = FALSE;
 $config['min_rounds']     = 5;
 $config['max_rounds']     = 9;
-$config['salt_prefix']    = '$2y$';
+$config['salt_prefix']    = '$2a$';
 
 /*
  | -------------------------------------------------------------------------
@@ -81,13 +82,13 @@ $config['salt_prefix']    = '$2y$';
  | The controller should check this function and act
  | appropriately. If this variable set to 0, there is no maximum.
  */
-$config['site_title']                 = "Example.com";       // Site Title, example.com
-$config['admin_email']                = "admin@example.com"; // Admin Email, admin@example.com
+$config['site_title']                 = "northeastern.edu/sase";       // Site Title, example.com
+$config['admin_email']                = "admin@admin.com"; // Admin Email, admin@example.com
 $config['default_group']              = 'members';           // Default group, use name
 $config['admin_group']                = 'admin';             // Default administrators group, use name
-$config['identity']                   = 'email';             // A database column which is used to login with
+$config['identity']                   = 'username';             // A database column which is used to login with
 $config['min_password_length']        = 8;                   // Minimum Required Length of Password
-$config['max_password_length']        = 20;                  // Maximum Allowed Length of Password
+$config['max_password_length']        = 80;                  // Maximum Allowed Length of Password
 $config['email_activation']           = FALSE;               // Email Activation for registration
 $config['manual_activation']          = FALSE;               // Manual Activation for registration
 $config['remember_users']             = TRUE;                // Allow users to be remembered and enable auto-login
@@ -114,12 +115,12 @@ $config['identity_cookie_name'] = 'identity';
  | Email options.
  | -------------------------------------------------------------------------
  | email_config:
- | 	  'file' = Use the default CI config or use from a config file
- | 	  array  = Manually set your email config settings
+ |    'file' = Use the default CI config or use from a config file
+ |    array  = Manually set your email config settings
  */
 $config['use_ci_email'] = FALSE; // Send Email using the builtin CI email class, if false it will return the code and the identity
 $config['email_config'] = array(
-	'mailtype' => 'html',
+  'mailtype' => 'html',
 );
 
 /*
@@ -174,11 +175,10 @@ $config['store_salt']  = FALSE;
  | Message Delimiters.
  | -------------------------------------------------------------------------
  */
-$config['delimiters_source']       = 'config'; 	// "config" = use the settings defined here, "form_validation" = use the settings defined in CI's form validation library
-$config['message_start_delimiter'] = '<p>'; 	// Message start delimiter
-$config['message_end_delimiter']   = '</p>'; 	// Message end delimiter
-$config['error_start_delimiter']   = '<p>';		// Error mesage start delimiter
-$config['error_end_delimiter']     = '</p>';	// Error mesage end delimiter
+$config['delimiters_source']       = 'config';  // "config" = use the settings defined here, "form_validation" = use the settings defined in CI's form validation library
+$config['message_start_delimiter'] = '<p>';   // Message start delimiter
+$config['message_end_delimiter']   = '</p>';  // Message end delimiter
+$config['error_start_delimiter']   = '<p>';   // Error mesage start delimiter
+$config['error_end_delimiter']     = '</p>';  // Error mesage end delimiter
 
 /* End of file ion_auth.php */
-/* Location: ./application/config/ion_auth.php */
