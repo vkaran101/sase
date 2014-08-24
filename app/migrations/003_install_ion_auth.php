@@ -141,19 +141,17 @@ class Migration_Install_ion_auth extends CI_Migration {
     $data = array(
       'id' => '1',
       'ip_address' => 0x7f000001,
-      'username' => 'admin',
+      'username' => 'sase',
       'password' => '$2a$07$SeBknntpZror9uyftVopmu61qg0ms8Qv1yV6FG.kQOSM.9QhmTo36',
-      'salt' => '9462e8eee0',
-      'email' => 'admin@admin.com',
+      'salt' => 'fbaa5e216d163a02ae630ab1a43372635dd374c0',
+      'email' => 'northeastern.sase@gmail.com',
       'activation_code' => '',
       'forgotten_password_code' => NULL,
       'created_on' => '1268889823',
       'last_login' => '1268889823',
       'active' => '1',
-      'first_name' => 'Admin',
-      'last_name' => 'istrator',
-      'company' => 'ADMIN',
-      'phone' => '0',
+      'first_name' => 'Northeastern',
+      'last_name' => 'SASE'
     );
     $this->db->insert('users', $data);
 

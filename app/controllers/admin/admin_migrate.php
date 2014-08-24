@@ -7,10 +7,6 @@ class Admin_migrate extends CI_Controller {
     parent::__construct();
     $this->load->library('migration');
     $this->load->library('ion_auth');
-    if (!$this->ion_auth->logged_in())
-    {
-      redirect('/admin/auth/login','refresh');
-    }
   }
 
   public function index()
@@ -22,6 +18,34 @@ class Admin_migrate extends CI_Controller {
     else
     {
       echo 'Migration successful!'.PHP_EOL;
+    }
+  }
+
+  public function rollback($steps=1)
+  {
+    if (!$this->ion_auth->logged_in())
+    {
+      redirect('/admin/auth/login','refresh');
+    }
+    if (!$this->ion_auth->is_admin()) {
+      show_error('Only administrators have access to migration rollbacks.');
+    }
+    if ($steps < 0) {
+      show_error('Migration rollback steps cannot be negative.');
+    }
+
+    $this->load->config('migration',TRUE);
+    $latest = $this->config->item('migration_version','migration');
+    $version = $latest - $steps;
+    if ($version < 3) {
+      // cap rollback to 3 to ensure we have auth system intact
+      $version = 3;
+    }
+
+    if (!$this->migration->version($version)) {
+      show_error('Migration rollback failed.');
+    } else {
+      echo 'Migration rollback to version '.$version.' successful!'.PHP_EOL;
     }
   }
 }
