@@ -6,6 +6,7 @@ class Admin_eboards extends CI_Controller {
   {
     parent::__construct();
     $this->load->model('eboards_model');
+    $this->load->library('ion_auth');
     $this->load->library('form_validation');
     $this->form_validation->set_error_delimiters(
       '<div data-alert class="alert-box alert radius">',
@@ -13,6 +14,10 @@ class Admin_eboards extends CI_Controller {
     );
     $this->load->helper('form');
     $this->load->helper('url');
+    if (!$this->ion_auth->logged_in())
+    {
+      redirect('/admin/auth/login','refresh');
+    }
   }
 
   public function index()

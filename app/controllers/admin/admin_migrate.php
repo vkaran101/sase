@@ -6,6 +6,11 @@ class Admin_migrate extends CI_Controller {
   {
     parent::__construct();
     $this->load->library('migration');
+    $this->load->library('ion_auth');
+    if (!$this->ion_auth->logged_in())
+    {
+      redirect('/admin/auth/login','refresh');
+    }
   }
 
   public function index()
