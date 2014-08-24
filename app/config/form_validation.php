@@ -60,6 +60,17 @@ $config = array(
     array('field' => 'year','label' => 'Year',
       'rules' => 'required|integer|exact_length[4]|greater_than[2012]'
     )
+  ),
+  'newsletter' => array(
+    array('field'=>'fname','label'=>'First Name',
+      'rules'=>'trim|required|max_length[255]'
+    ),
+    array('field'=>'lname','label'=>'Last Name',
+      'rules'=>'trim|required|max_length[255]'
+    ),
+    array('field'=>'email','label'=>'Email',
+      'rules'=>'trim|required|valid_email'
+    )
   )
 );
 
