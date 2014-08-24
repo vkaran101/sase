@@ -8,7 +8,7 @@
  * @author Drew McLellan <drew.mclellan@gmail.com> modified by Ben Bowler <ben.bowler@vice.com>
  * @version 1.0
  */
-class Mailchimp_library
+class Mailchimp
 {
   private $api_key;
   private $api_endpoint = 'https://<dc>.api.mailchimp.com/2.0/';
