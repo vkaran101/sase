@@ -53,7 +53,7 @@ class Admin_auth extends CI_Controller {
   {
     $this->data['title'] = "Login";
 
-    $this->form_validation->set_rules('identity','Identity','required');
+    $this->form_validation->set_rules('username','Username','required|alpha_dash');
     $this->form_validation->set_rules('password','Password','required');
 
     if ($this->form_validation->run() == true)
@@ -61,7 +61,7 @@ class Admin_auth extends CI_Controller {
       //check to see if the user is logging in
       $remember = (bool) $this->input->post('remember');
 
-      if ($this->ion_auth->login($this->input->post('identity'),$this->input->post('password'),$remember))
+      if ($this->ion_auth->login($this->input->post('username'),$this->input->post('password'),$remember))
       {
         //if the login is successful
         $this->session->set_flashdata('message',$this->ion_auth->messages());
@@ -77,7 +77,7 @@ class Admin_auth extends CI_Controller {
     else
     {
       //the user is not logging in so display the login page
-      $this->data['message'] = (validation_errors()) ? validation_errors() : $this->session->flashdata('message');
+      $this->data['message'] = $this->session->flashdata('message');
       $this->_render_page('/admin/auth/login',$this->data);
     }
   }
