@@ -7,7 +7,7 @@
   </div>
 </div>
 <div class="row">
-  <div class="small-12 columns">
+  <div class="small-12 medium-8 medium-centered columns">
     <?=form_open('newsletter/subscribe')?>
       <div class="row">
         <div class="small-12 medium-6 columns">
@@ -41,7 +41,7 @@
       <div class="row">
         <div class="small-12 columns">
           <button class="button radius" type="submit">
-            <i class="fa fa-fw fa-send"></i> Submit
+            <i class="fa fa-fw fa-send"></i> Subscribe
           </button>
         </div>
       </div>

@@ -127,3 +127,15 @@ footer {
   text-align: center;
   font-weight: $font-weight-bold;
 }
+
+.icon-block {
+  display: block;
+  margin: rem-calc(30) 0;
+  text-align: center;
+}
+.icon-block.success {
+  color: $success-color;
+}
+.icon-block.alert {
+  color: $alert-color;
+}

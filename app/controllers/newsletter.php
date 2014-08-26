@@ -55,28 +55,19 @@ class Newsletter extends CI_Controller {
       $result = $this->mailchimp->call('lists/subscribe',$data);
 
       if (isset($result['email'])) {
-        redirect('/newsletter/success','refresh');
+        $this->data['title'] = 'Success - Northeastern SASE';
+        $this->load->view('templates/header',$this->data);
+        $this->load->view('newsletter/success');
+        $this->load->view('templates/footer');
       } else {
-        redirect('/newsletter/error','refresh');
+        $this->data['title'] = 'Error - Northeastern SASE';
+        $this->load->view('templates/header',$this->data);
+        $this->load->view('newsletter/error');
+        $this->load->view('templates/footer');
       }
     }
   }
 
-  public function success()
-  {
-    $this->data['title'] = 'Success - Northeastern SASE';
-    $this->load->view('templates/header',$this->data);
-    $this->load->view('newsletter/success');
-    $this->load->view('templates/footer');
-  }
-
-  public function error()
-  {
-    $this->data['title'] = 'Error - Northeastern SASE';
-    $this->load->view('templates/header',$this->data);
-    $this->load->view('newsletter/error');
-    $this->load->view('templates/footer');
-  }
 }
 
 /* End of file */
