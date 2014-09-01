@@ -83,3 +83,10 @@ nav.top-bar {
 .side-nav li.active {
   background-color: #eee;
 }
+
+.footer-side-nav {
+  @include side-nav(
+    $link-color: '#fff',
+    $link-color-hover: '#ddd'
+  );
+}

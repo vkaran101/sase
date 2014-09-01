@@ -1,6 +1,8 @@
 // styles for Northeastern SASE website
 
+/************************************************/
 // layout
+
 .banner {
   padding-top: rem-calc(30);
   padding-bottom: rem-calc(20);
@@ -8,61 +10,26 @@
   background-color: #eee;
 }
 
-#newsletter {
-  background-color: $sase-green;
-  text-align: center;
-  padding-top: rem-calc(20);
-}
-
 footer {
   background-color: $sase-blue;
-  color: #fff;
   padding-top: rem-calc(40);
-  text-align: center;
+  border-top: 5px solid $sase-green;
+  color: #fff;
 
-  h1,h2,h3,h4,h5,h6 {
-    color: #fff;
-  }
-  ul {
-    list-style-type: none;
-  }
-  a {
-    color: #fff;
-  }
-  a:hover {
-    color: $sase-green;
-  }
-}
-
-.divider {
-  border-color: $primary-color;
-}
-
-#affiliations {
-  ul {
-    margin-left: 0;
-  }
+  h1,h2,h3,h4,h5,h6 { color: #fff; }
+  a { color: #fff; }
+  a:hover { color: #ddd; }
+  .divider { border-color: $primary-color; }
 }
 
 #copyright {
   text-align: center;
-  padding-bottom: rem-calc(20);
+  margin-bottom: rem-calc(20);
 }
 
-@media #{$medium-up} {
-  #join {
-    padding-left: rem-calc(20);
-  }
-  #affiliations {
-    text-align: right;
-    padding-right: rem-calc(30);
-  }
-  #logo-stamp {
-    margin-left: rem-calc(30);
-  }
-}
-
+/************************************************/
 // home page
+
 #pillar-container {
   background-color: #eee;
 }
@@ -95,7 +62,9 @@ footer {
   }
 }
 
+/************************************************/
 // events page
+
 .event-info {
   margin-top: rem-calc(10);
   margin-bottom: rem-calc(15);
