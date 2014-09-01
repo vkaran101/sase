@@ -27,6 +27,10 @@ footer {
   margin-bottom: rem-calc(20);
 }
 
+.clear-gap {
+  margin-bottom: 0;
+}
+
 /************************************************/
 // home page
 
@@ -97,6 +101,9 @@ footer {
   font-weight: $font-weight-bold;
 }
 
+/************************************************/
+// newsletter
+
 .icon-block {
   display: block;
   margin: rem-calc(30) 0;
@@ -108,3 +115,22 @@ footer {
 .icon-block.alert {
   color: $alert-color;
 }
+
+/************************************************/
+// sponsors page
+
+.thumbnail-block {
+  padding: rem-calc(80) 0;
+  h3 { margin-bottom: rem-calc(50); }
+  ul li a {
+    display: block;
+    background: #fff;
+    padding-top: rem-calc(20);
+    height: 160px;
+  }
+  ul li a:hover {
+    box-shadow: 0 0 6px 2px $sase-green;
+  }
+}
+#gold { background: #f5d76e; }
+#silver { background: #ecf0f1; }
