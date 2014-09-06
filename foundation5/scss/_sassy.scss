@@ -10,6 +10,19 @@
   background-color: #eee;
 }
 
+.container {
+  padding: rem-calc(80) 0;
+  h1,h2,h3,h4,h5,h6,p {
+    margin-bottom: rem-calc(35);
+  }
+}
+.white { background: #fff; }
+.grey { background: #eee; }
+.light-grey { background: #f9f9fa; }
+.smoke { background: #ececec; }
+.porcelain { background: #ecf0f1; }
+.gold { background: #f5d76e; }
+
 footer {
   background-color: $sase-blue;
   padding-top: rem-calc(40);
@@ -120,8 +133,6 @@ footer {
 // sponsors page
 
 .thumbnail-block {
-  padding: rem-calc(80) 0;
-  h3 { margin-bottom: rem-calc(50); }
   ul li a {
     display: block;
     background: #fff;
@@ -132,5 +143,3 @@ footer {
     box-shadow: 0 0 6px 2px $sase-green;
   }
 }
-#gold { background: #f5d76e; }
-#silver { background: #ecf0f1; }

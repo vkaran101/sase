@@ -7,7 +7,7 @@
 </div>
 </div>
 
-<div class="thumbnail-block" id="gold">
+<div class="container gold thumbnail-block">
 <div class="row">
   <div class="small-12 medium-8 medium-centered columns text-center">
     <h3>Gold Sponsors</h3>
@@ -35,7 +35,7 @@
 </div>
 </div>
 
-<div class="thumbnail-block" id="silver">
+<div class="container porcelain thumbnail-block">
 <div class="row">
   <div class="small-12 medium-8 medium-centered columns text-center">
     <h3>Silver Sponsors</h3>
