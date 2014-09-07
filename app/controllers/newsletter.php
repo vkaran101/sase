@@ -5,7 +5,7 @@ class Newsletter extends CI_Controller {
   public function __construct()
   {
     parent::__construct();
-    $this->load->library('mailchimp');
+    //$this->load->library('mailchimp');
     $this->load->library('form_validation');
     $this->form_validation->set_error_delimiters(
       '<small class="error">','</small>'
