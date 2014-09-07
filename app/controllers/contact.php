@@ -13,9 +13,6 @@ class Contact extends CI_Controller {
     );
     $this->load->helper('form');
     $this->load->helper('url');
-
-    // tweak to make email work well
-    $this->email->set_newline("\r\n");
   }
 
   public function index()
@@ -45,10 +42,8 @@ class Contact extends CI_Controller {
       $subject = $this->input->post('subject');
       $message = $this->input->post('message');
 
-      // use gmail to send email to ourself
-      // check reply-to email for user's email
       $this->email->clear(TRUE);
-      $this->email->from($sase_email,$sase_name);
+      $this->email->from($email,$name);
       $this->email->to($sase_email);
       $this->email->reply_to($email,$name);
       $this->email->subject('[SASE Website] '.$subject);
