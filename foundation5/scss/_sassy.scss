@@ -18,10 +18,10 @@
 }
 .white { background: #fff; }
 .grey { background: #eee; }
-.light-grey { background: #f9f9fa; }
 .smoke { background: #ececec; }
 .porcelain { background: #ecf0f1; }
 .gold { background: #f5d76e; }
+.light-grey { background: #f9f9fa; }
 
 footer {
   background-color: $sase-blue;
@@ -142,4 +142,20 @@ footer {
   ul li a:hover {
     box-shadow: 0 0 6px 2px $sase-green;
   }
+}
+
+/************************************************/
+// contact page
+
+.gmail-red {
+  color: #dd4b39;
+  font-weight: $font-weight-bold;
+}
+.facebook-blue {
+  color: #3b5998;
+  font-weight: $font-weight-bold;
+}
+.orgsync-green {
+  color: #859d03;
+  font-weight: $font-weight-bold;
 }

@@ -63,13 +63,27 @@ $config = array(
   ),
   'newsletter' => array(
     array('field'=>'fname','label'=>'First Name',
-      'rules'=>'trim|required|max_length[255]'
+      'rules'=>'trim|required|max_length[255]|alpha_dash'
     ),
     array('field'=>'lname','label'=>'Last Name',
-      'rules'=>'trim|required|max_length[255]'
+      'rules'=>'trim|required|max_length[255]|alpha_dash'
     ),
     array('field'=>'email','label'=>'Email',
       'rules'=>'trim|required|valid_email'
+    )
+  ),
+  'contact' => array(
+    array('field' => 'name','label' => 'Name',
+      'rules' => 'trim|required'
+    ),
+    array('field'=>'email','label'=>'Email',
+      'rules'=>'trim|required|valid_email'
+    ),
+    array('field' => 'subject','label' => 'Subject',
+      'rules' => 'trim|required'
+    ),
+    array('field' => 'message','label' => 'Message',
+      'rules' => 'trim|required'
     )
   )
 );
