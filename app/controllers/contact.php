@@ -43,7 +43,7 @@ class Contact extends CI_Controller {
       $message = $this->input->post('message');
 
       $this->email->clear(TRUE);
-      $this->email->from($email,$name);
+      $this->email->from($sase_email,$sase_name);
       $this->email->to($sase_email);
       $this->email->reply_to($email,$name);
       $this->email->subject('[SASE Website] '.$subject);
