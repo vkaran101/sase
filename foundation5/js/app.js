@@ -25,7 +25,17 @@ function setPromoHeight() {
   $('#promo-msg').css('margin-top', marginTop);
 }
 
+// overlay the google map iframe
+function overlayGoogleMaps() {
+  var w = $('#gmap').width();
+  var h = $('#gmap').height();
+  $('.map-overlay').width(w);
+  $('.map-overlay').height(h);
+}
+
 $(document).ready(setPromoHeight());
 $(window).resize(function() {
   setPromoHeight();
+  overlayGoogleMaps();
 });
+overlayGoogleMaps();

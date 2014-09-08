@@ -44,6 +44,16 @@ footer {
   margin-bottom: 0;
 }
 
+.map-overlay {
+  background: transparent;
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin: 0;
+  padding: 0;
+  z-index: 5;
+}
+
 /************************************************/
 // home page
 
