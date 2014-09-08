@@ -12,7 +12,7 @@
 
 .container {
   padding: rem-calc(80) 0;
-  h1,h2,h3,h4,h5,h6,p {
+  h1,h2,h3,h4,h5,h6 {
     margin-bottom: rem-calc(35);
   }
 }
@@ -21,7 +21,7 @@
 .smoke { background: #ececec; }
 .porcelain { background: #ecf0f1; }
 .gold { background: #f5d76e; }
-.light-grey { background: #f9f9fa; }
+.light-grey { background: #f6f6f6; }
 
 footer {
   background-color: $sase-blue;
