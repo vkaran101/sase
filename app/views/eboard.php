@@ -1,8 +1,8 @@
 <div class="banner">
   <div class="row">
-    <div class="small-12 medium-10 medium-centered columns">
+    <div class="small-12 columns">
       <h2>Executive Board</h2>
-      <h4 class="subheader">Current Executive Board members.</h4>
+      <h4 class="subheader">Current Executive Board members</h4>
     </div>
   </div>
 </div>
@@ -19,7 +19,7 @@
           <li class="position"><?=$member->position?></li>
           <li class="pic"><img src="<?=base_url()?>public/img/eboard/<?=$member->position?>.png" /></li>
           <li class="name"><?=$member->name?></li>
-          <li class="item"><?=$member->major?> | Class of <?=$member->grad_year?></li>
+          <li class="item"><?=$member->major?> &mdash; Class of <?=$member->grad_year?></li>
           <li class="bio"><?=$member->bio?></li>
         </ul>
       </div>

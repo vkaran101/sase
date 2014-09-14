@@ -10,20 +10,17 @@ class Home extends CI_Controller {
    *    http://example.com/index.php/home/index
    * Since this controller is set as the default controller in
    * config/routes.php, it's displayed at http://example.com/
-   *
-   * @see http://codeigniter.com/user_guide/general/urls.html
    */
   public function index()
   {
     $this->load->helper('url');
 
-    $data['title'] = 'Home | Northeastern SASE';
+    $this->data['title'] = 'Home - Northeastern SASE';
 
-    $this->load->view('templates/header',$data);
-    $this->load->view('home_view');
+    $this->load->view('templates/header',$this->data);
+    $this->load->view('home');
     $this->load->view('templates/footer');
   }
 }
 
-/* End of controller home.php */
-/* Location: ./app/controllers/home.php */
+/* End of file */

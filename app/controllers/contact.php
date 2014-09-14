@@ -17,9 +17,9 @@ class Contact extends CI_Controller {
 
   public function index()
   {
-    $this->data['title'] = 'Contact | Northeastern SASE';
+    $this->data['title'] = 'Contact - Northeastern SASE';
     $this->load->view('templates/header',$this->data);
-    $this->load->view('contact');
+    $this->load->view('contact/form');
     $this->load->view('templates/footer');
   }
 
@@ -27,9 +27,9 @@ class Contact extends CI_Controller {
   {
     if ($this->form_validation->run('contact') == FALSE)
     {
-      $this->data['title'] = 'Contact | Northeastern SASE';
+      $this->data['title'] = 'Contact - Northeastern SASE';
       $this->load->view('templates/header',$this->data);
-      $this->load->view('contact');
+      $this->load->view('contact/form');
       $this->load->view('templates/footer');
     }
     else
@@ -54,12 +54,12 @@ class Contact extends CI_Controller {
       if ($result) {
         $this->data['title'] = 'Success - Northeastern SASE';
         $this->load->view('templates/header',$this->data);
-        $this->load->view('contact_success');
+        $this->load->view('contact/success');
         $this->load->view('templates/footer');
       } else {
         $this->data['title'] = 'Error - Northeastern SASE';
         $this->load->view('templates/header',$this->data);
-        $this->load->view('contact_error');
+        $this->load->view('contact/error');
         $this->load->view('templates/footer');
       }
     }

@@ -14,11 +14,11 @@ class Eboard extends CI_Controller {
     $year = 2014;
     $semester = 'fall';
 
-    $data['title'] = 'Eboard | Northeastern SASE';
-    $data['eboard'] = $this->eboards_model->get_current_eboard($year,$semester);
+    $this->data['title'] = 'Eboard - Northeastern SASE';
+    $this->data['eboard'] = $this->eboards_model->get_current_eboard($year,$semester);
 
-    $this->load->view('templates/header',$data);
-    $this->load->view('eboard_view',$data);
+    $this->load->view('templates/header',$this->data);
+    $this->load->view('eboard',$this->data);
     $this->load->view('templates/footer');
   }
 }

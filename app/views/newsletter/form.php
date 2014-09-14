@@ -2,7 +2,7 @@
   <div class="row">
     <div class="small-12 columns">
       <h2>Newsletter Subscription</h2>
-      <h4 class="subheader">Get updates and reminders on meetings, events, and programs.</h4>
+      <h4 class="subheader">Get updates and reminders on meetings, events, and programs</h4>
     </div>
   </div>
 </div>

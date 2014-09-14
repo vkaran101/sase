@@ -6,7 +6,7 @@ class About extends CI_Controller {
   {
     $this->load->helper('url');
 
-    $this->data['title'] = 'About | Northeastern SASE';
+    $this->data['title'] = 'About - Northeastern SASE';
 
     $this->load->view('templates/header',$this->data);
     $this->load->view('about');

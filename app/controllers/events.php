@@ -14,34 +14,31 @@ class Events extends CI_Controller {
     $semester = 'fall';
     $year = 2014;
 
-    $data['title'] = 'Events | Northeastern SASE';
-    $data['upcoming'] = $this->events_model->get_upcoming_events($semester,$year);
-    $data['meetings'] = $this->events_model->get_upcoming_meetings($semester,$year);
-    $data['services'] = $this->events_model->get_upcoming_services($semester,$year);
+    $this->data['title'] = 'Events - Northeastern SASE';
+    $this->data['upcoming'] = $this->events_model->get_upcoming_events($semester,$year);
+    $this->data['meetings'] = $this->events_model->get_upcoming_meetings($semester,$year);
+    $this->data['services'] = $this->events_model->get_upcoming_services($semester,$year);
 
-    $this->load->view('templates/header', $data);
-    $this->load->view('events_view');
+    $this->load->view('templates/header',$this->data);
+    $this->load->view('events');
     $this->load->view('templates/footer');
   }
 
-  public function past($yr=NULL,$sem=NULL)
+  public function past($sem=NULL,$yr=NULL)
   {
-    $semester = 'fall';
-    $year = 2014;
-
     if (!$sem)
-      $sem = $semester;
+      $sem = 'fall';
     if (!$yr)
-      $yr = $year;
+      $yr = 2014;
 
-    $data['query'] = $this->events_model->get_all($sem,$yr);
-    $data['semester_list'] = $this->events_model->get_all_semesters();
-    $data['semester'] = $sem;
-    $data['year'] = $yr;
-    $data['title'] = 'Past Events | Northeastern SASE';
+    $this->data['query'] = $this->events_model->get_all($sem,$yr);
+    $this->data['semester_list'] = $this->events_model->get_all_semesters();
+    $this->data['semester'] = $sem;
+    $this->data['year'] = $yr;
+    $this->data['title'] = 'Past Events - Northeastern SASE';
 
-    $this->load->view('templates/header', $data);
-    $this->load->view('past_events_view');
+    $this->load->view('templates/header',$this->data);
+    $this->load->view('past_events');
     $this->load->view('templates/footer');
   }
 }

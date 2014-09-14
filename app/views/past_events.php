@@ -1,8 +1,8 @@
 <div class="banner">
 <div class="row">
-  <div class="small-12 medium-10 medium-centered columns">
+  <div class="small-12 columns">
     <h2>Past Events</h2>
-    <h4 class="subheader">Browse past events, meetings, and community services.</h4>
+    <h4 class="subheader">Browse past events, meetings, and community services</h4>
   </div>
 </div>
 </div>
@@ -23,7 +23,7 @@
                 <?php else: ?>
                   <li>
                 <?php endif; ?>
-                <a href="<?=base_url().'events/past/'.$pair->year.'/'.$pair->semester?>">
+                <a href="<?=base_url().'events/past/'.$pair->semester.'/'.$pair->year?>">
                   <?=ucfirst($pair->semester).' '.$pair->year?>
                 </a>
               <?php endforeach; ?>
@@ -52,7 +52,7 @@
               <?php else: ?>
                 <li>
               <?php endif; ?>
-              <a href="<?=base_url().'events/past/'.$pair->year.'/'.$pair->semester?>">
+              <a href="<?=base_url().'events/past/'.$pair->semester.'/'.$pair->year?>">
                 <?=ucfirst($pair->semester).' '.$pair->year?>
               </a>
             <?php endforeach; ?>

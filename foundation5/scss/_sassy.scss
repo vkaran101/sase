@@ -47,21 +47,6 @@ footer {
 /************************************************/
 // home page
 
-#pillar-container {
-  background-color: #eee;
-}
-.pillar {
-  padding-top: rem-calc(50);
-  padding-bottom: rem-calc(30);
-  text-align: center;
-  img {
-    -webkit-border-radius: 50%;
-    -moz-border-radius: 50%;
-    border-radius: 50%;
-    margin-bottom: rem-calc(20);
-  }
-}
-
 #promo {
   background: url('../img/stickman2.png')  #aac46c;
   background-repeat: no-repeat;
@@ -76,6 +61,18 @@ footer {
   text-align: center;
   h1 {
     margin-bottom: rem-calc(30);
+  }
+}
+
+.pillar {
+  padding-top: rem-calc(50);
+  padding-bottom: rem-calc(30);
+  text-align: center;
+  img {
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    margin-bottom: rem-calc(20);
   }
 }
 
@@ -158,6 +155,10 @@ footer {
 .orgsync-green {
   color: #859d03;
   font-weight: $font-weight-bold;
+}
+
+.card {
+  padding: rem-calc(30);
 }
 
 /************************************************/

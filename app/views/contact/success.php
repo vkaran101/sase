@@ -1,7 +1,7 @@
 <div class="banner clear-gap">
   <div class="row">
     <div class="small-12 columns">
-      <h2>Newsletter Subscription</h2>
+      <h2>Contact Us</h2>
     </div>
   </div>
 </div>
@@ -15,12 +15,7 @@
       </div>
       <h3>Success!</h3>
       <p>
-        Thank you for your subscription request. Please check your inbox for an
-        email from us to complete the subscription process!
-      </p>
-      <p>
-        Note: Some email service providers will label the email as spam, so be
-        sure to check your spam folder.
+        Thanks for reaching out and getting in touch with us!
       </p>
       <hr />
       <a href="<?=base_url()?>" class="button radius">Return Home</a>

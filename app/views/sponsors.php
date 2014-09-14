@@ -1,15 +1,15 @@
 <div class="banner clear-gap">
 <div class="row">
-  <div class="small-12 medium-10 medium-centered columns">
+  <div class="small-12 columns">
     <h2>National Sponsors</h2>
-    <h4 class="subheader">Organizations that support SASE at the national level.</h4>
+    <h4 class="subheader">Organizations that support SASE at the national level</h4>
   </div>
 </div>
 </div>
 
 <div class="container gold thumbnail-block">
 <div class="row">
-  <div class="small-12 medium-8 medium-centered columns text-center">
+  <div class="small-12 medium-10 medium-centered columns text-center">
     <h3>Gold Sponsors</h3>
     <ul class="small-block-grid-2 medium-block-grid-3">
       <li><a href="http://www.boozallen.com/careers" target="_blank">
@@ -37,7 +37,7 @@
 
 <div class="container porcelain thumbnail-block">
 <div class="row">
-  <div class="small-12 medium-8 medium-centered columns text-center">
+  <div class="small-12 medium-10 medium-centered columns text-center">
     <h3>Silver Sponsors</h3>
     <ul class="small-block-grid-2 medium-block-grid-3">
       <li><a href="https://www.cra.com/careers/jobs-internships.asp" target="_blank">

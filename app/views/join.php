@@ -2,7 +2,7 @@
 <div class="row">
   <div class="small-12 columns">
     <h2>Join SASE</h2>
-    <h4 class="subheader">Be a part of the local and national communities.</h4>
+    <h4 class="subheader">Be a part of the local and national communities</h4>
   </div>
 </div>
 </div>
