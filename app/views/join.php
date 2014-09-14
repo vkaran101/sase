@@ -16,7 +16,7 @@
 <div class="row">
   <div class="small-12 medium-7 columns">
     <div class="flex-video">
-      <div class="map-overlay"></div>
+      <div class="map-overlay show-for-small-only"></div>
       <iframe id="gmap" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d2949.1434211632263!2d-71.0877537!3d42.339465499999996!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89e37a185d8cbbe7%3A0xfd24fc5f9249a6f5!2sEll+Hall%2C+Northeastern+University%2C+Boston%2C+MA+02115!5e0!3m2!1sen!2sus!4v1410130867514" width="400" height="300" frameborder="0" style="border:0"></iframe>
     </div>
   </div>

@@ -11,7 +11,7 @@
 }
 
 .container {
-  padding: rem-calc(80) 0;
+  padding: rem-calc(100) 0;
   h1,h2,h3,h4,h5,h6 {
     margin-bottom: rem-calc(35);
   }
@@ -42,16 +42,6 @@ footer {
 
 .clear-gap {
   margin-bottom: 0;
-}
-
-.map-overlay {
-  background: transparent;
-  position: absolute;
-  top: 0;
-  left: 0;
-  margin: 0;
-  padding: 0;
-  z-index: 5;
 }
 
 /************************************************/
@@ -168,4 +158,57 @@ footer {
 .orgsync-green {
   color: #859d03;
   font-weight: $font-weight-bold;
+}
+
+/************************************************/
+// join page
+
+.map-overlay {
+  background: transparent;
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin: 0;
+  padding: 0;
+  z-index: 5;
+}
+
+/************************************************/
+// programs page
+
+@mixin background-cover {
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.program {
+  div.columns {
+    padding-top: rem-calc(20);
+    padding-bottom: rem-calc(20);
+  }
+  @media #{$small-only} {
+    text-align: center;
+  }
+}
+
+#mentorship {
+  @extend .program;
+  background: url('../img/mentor_bg.jpg') center center no-repeat;
+  @include background-cover;
+  div.columns { background: rgba(255,255,255,0.5); }
+  @media #{$small-only} {
+    div.columns { background: rgba(255,255,255,0.9); }
+  }
+}
+
+#innoservice {
+  @extend .program;
+  background: url('../img/stude_blueprint.jpg') center center no-repeat;
+  @include background-cover;
+  div.columns { background: rgba(255,255,255,0.8); }
+  @media #{$small-only} {
+    div.columns { float: none !important; }
+  }
 }
