@@ -17,7 +17,11 @@
       <div class="small-12 medium-6 columns">
         <ul class="eboard-table">
           <li class="position"><?=$member->position?></li>
-          <li class="pic"><img src="<?=base_url()?>public/img/eboard/<?=$member->position?>.png" /></li>
+          <li class="pic">
+            <img src="<?=base_url()?>public/img/eboard/<?=$member->position?>.png"
+              width="200"
+            />
+          </li>
           <li class="name"><?=$member->name?></li>
           <li class="item"><?=$member->major?> &mdash; Class of <?=$member->grad_year?></li>
           <li class="bio"><?=$member->bio?></li>
