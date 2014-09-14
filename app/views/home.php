@@ -1,18 +1,16 @@
-<div id="promo">
-<div class="row">
-  <div class="small-12 medium-8 medium-centered columns">
-    <div id="promo-msg">
-      <h1><strong>Fall 2014 Kickoff Meeting</strong></h1>
-      <h4>September 4, 2014</h4>
-      <h4>8:00 pm - 9:00 pm</h4>
-      <h4>Asian American Center</h4>
-      <h4>109 Hemenway Street</h4>
-    </div>
+<div class="container" id="promo">
+  <div id="promo-msg">
+    <img src="<?=base_url()?>public/img/national_flyer.jpg" />
   </div>
-</div>
 </div>
 
 <div class="container light-grey">
+<div class="row">
+  <div class="small-12 medium-8 medium-centered columns text-center">
+    <h2>Three Pillars of SASE</h2>
+    <hr />
+  </div>
+</div>
 <div class="row">
   <div class="small-12 medium-4 columns">
     <div class="pillar">

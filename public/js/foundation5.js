@@ -33,9 +33,9 @@ function overlayGoogleMaps() {
   $('.map-overlay').height(h);
 }
 
-$(document).ready(setPromoHeight());
+//$(document).ready(setPromoHeight());
 $(window).resize(function() {
-  setPromoHeight();
+//  setPromoHeight();
   overlayGoogleMaps();
 });
 overlayGoogleMaps();

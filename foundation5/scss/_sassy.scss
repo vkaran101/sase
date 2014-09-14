@@ -44,23 +44,31 @@ footer {
   margin-bottom: 0;
 }
 
+@mixin background-cover {
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
 /************************************************/
 // home page
 
 #promo {
-  background: url('../img/stickman2.png')  #aac46c;
+  background: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url('../img/promo_national.jpg');
+  background-position: center center;
   background-repeat: no-repeat;
-  background-position: left bottom;
-  color: #1e497d;
-  h1,h2,h3,h4,h5,h6 {
-    color: #1e497d;
-  }
+  @include background-cover;
 }
 
 #promo-msg {
+  background: rgba(255,255,255,0.3);
+  margin: rem-calc(50) 0;
+  padding: rem-calc(30) 0;
   text-align: center;
-  h1 {
-    margin-bottom: rem-calc(30);
+  @media #{$small-only} {
+    margin: rem-calc(30) 0;
+    padding: 0;
   }
 }
 
@@ -176,13 +184,6 @@ footer {
 
 /************************************************/
 // programs page
-
-@mixin background-cover {
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-}
 
 .program {
   div.columns {
