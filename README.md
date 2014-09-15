@@ -7,9 +7,6 @@ Northeastern University.
 
 Visit the site at [northeastern.edu/sase](www.northeastern.edu/sase).
 
-Project is currently located at [northeastern.edu/sase/sase-site](
-www.northeastern.edu/sase/sase-site).
-
 ### Introduction
 
 **NOTE: Unless told otherwise, relative paths referred to in this document
@@ -25,6 +22,14 @@ so you don't commit the sensitive data into mainline.
 
 2. In `index.php`, change `ENVIRONMENT` to `production`.
 
-3. Change the base URL in `app/config/config.php` to
-  `http://northeastern.edu/sase/sase-site/`.
+3. In `app/config/config.php` update the following:
+    - base url to `http://www.northeastern.edu/sase/`
+    - log threshold to `1`
+    - log path to `/var/www/html/sase/app/logs/`
+    - add an awesome encryption key
 
+4. In `app/config/database.php` update the database account.
+
+5. In `app/config/mailchimp.php` update the api key.
+
+Transfer files to server and verify.
