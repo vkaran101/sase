@@ -31,7 +31,7 @@ class Events extends CI_Controller {
     if (!$yr)
       $yr = 2014;
 
-    $this->data['query'] = $this->events_model->get_all($sem,$yr);
+    $this->data['query'] = $this->events_model->get_all_past($sem,$yr);
     $this->data['semester_list'] = $this->events_model->get_all_semesters();
     $this->data['semester'] = $sem;
     $this->data['year'] = $yr;

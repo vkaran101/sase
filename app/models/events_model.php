@@ -14,10 +14,27 @@ class Events_model extends CI_Model {
   // sorted by year > semester > date > time
   function get_all($sem=NULL,$yr=NULL)
   {
-    $this->db->order_by('year','asc');
+    $this->db->order_by('year','desc');
     $this->db->order_by('semester','asc');
-    $this->db->order_by('date','asc');
-    $this->db->order_by('time','asc');
+    $this->db->order_by('date','desc');
+    $this->db->order_by('time','desc');
+
+    if ($sem && $yr) {
+      $this->db->where('semester',$sem);
+      $this->db->where('year',$yr);
+    }
+
+    return $this->db->get('events');
+  }
+
+  function get_all_past($sem=NULL,$yr=NULL)
+  {
+    $today = date('Y-m-d');
+    $this->db->where('date <',$today);
+    $this->db->order_by('year','desc');
+    $this->db->order_by('semester','asc');
+    $this->db->order_by('date','desc');
+    $this->db->order_by('time','desc');
 
     if ($sem && $yr) {
       $this->db->where('semester',$sem);
