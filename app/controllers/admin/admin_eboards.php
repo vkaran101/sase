@@ -22,33 +22,33 @@ class Admin_eboards extends CI_Controller {
 
   public function index()
   {
-    $data['query'] = $this->eboards_model->get_all();
-    $this->load->view('admin/eboards/index_view', $data);
+    $this->data['query'] = $this->eboards_model->get_all();
+    $this->load->view('admin/eboards/index_view',$this->data);
   }
 
   public function create()
   {
-    $data['title'] = 'Add New Eboard Member';
-    $data['action'] = 'add';
-    $data['cancel_action'] = base_url().'admin/eboards';
-    $this->load->view('admin/eboards/form_view', $data);
+    $this->data['title'] = 'Add New Eboard Member';
+    $this->data['action'] = 'add';
+    $this->data['cancel_action'] = base_url().'admin/eboards';
+    $this->load->view('admin/eboards/form_view',$this->data);
   }
 
   public function add()
   {
     if ($this->form_validation->run('eboards') == FALSE)
     {
-      $data['title'] = 'Add New Eboard Member';
-      $data['action'] = 'add';
-      $data['cancel_action'] = base_url().'admin/eboards';
-      $this->load->view('admin/eboards/form_view', $data);
+      $this->data['title'] = 'Add New Eboard Member';
+      $this->data['action'] = 'add';
+      $this->data['cancel_action'] = base_url().'admin/eboards';
+      $this->load->view('admin/eboards/form_view',$this->data);
     }
     else
     {
       $input = $this->input->post(NULL,TRUE);
       $member = $this->eboards_model->parse_input($input);
       $id = $this->eboards_model->save($member);
-      redirect('/admin/eboards/show/'.$id, 'location');
+      redirect('/admin/eboards/show/'.$id, 'refresh');
     }
   }
 
@@ -58,8 +58,8 @@ class Admin_eboards extends CI_Controller {
     {
       show_error('Missing eboard member identifier.');
     }
-    $data['member'] = $this->eboards_model->get_by_id($id)->row();
-    $this->load->view('admin/eboards/show_view', $data);
+    $this->data['member'] = $this->eboards_model->get_by_id($id)->row();
+    $this->load->view('admin/eboards/show_view',$this->data);
   }
 
   public function edit($id=0)
@@ -70,11 +70,11 @@ class Admin_eboards extends CI_Controller {
     }
     $member = $this->eboards_model->get_by_id($id)->row();
     $member = $this->eboards_model->setup_form_entry($member);
-    $data['title'] = 'Edit Eboard Member';
-    $data['action'] = 'update/'.$id;
-    $data['cancel_action'] = base_url().'admin/eboards/show/'.$id;
-    $data['member'] = $member;
-    $this->load->view('admin/eboards/form_view', $data);
+    $this->data['title'] = 'Edit Eboard Member';
+    $this->data['action'] = 'update/'.$id;
+    $this->data['cancel_action'] = base_url().'admin/eboards/show/'.$id;
+    $this->data['member'] = $member;
+    $this->load->view('admin/eboards/form_view',$this->data);
   }
 
   public function update($id=0)
@@ -85,17 +85,17 @@ class Admin_eboards extends CI_Controller {
     }
     if ($this->form_validation->run('eboards') == FALSE)
     {
-      $data['title'] = 'Edit Eboard Member';
-      $data['action'] = 'update/'.$id;
-      $data['cancel_action'] = base_url().'admin/eboards/show/'.$id;
-      $this->load->view('admin/eboards/form_view', $data);
+      $this->data['title'] = 'Edit Eboard Member';
+      $this->data['action'] = 'update/'.$id;
+      $this->data['cancel_action'] = base_url().'admin/eboards/show/'.$id;
+      $this->load->view('admin/eboards/form_view',$this->data);
     }
     else
     {
       $input = $this->input->post(NULL,TRUE);
       $member= $this->eboards_model->parse_input($input);
       $this->eboards_model->update($id,$member);
-      redirect('/admin/eboards/show/'.$id, 'location');
+      redirect('/admin/eboards/show/'.$id, 'refresh');
     }
   }
 
@@ -106,7 +106,7 @@ class Admin_eboards extends CI_Controller {
       show_error('Missing eboard member identifier. No member deleted.');
     }
     $copy = $this->eboards_model->remove($id);
-    redirect('/admin/eboards', 'location');
+    redirect('/admin/eboards', 'refresh');
   }
 }
 

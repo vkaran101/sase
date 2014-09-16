@@ -22,33 +22,33 @@ class Admin_events extends CI_Controller {
 
   public function index()
   {
-    $data['query'] = $this->events_model->get_all();
-    $this->load->view('admin/events/index_view', $data);
+    $this->data['query'] = $this->events_model->get_all();
+    $this->load->view('admin/events/index_view',$this->data);
   }
 
   public function create()
   {
-    $data['title'] = 'Create New Event';
-    $data['action'] = 'add';
-    $data['cancel_action'] = base_url().'admin/events';
-    $this->load->view('admin/events/form_view', $data);
+    $this->data['title'] = 'Create New Event';
+    $this->data['action'] = 'add';
+    $this->data['cancel_action'] = base_url().'admin/events';
+    $this->load->view('admin/events/form_view',$this->data);
   }
 
   public function add()
   {
     if ($this->form_validation->run('events') == FALSE)
     {
-      $data['title'] = 'Create New Event';
-      $data['action'] = 'add';
-      $data['cancel_action'] = base_url().'admin/events';
-      $this->load->view('admin/events/form_view', $data);
+      $this->data['title'] = 'Create New Event';
+      $this->data['action'] = 'add';
+      $this->data['cancel_action'] = base_url().'admin/events';
+      $this->load->view('admin/events/form_view',$this->data);
     }
     else
     {
       $input = $this->input->post(NULL,TRUE);
       $entry = $this->events_model->parse_input($input);
       $id = $this->events_model->save($entry);
-      redirect('/admin/events/show/'.$id, 'location');
+      redirect('/admin/events/show/'.$id, 'refresh');
     }
   }
 
@@ -58,8 +58,8 @@ class Admin_events extends CI_Controller {
     {
       show_error('Missing event entry identifier.');
     }
-    $data['entry'] = $this->events_model->get_by_id($id)->row();
-    $this->load->view('admin/events/show_view', $data);
+    $this->data['entry'] = $this->events_model->get_by_id($id)->row();
+    $this->load->view('admin/events/show_view',$this->data);
   }
 
   public function edit($id=0)
@@ -70,11 +70,11 @@ class Admin_events extends CI_Controller {
     }
     $entry = $this->events_model->get_by_id($id)->row();
     $entry = $this->events_model->setup_form_entry($entry);
-    $data['title'] = 'Edit Event Entry';
-    $data['action'] = 'update/'.$id;
-    $data['cancel_action'] = base_url().'admin/events/show/'.$id;
-    $data['entry'] = $entry;
-    $this->load->view('admin/events/form_view', $data);
+    $this->data['title'] = 'Edit Event Entry';
+    $this->data['action'] = 'update/'.$id;
+    $this->data['cancel_action'] = base_url().'admin/events/show/'.$id;
+    $this->data['entry'] = $entry;
+    $this->load->view('admin/events/form_view',$this->data);
   }
 
   public function update($id=0)
@@ -85,10 +85,10 @@ class Admin_events extends CI_Controller {
     }
     if ($this->form_validation->run('events') == FALSE)
     {
-      $data['title'] = 'Edit Event Entry';
-      $data['action'] = 'update/'.$id;
-      $data['cancel_action'] = base_url().'admin/events/show/'.$id;
-      $this->load->view('admin/events/form_view', $data);
+      $this->data['title'] = 'Edit Event Entry';
+      $this->data['action'] = 'update/'.$id;
+      $this->data['cancel_action'] = base_url().'admin/events/show/'.$id;
+      $this->load->view('admin/events/form_view',$this->data);
     }
     else
     {

@@ -5,6 +5,7 @@ class Admin_index extends CI_Controller {
   public function __construct()
   {
     parent::__construct();
+    date_default_timezone_set('America/New_York');
     $this->load->library('ion_auth');
     $this->load->helper('url');
     if (!$this->ion_auth->logged_in())

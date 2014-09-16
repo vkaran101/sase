@@ -2,7 +2,7 @@
 <html>
 <head>
   <meta charset="utf-8" />
-  <title>Eboards | NUSASE Admin</title>
+  <title>Eboards - NUSASE Admin</title>
   <meta name="viewport" content="width=device-width,initial-scale=1.0" />
   <link rel="stylesheet" href="<?=base_url()?>public/css/foundation5.css" />
   <link rel="stylesheet" href="<?=base_url()?>public/css/font-awesome.css" />
