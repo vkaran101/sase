@@ -43,7 +43,13 @@
                 </a>
               </td>
               <td><?=date('n/j/y',strtotime($entry->date))?></td>
-              <td><?=date('g:ia',strtotime($entry->time))?></td>
+              <td>
+                <?php if ($entry->time !== ''): ?>
+                  <?=date('g:ia',strtotime($entry->time))?>
+                <?php else: ?>
+                  not set
+                <?php endif; ?>
+              </td>
               <td>
                 <?php if (strlen($entry->location) > 30): ?>
                   <?=substr($entry->location,0,30).' ...'?>

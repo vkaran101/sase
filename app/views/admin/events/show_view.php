@@ -28,7 +28,12 @@
         <strong>Date: </strong><?=date('n/j/y',strtotime($entry->date))?>
       </div>
       <div class="small-12 medium-3 columns">
-        <strong>Time: </strong><?=date('g:i a',strtotime($entry->time))?>
+        <strong>Time: </strong>
+        <?php if ($entry->time !== ''): ?>
+          <?=date('g:i a',strtotime($entry->time))?>
+        <?php else: ?>
+          not set
+        <?php endif; ?>
       </div>
       <div class="small-12 medium-6 columns">
         <strong>Location: </strong><?=$entry->location?>

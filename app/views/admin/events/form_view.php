@@ -67,7 +67,7 @@
           <?=form_error('date_month')?><?=form_error('date_day')?><?=form_error('date_year')?>
         </div>
         <div class="small-12 medium-6 columns">
-          <label>Time</label>
+          <label>Time (not required)</label>
           <div class="row collapse">
             <div class="small-3 columns">
               <input type="text" name="time_hour" placeholder="HH"

@@ -74,7 +74,9 @@
             <h4><?=$entry->title?></h4>
             <div class="event-info">
               <i class="fa fa-fw fa-calendar-o"></i><span><?=date('n/j/y',strtotime($entry->date))?></span>
-              <i class="fa fa-fw fa-clock-o"></i><span><?=date('g:i a',strtotime($entry->time))?></span>
+              <?php if ($entry->time !== ''): ?>
+                <i class="fa fa-fw fa-clock-o"></i><span><?=date('g:i a',strtotime($entry->time))?></span>
+              <?php endif; ?>
               <i class="fa fa-fw fa-map-marker"></i><span><?=$entry->location?></span>
             </div>
             <p><?=$entry->description?></p>

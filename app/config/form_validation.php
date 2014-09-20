@@ -15,13 +15,13 @@ $config = array(
       'rules' => 'required|integer|exact_length[4]|greater_than[2012]'
     ),
     array('field' => 'time_hour','label' => 'Time Hour',
-      'rules' => 'required|integer|max_length[2]|greater_than[0]|less_than[13]'
+      'rules' => 'integer|max_length[2]|greater_than[0]|less_than[13]'
     ),
     array('field' => 'time_minute','label' => 'Time Minute',
-      'rules' => 'required|integer|exact_length[2]|greater_than[-1]|less_than[60]'
+      'rules' => 'integer|exact_length[2]|greater_than[-1]|less_than[60]'
     ),
     array('field' => 'time_oclock','label' => 'Time Clock Zone',
-      'rules' => 'required'
+      'rules' => ''
     ),
     array('field' => 'location','label' => 'Location',
       'rules' => 'trim|required|max_length[65500]'

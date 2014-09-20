@@ -24,7 +24,11 @@ class Events_model extends CI_Model {
       $this->db->where('year',$yr);
     }
 
-    return $this->db->get('events');
+    $query = $this->db->get('events');
+    foreach ($query->result() as $key => $obj) {
+      $query->row($key)->time = $this->parse_time($obj->time);
+    }
+    return $query;
   }
 
   function get_all_past($sem=NULL,$yr=NULL)
@@ -41,7 +45,11 @@ class Events_model extends CI_Model {
       $this->db->where('year',$yr);
     }
 
-    return $this->db->get('events');
+    $query = $this->db->get('events');
+    foreach ($query->result() as $key => $obj) {
+      $query->row($key)->time = $this->parse_time($obj->time);
+    }
+    return $query;
   }
 
   function get_all_semesters()
@@ -63,7 +71,11 @@ class Events_model extends CI_Model {
     $this->db->where('service',0);
     $this->db->order_by('date','asc');
     $this->db->order_by('time','asc');
-    return $this->db->get('events');
+    $query = $this->db->get('events');
+    foreach ($query->result() as $key => $obj) {
+      $query->row($key)->time = $this->parse_time($obj->time);
+    }
+    return $query;
   }
 
   function get_upcoming_meetings($semester,$year)
@@ -75,7 +87,11 @@ class Events_model extends CI_Model {
     $this->db->where('year',$year);
     $this->db->order_by('date','asc');
     $this->db->order_by('time','asc');
-    return $this->db->get('events');
+    $query = $this->db->get('events');
+    foreach ($query->result() as $key => $obj) {
+      $query->row($key)->time = $this->parse_time($obj->time);
+    }
+    return $query;
   }
 
   function get_upcoming_services($semester,$year)
@@ -87,13 +103,21 @@ class Events_model extends CI_Model {
     $this->db->where('year',$year);
     $this->db->order_by('date','asc');
     $this->db->order_by('time','asc');
-    return $this->db->get('events');
+    $query = $this->db->get('events');
+    foreach ($query->result() as $key => $obj) {
+      $query->row($key)->time = $this->parse_time($obj->time);
+    }
+    return $query;
   }
 
   function get_by_id($id)
   {
     $this->db->where('id',$id);
-    return $this->db->get('events');
+    $query = $this->db->get('events');
+    foreach ($query->result() as $key => $obj) {
+      $query->row($key)->time = $this->parse_time($obj->time);
+    }
+    return $query;
   }
 
   // insert entry into table and return id of entry
@@ -120,6 +144,9 @@ class Events_model extends CI_Model {
   {
     $this->db->where('id',$id);
     $query = $this->db->get('events');
+    foreach ($query->result() as $key => $obj) {
+      $query->row($key)->time = $this->parse_time($obj->time);
+    }
 
     $this->db->delete('events', array('id' => $id));
     return $query->row();
@@ -133,10 +160,15 @@ class Events_model extends CI_Model {
     $parsed_date .= '-' . $input['date_day'];
     $parsed_date = date('Y-m-d', strtotime($parsed_date));
 
-    $time = $input['time_hour'];
-    $time .= ':' . $input['time_minute'];
-    $time .= ' ' . $input['time_oclock'];
-    $parsed_time = date('H:i:s', strtotime($time));
+    if ($input['time_hour'] && $input['time_hour']) {
+      $time = $input['time_hour'];
+      $time .= ':' . $input['time_minute'];
+      $time .= ' ' . $input['time_oclock'];
+      $parsed_time = date('H:i:s', strtotime($time));
+    } else {
+      // use an out-of-range value to indicate time is not set
+      $parsed_time = '55:55:55';
+    }
 
     // current time
     $datetime = date('Y-m-d H:i:s');
@@ -174,8 +206,13 @@ class Events_model extends CI_Model {
     $entry->date_month = date('m',strtotime($entry->date));
     $entry->date_day = date('d',strtotime($entry->date));
     $entry->date_year = date('Y',strtotime($entry->date));
-    $entry->time_hour = date('g',strtotime($entry->time));
-    $entry->time_minute = date('i',strtotime($entry->time));
+    if ($entry->time !== '') {
+      $entry->time_hour = date('g',strtotime($entry->time));
+      $entry->time_minute = date('i',strtotime($entry->time));
+    } else {
+      $entry->time_hour = '';
+      $entry->time_minute = '';
+    }
 
     switch (date('a',strtotime($entry->time))) {
       case 'am':
@@ -211,6 +248,16 @@ class Events_model extends CI_Model {
     }
 
     return $entry;
+  }
+
+  // convert out-of-range time value to empty string
+  private function parse_time($time)
+  {
+    if ($time == '55:55:55') {
+      return '';
+    } else {
+      return $time;
+    }
   }
 }
 
