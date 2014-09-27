@@ -19,14 +19,6 @@
       semester, fun professional and social events will be held to foster
       strong relationships amongst the participants.
     </p>
-    <p>
-      We are now accepting mentee applications! Please
-      <a href="<?=base_url()?>contact">contact us</a>
-      if you have any questions or comments.
-    </p>
-    <a href="https://docs.google.com/forms/d/1MEeKXW8ermrCn93T5km5GFVZzYbUqvj7Z6300XacV5k/viewform?c=0&w=1"
-      class="button radius">Sign Up Here
-    </a>
   </div>
 </div>
 </div>
