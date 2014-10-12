@@ -7,6 +7,7 @@
 </div>
 </div>
 
+<div class="container">
 <div class="row">
   <div class="small-12 medium-6 columns">
     <ul class="events-table">
@@ -86,6 +87,7 @@
       </div>
     </div>
   </div>
+</div>
 </div>
 
 <div class="bottom-banner">

@@ -7,6 +7,7 @@
   </div>
 </div>
 
+<div class="container">
 <div class="row">
   <?php if (count($eboard) == 0): ?>
     <div class="eboard-placeholder">No members in current eboard.</div>
@@ -34,4 +35,5 @@
       <?php endif; ?>
     <?php endforeach; ?>
   <?php endif; ?>
+</div>
 </div>

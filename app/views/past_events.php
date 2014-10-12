@@ -7,6 +7,7 @@
 </div>
 </div>
 
+<div class="container">
 <div class="row show-for-small-only">
   <div class="small-12 columns">
     <dl class="accordion" data-accordion>
@@ -36,7 +37,6 @@
     <br />
   </div>
 </div>
-
 <div class="row">
   <div class="small-12 medium-4 columns hide-for-small-only">
     <ul class="events-table">
@@ -85,4 +85,5 @@
       <?php endif; ?>
     </ul>
   </div>
+</div>
 </div>

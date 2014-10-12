@@ -1,4 +1,4 @@
-<div class="banner clear-gap">
+<div class="banner">
 <div class="row">
   <div class="small-12 columns">
     <h2>About Us</h2>
