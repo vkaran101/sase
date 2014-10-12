@@ -717,7 +717,9 @@ $sase-green: #7dc242;
 // $off-canvas-link-padding: rem-calc(10, 15);
 // $off-canvas-link-color: rgba(#fff, 0.7);
 // $off-canvas-link-border-bottom: 1px solid scale-color($off-canvas-bg, $lightness: -25%);
-$off-canvas-label-padding: 1.0rem rem-calc(15);
+$off-canvas-label-padding: rem-calc(10, 20);
+$off-canvas-label-color: rgba(#fff, 0.7);
+$off-canvas-link-color: #fff;
 
 // Off Canvas Menu Icon Variables
 // $tabbar-menu-icon-color: #fff;
@@ -743,6 +745,7 @@ $off-canvas-label-padding: 1.0rem rem-calc(15);
 
 // Transition Variables
 // $menu-slide: "transform 500ms ease";
+$menu-slide: "transform 300ms ease";
 
 // Orbit
 
@@ -1211,7 +1214,6 @@ $topbar-bg-color: #fff;
 // $topbar-dropdown-toggle-size: 5px;
 // $topbar-dropdown-toggle-color: #fff;
 // $topbar-dropdown-toggle-alpha: 0.4;
-$topbar-dropdown-toggle-color: #333;
 
 // Set the link colors and styles for top-level nav
 // $topbar-link-color: #fff;
@@ -1230,7 +1232,8 @@ $topbar-dropdown-toggle-color: #333;
 // $topbar-link-text-transform: none;
 // $topbar-link-padding: $topbar-height / 3;
 $topbar-link-color: #333;
-$topbar-link-color-active: #fff;
+$topbar-link-bg-active: $sase-blue;
+$topbar-link-bg-active-hover: scale-color($sase-blue, $lightness: -20%);
 
 // $topbar-button-font-size: 0.75rem;
 // $topbar-button-top: 7px;
@@ -1249,12 +1252,18 @@ $topbar-link-color-active: #fff;
 // $topbar-menu-icon-color: #fff;
 // $topbar-menu-link-color-toggled: #888;
 // $topbar-menu-icon-color-toggled: #888;
+$topbar-menu-link-color: #333;
+$topbar-menu-icon-color: #333;
+$topbar-menu-link-color-toggled: #333;
+$topbar-menu-icon-color-toggled: #333;
 
 // Transitions and breakpoint styles
 // $topbar-transition-speed: 300ms;
 // Using rem-calc for the below breakpoint causes issues with top bar
 // $topbar-breakpoint: #{lower-bound($medium-range)}; // Change to 9999px for always mobile layout
 // $topbar-media-query: $medium-up;
+$topbar-breakpoint: 740px;
+$topbar-media-query: "only screen and (min-width:740px)";
 
 // Divider Styles
 // $topbar-divider-border-bottom: solid 1px  scale-color($topbar-bg-color, $lightness: 13%);

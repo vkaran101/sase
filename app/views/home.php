@@ -7,7 +7,7 @@
 <div class="container light-grey">
 <div class="row">
   <div class="small-12 medium-8 medium-centered columns text-center">
-    <h2>Three Pillars of SASE</h2>
+    <h2>The Three Pillars of SASE</h2>
     <hr />
   </div>
 </div>

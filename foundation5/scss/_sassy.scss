@@ -3,6 +3,26 @@
 /************************************************/
 // layout
 
+.off-canvas-list {
+  li.active a {
+    background-color: $sase-blue;
+    color: #fff;
+  }
+  li.active a:hover {
+    background-color: scale-color($sase-blue, $lightness: -15%);
+  }
+  li label a {
+    border-bottom: none;
+  }
+}
+
+header {
+  padding: rem-calc(10) 0;
+  section.top-bar-section {
+    @media (max-width:740px) { display: none; }
+  }
+}
+
 .banner {
   padding-top: rem-calc(30);
   padding-bottom: rem-calc(20);
