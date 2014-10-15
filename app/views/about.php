@@ -13,11 +13,11 @@
     <h3>What is SASE?</h3>
     <p>
       The Society of Asian Scientists and Engineers is a national non-profit
-      organization that provide resources for professionals of Asian heritage
+      organization that provides resources for professionals of Asian heritage
       to succeed in the global industry. The organization also serves as a
       platform for celebrating cultural diversity on campuses and workplaces,
       and as a community for members to network and connect with each other.
-      SASE Memebership is open to all men and women professionals of all
+      SASE membership is open to all men and women professionals of all
       ethnic backgrounds.
     </p>
   </div>
