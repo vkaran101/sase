@@ -65,14 +65,22 @@ header {
 
 footer {
   background-color: #333;
-  padding-top: rem-calc(40);
+  padding: rem-calc(80) 0 rem-calc(30);
   border-top: 5px solid $sase-green;
   color: #eee;
 
   h1,h2,h3,h4,h5,h6 { color: #fff; }
   a { color: #eee; }
-  a:hover { color: #ccc; }
-  .divider { border-color: $sase-green; }
+  a:hover { color: $sase-green; }
+
+  ul {
+    list-style-type: none;
+    margin-left: 0;
+  }
+  .divider {
+    border: 0;
+    padding: rem-calc(15) 0;
+  }
 
   #copyright {
     text-align: center;
@@ -118,6 +126,10 @@ footer {
   p {
     padding-top: rem-calc(10);
   }
+}
+
+.side-nav li.active {
+  background-color: #eee;
 }
 
 .event-placeholder, .eboard-placeholder {
