@@ -1,11 +1,9 @@
 <div class="banner">
-<div class="row">
-  <div class="small-12 columns">
-    <h2>Events</h2>
-    <h4 class="subheader">Find upcoming events, meetings, and community service</h4>
-  </div>
+  <h2>Events</h2>
+  <h3>Find Upcoming Events, Meetings, and Community Services</h3>
 </div>
-</div>
+</header>
+<section class="main">
 
 <div class="container">
 <div class="row">

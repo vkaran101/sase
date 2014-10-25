@@ -71,12 +71,13 @@
   <div class="small-12 columns" id="copyright">
     <hr />
     <?php date_default_timezone_set('America/New_York'); ?>
-    <p><small>&copy; Copyright <?=date("Y")?> Northeastern SASE</small></p>
+    <p>Copyright &copy; <?=date("Y")?> Northeastern SASE</p>
   </div>
 </div>
 </footer>
 
 </section><!-- close section.main -->
+<a class="exit-off-canvas"></a>
 </div><!-- close div.inner-wrap -->
 </div><!-- close div.off-canvas-wrapper -->
 

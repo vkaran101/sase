@@ -1,11 +1,9 @@
 <div class="banner">
-<div class="row">
-  <div class="small-12 columns">
-    <h2>Past Events</h2>
-    <h4 class="subheader">Browse past events, meetings, and community services</h4>
-  </div>
+  <h2>Past Events</h2>
+  <h3>Browse Past Events, Meetings, and Community Services</h3>
 </div>
-</div>
+</header>
+<section class="main">
 
 <div class="container">
 <div class="row show-for-small-only">

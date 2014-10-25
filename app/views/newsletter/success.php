@@ -1,10 +1,8 @@
 <div class="banner">
-  <div class="row">
-    <div class="small-12 columns">
-      <h2>Newsletter Subscription</h2>
-    </div>
-  </div>
+  <h2>Newsletter Subscription</h2>
 </div>
+</header>
+<section class="main">
 
 <div class="container">
 <div class="row">

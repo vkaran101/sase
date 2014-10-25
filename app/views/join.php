@@ -1,11 +1,9 @@
 <div class="banner">
-<div class="row">
-  <div class="small-12 columns">
-    <h2>Join SASE</h2>
-    <h4 class="subheader">Be a part of the local and national communities</h4>
-  </div>
+  <h2>Join SASE</h2>
+  <h3>Be a Part of the Local and National Communities</h3>
 </div>
-</div>
+</header>
+<section class="main">
 
 <div class="container">
 <div class="row">

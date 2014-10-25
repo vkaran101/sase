@@ -1,3 +1,6 @@
+</header>
+<section class="main">
+
 <div class="row">
   <div class="small-12 medium-4 columns porcelain">
     <div class="container">

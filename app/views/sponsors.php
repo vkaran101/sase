@@ -1,11 +1,9 @@
 <div class="banner">
-<div class="row">
-  <div class="small-12 columns">
-    <h2>National Sponsors</h2>
-    <h4 class="subheader">Organizations that support SASE at the national level</h4>
-  </div>
+  <h2>National Sponsors</h2>
+  <h3>Organizations That Support SASE at the National Level</h3>
 </div>
-</div>
+</header>
+<section class="main">
 
 <div class="container gold thumbnail-block">
 <div class="row">

@@ -1,11 +1,9 @@
 <div class="banner">
-  <div class="row">
-    <div class="small-12 columns">
-      <h2>Newsletter Subscription</h2>
-      <h4 class="subheader">Get updates and reminders on meetings, events, and programs</h4>
-    </div>
-  </div>
+  <h2>Newsletter Subscription</h2>
+  <h3>Get Updates and Reminders in Your Mailbox</h3>
 </div>
+</header>
+<section class="main">
 
 <div class="container">
 <div class="row">

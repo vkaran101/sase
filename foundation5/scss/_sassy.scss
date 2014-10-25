@@ -3,6 +3,13 @@
 /************************************************/
 // layout
 
+@mixin background-cover {
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
 .off-canvas-list {
   li.active a {
     background-color: $sase-blue;
@@ -11,22 +18,35 @@
   li.active a:hover {
     background-color: scale-color($sase-blue, $lightness: -15%);
   }
-  li label a {
-    border-bottom: none;
-  }
+  li label a { border-bottom: none; }
 }
 
 header {
-  padding: rem-calc(10) 0;
-  section.top-bar-section {
-    @media (max-width:740px) { display: none; }
+  .top-bar-section {
+    @media (max-width:840px) { display: none; }
+    ul li {
+      margin: 0 5px;
+      border: 1px solid transparent;
+    }
+    ul li.active { border-color: #fff; }
+    ul li:hover { border-color: #fff; }
   }
+  .title-area li a { border: 1px solid transparent; }
+  .title-area li a:hover { border: 1px solid #fff; }
+
+  background: $sase-blue;
+  background-position: center center;
+  background-repeat: no-repeat;
+  @include background-cover;
+
+  padding: rem-calc(30) 0 rem-calc(10);
+  h1,h2,h3,h4,h5,h6 { color: #fff; }
+  color: #fff;
 }
 
 .banner {
-  padding-top: rem-calc(30);
-  padding-bottom: rem-calc(20);
-  background-color: #eee;
+  padding: rem-calc(50) 0;
+  text-align: center;
 }
 
 .container {
@@ -35,56 +55,37 @@ header {
     margin-bottom: rem-calc(35);
   }
 }
+
 .white { background: #fff; }
 .grey { background: #eee; }
 .smoke { background: #ececec; }
 .porcelain { background: #ecf0f1; }
-.gold { background: #f5d76e; }
+.gold { background: #f8e397; }
 .light-grey { background: #f6f6f6; }
 
 footer {
-  background-color: $sase-blue;
+  background-color: #333;
   padding-top: rem-calc(40);
   border-top: 5px solid $sase-green;
-  color: #fff;
+  color: #eee;
 
   h1,h2,h3,h4,h5,h6 { color: #fff; }
-  a { color: #fff; }
-  a:hover { color: #ddd; }
-  .divider { border-color: $primary-color; }
-}
+  a { color: #eee; }
+  a:hover { color: #ccc; }
+  .divider { border-color: $sase-green; }
 
-#copyright {
-  text-align: center;
-  margin-bottom: rem-calc(20);
-}
-
-@mixin background-cover {
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
+  #copyright {
+    text-align: center;
+    margin-bottom: rem-calc(30);
+  }
 }
 
 /************************************************/
 // home page
 
 #promo {
-  background: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url('../img/promo_national.jpg');
-  background-position: center center;
-  background-repeat: no-repeat;
-  @include background-cover;
-}
-
-#promo-msg {
-  background: rgba(255,255,255,0.3);
-  margin: rem-calc(50) 0;
-  padding: rem-calc(30) 0;
+  margin: rem-calc(50) auto;
   text-align: center;
-  @media #{$small-only} {
-    margin: rem-calc(30) 0;
-    padding: 0;
-  }
 }
 
 .pillar {

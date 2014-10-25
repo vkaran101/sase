@@ -16,7 +16,9 @@
   <header>
     <div class="row">
       <div class="small-9 medium-4 columns">
-        <a href="<?=base_url()?>"><img src="<?=base_url()?>public/img/northeastern_sase.png" width="300" /></a>
+        <a href="<?=base_url()?>"><img src="<?=base_url()?>public/img/northeastern_sase_white.png"
+          width="300" />
+        </a>
       </div>
       <div class="small-3 medium-8 columns">
         <nav class="top-bar" data-topbar role="navigation">
@@ -50,7 +52,4 @@
         <li class="<?=active_nav('contact')?>"><a href="<?=base_url()?>contact">Contact</a></li>
       </ul>
     </aside>
-  </header>
-  <a class="exit-off-canvas"></a>
-  <section class="main">
 <!-- end header -->

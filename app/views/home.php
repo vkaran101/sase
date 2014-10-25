@@ -1,13 +1,16 @@
-<div class="container" id="promo">
-  <div id="promo-msg">
-    <img src="<?=base_url()?>public/img/national_flyer.jpg" />
+<div class="container">
+  <div id="promo">
+    <h1>Professional and Cultural Involvement</h1>
+    <h2>For Scientists and Engineers</h2>
   </div>
 </div>
+</header>
+<section class="main">
 
 <div class="container light-grey">
 <div class="row">
   <div class="small-12 medium-8 medium-centered columns text-center">
-    <h2>The Three Pillars of SASE</h2>
+    <h2>The Pillars of SASE</h2>
     <hr />
   </div>
 </div>
@@ -44,3 +47,13 @@
   </div>
 </div>
 </div>
+
+<script type="text/javascript">
+  // setup homepage background image
+
+  var image = "url(/sase/public/img/northeastern.png)";
+  var shade = "linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5))";
+  var attribute = shade + ", " + image;
+
+  $('header').css("background-image", attribute);
+</script>

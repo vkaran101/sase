@@ -1,11 +1,9 @@
 <div class="banner">
-  <div class="row">
-    <div class="small-12 columns">
-      <h2>Executive Board</h2>
-      <h4 class="subheader">Current Executive Board members</h4>
-    </div>
-  </div>
+  <h2>Executive Board</h2>
+  <h3>Our Current Chapter Leadership</h3>
 </div>
+</header>
+<section class="main">
 
 <div class="container">
 <div class="row">

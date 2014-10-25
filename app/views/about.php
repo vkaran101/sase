@@ -1,11 +1,9 @@
 <div class="banner">
-<div class="row">
-  <div class="small-12 columns">
-    <h2>About Us</h2>
-    <h4 class="subheader">Our chapter's history and mission</h4>
-  </div>
+  <h2>About Us</h2>
+  <h3>Our Chapter's History and Mission</h3>
 </div>
-</div>
+</header>
+<section class="main">
 
 <div class="container">
 <div class="row">

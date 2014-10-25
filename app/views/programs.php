@@ -1,11 +1,9 @@
 <div class="banner">
-<div class="row">
-  <div class="small-12 columns">
-    <h2>Programs</h2>
-    <h4 class="subheader">More than just meetings and events</h4>
-  </div>
+  <h2>Programs</h2>
+  <h3>More than Just Meetings and Events</h3>
 </div>
-</div>
+</header>
+<section class="main">
 
 <div class="container" id="mentorship">
 <div class="row">
