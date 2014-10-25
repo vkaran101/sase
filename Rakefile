@@ -12,6 +12,7 @@ task :update do
   puts "[update] foundation5"
 
   Dir.chdir "foundation5"
+  sh "bundle update"
   sh "foundation update"
   Dir.chdir ".."
 
