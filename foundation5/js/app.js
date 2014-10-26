@@ -19,7 +19,7 @@ $(document).ready(function() {
 
   // show or hide the scroller
   $(window).scroll(function() {
-    var scrollBreakpoint = 800;
+    var scrollBreakpoint = 1000;
     var fadeDelay = 300;
 
     if ($(this).scrollTop() > scrollBreakpoint) {
@@ -31,7 +31,7 @@ $(document).ready(function() {
 
   // scroll to top on click
   $('#scroller').click(function(event) {
-    var scrollDelay = 450;
+    var scrollDelay = 500;
 
     event.preventDefault();
     $('html, body').animate({scrollTop: 0}, scrollDelay);
