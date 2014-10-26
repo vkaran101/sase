@@ -1,5 +1,6 @@
 <div class="banner">
   <h2>Newsletter Subscription</h2>
+  <h3>Get Updates and Reminders in Your Mailbox</h3>
 </div>
 </header>
 <section class="main">
