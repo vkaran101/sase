@@ -62,6 +62,8 @@
     <p>Copyright &copy; <?=date("Y")?> Northeastern SASE</p>
   </div>
 </div>
+
+<a href="#" id="scroller"><i class="fa fa-chevron-up fa-2x"></i></a>
 </footer>
 
 </section><!-- close section.main -->

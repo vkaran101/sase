@@ -48,7 +48,7 @@
 </div>
 </div>
 
-<script type="text/javascript">
+<script>
   // setup homepage background image
 
   var image = "url(/sase/public/img/northeastern.png)";
