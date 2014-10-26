@@ -1,5 +1,6 @@
 <div class="banner">
   <h2>Contact Us</h2>
+  <h3>We Want to Hear from You</h3>
 </div>
 </header>
 <section class="main">

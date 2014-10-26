@@ -1,14 +1,17 @@
+<div class="banner">
+  <h2>Contact Us</h2>
+  <h3>We Want to Hear from You</h3>
+</div>
 </header>
 <section class="main">
 
 <div class="row">
   <div class="small-12 medium-4 columns porcelain">
     <div class="container">
-      <h3>Contact Us</h3>
-      <p>
+      <h4>
         Send us a message anytime for questions, comments, suggestions, or
         just to say hi!
-      </p>
+      </h4>
       <p>
         <span class="gmail-red">Email</span><br />
         <a href="mailto:northeastern.sase@gmail.com">
