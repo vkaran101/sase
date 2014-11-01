@@ -1,0 +1,10 @@
+/* www.humanstxt.org */
+
+/* CONTRIBUTORS */
+Yufeng Wang, Computer Engineering 2017, Northeastern University
+
+/* SITE */
+Standards: HTML5, CSS3
+Frameworks: CodeIgniter, Foundation 5, Font Awesome
+Components: jQuery, Modernizr
+Software: Git, Sass, PHP
