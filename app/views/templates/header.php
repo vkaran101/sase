@@ -1,5 +1,8 @@
 <!DOCTYPE html>
-<html lang="en">
+<!--[if lt IE 7]><html lang="en" class="no-js lt-ie9 lt-ie8 lt-ie7"><![endif]-->
+<!--[if IE 7]>        <html lang="en" class="no-js lt-ie9 lt-ie8"><![endif]-->
+<!--[if IE 8]>        <html lang="en" class="no-js lt-ie9"><![endif]-->
+<!--[if gt IE 8]><!--><html lang="en" class="no-js"><!--<![endif]-->
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1.0" />
@@ -10,6 +13,14 @@
   <script src="<?=base_url()?>public/js/jquery.min.js"></script>
 </head>
 <body>
+
+<!--[if lt IE 9]>
+  <div id="outdate-box">
+    You are using an <strong>outdated</strong> browser.
+    Please <a href="http://browsehappy.com/?locale=en">upgrade your browser</a>
+    to improve your experience.
+  </div>
+<![endif]-->
 
 <div class="off-canvas-wrap" data-offcanvas>
 <div class="inner-wrap">
