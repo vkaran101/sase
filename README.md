@@ -27,7 +27,7 @@ are relative to the CodeIgniter project root.**
 Before you can begin development for this project, there are several tools
 that you need to install and get familiar with:
 
-- git: make sure you can grab the repo for the website
+- git: make sure you can grab the website repo
 - Apache/httpd: a local web server to view and test website
 - MySQL: for database access and store
 - PHP: backend framework of website is written in the php language, version >= 5.3.3
@@ -48,9 +48,9 @@ currently offer on the website:
 - home page: any big announcements and main ideas
 - events: upcoming and past events SASE has done
 - programs: unique long-term activities from SASE
-- about: what SASE is all about
 - eboard: the current set of eboard members
 - sponsors: the organizations that support National SASE
+- about: what SASE is all about
 - contact: ways to get in touch with SASE
 
 There are also a few other pages that are important, such as a page to sign up
@@ -60,7 +60,7 @@ pages work at all times.
 
 ### Header
 
-The header of all pages contains the NU SASE logo and the navigation links.
+The header of all pages contains the NUSASE logo and the navigation links.
 When the website is viewed on a mobile device or on a small screen, the
 navigation links will collapse down to a menu button, which opens a list of
 links to the left of the website page.
@@ -73,7 +73,7 @@ container that creates a full-page background.
 
 ### Footer
 
-The footer section has quite a lot of content. There is an alternative NU SASE
+The footer section has quite a lot of content. There is an alternative NUSASE
 logo that brings visitors back to the home page. There are links that allow
 visitors to sign up for SASE's mailing list and other ways to join SASE.
 A list of organizations that has affiliations with SASE is also available.
@@ -193,4 +193,7 @@ Production deployment, so you don't commit the sensitive data into mainline.
 
 5. In `app/config/mailchimp.php` update the api key.
 
-Transfer files to server and verify.
+Transfer files to server and verify. The production deploy process has been
+automated with the rake task `rake deploy`. Make sure you have configured
+the correct settings in `settings.rb` before running the task. Check out
+the rakefile for more details.
