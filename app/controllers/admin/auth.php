@@ -1,6 +1,6 @@
 <?php defined('BASEPATH') OR exit('No direct script access allowed');
 
-class Admin_auth extends CI_Controller {
+class Auth extends CI_Controller {
 
   function __construct()
   {

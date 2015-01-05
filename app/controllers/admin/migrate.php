@@ -1,6 +1,6 @@
 <?php if ( ! defined('BASEPATH')) exit('No direct script access allowed');
 
-class Admin_migrate extends CI_Controller {
+class Migrate extends CI_Controller {
 
   public function __construct()
   {

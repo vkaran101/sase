@@ -1,6 +1,6 @@
 <?php if ( ! defined('BASEPATH')) exit('No direct script access allowed');
 
-class Admin_eboards extends CI_Controller {
+class Eboards extends CI_Controller {
 
   public function __construct()
   {
