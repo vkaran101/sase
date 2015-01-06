@@ -11,7 +11,7 @@
 <body>
 
 <div class="row">
-  <div class="small-12 columns">
+  <div class="small-12 medium-10 medium-centered large-8 columns">
     <h1><a href="<?=base_url()?>admin">Admin Dashboard</a></h1>
     <hr />
     <p>
@@ -30,19 +30,17 @@
     </div>
     <div class="row">
       <div class="small-12 columns">
+        <strong>Rank: </strong><?=$member->rank?>
+      </div>
+    </div>
+    <div class="row">
+      <div class="small-12 columns">
         <strong>Major: </strong><?=$member->major?>
       </div>
     </div>
     <div class="row">
       <div class="small-12 columns">
         <strong>Graduation Year: </strong><?=$member->grad_year?>
-      </div>
-    </div>
-    <div class="row">
-      <div class="small-12 columns">
-        <strong>Bio:</strong>
-        <br />
-        <?=$member->bio?>
       </div>
     </div>
     <br />
@@ -79,7 +77,6 @@
     var response = confirm('Warning: data will be lost!\n\nContinue to delete eboard member?');
     if (response) {
       window.location.href = '<?=base_url()?>admin/eboards/destroy/<?=$member->id?>';
-      alert('Eboard member has been deleted.');
     }
   });
 </script>

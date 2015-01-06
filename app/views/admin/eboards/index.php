@@ -24,7 +24,10 @@
         <thead>
           <tr>
             <?php foreach ($query->list_fields() as $column): ?>
-              <?php if($column != 'id'): ?>
+              <?php if($column == 'id'): ?>
+                <th>rank</th>
+              <?php elseif($column == 'rank'): #do nothing ?>
+              <?php else: ?>
                 <th><?=$column?></th>
               <?php endif; ?>
             <?php endforeach; ?>
@@ -33,41 +36,19 @@
         <tbody>
           <?php foreach ($query->result() as $member): ?>
             <tr>
+              <td><?=$member->rank?></td>
               <td>
                 <a href="<?=base_url()?>admin/eboards/show/<?=$member->id?>">
-                  <?php if (strlen($member->name) > 30): ?>
-                    <?=substr($member->name,0,30).' ...'?>
-                  <?php else: ?>
-                    <?=$member->name?>
-                  <?php endif; ?>
+                  <?=$member->name?>
                 </a>
               </td>
-              <td>
-                <?php if (strlen($member->position) > 30): ?>
-                  <?=substr($member->position,0,30).' ...'?>
-                <?php else: ?>
-                  <?=$member->position?>
-                <?php endif; ?>
-              </td>
-              <td>
-                <?php if (strlen($member->major) > 50): ?>
-                  <?=substr($member->major,0,50).' ...'?>
-                <?php else: ?>
-                  <?=$member->major?>
-                <?php endif; ?>
-              </td>
+              <td><?=$member->position?></td>
+              <td><?=$member->major?></td>
               <td><?=$member->grad_year?></td>
-              <td>
-                <?php if (strlen($member->bio) > 50): ?>
-                  <?=substr($member->bio,0,50).' ...'?>
-                <?php else: ?>
-                  <?=$member->bio?>
-                <?php endif; ?>
-              </td>
               <td><?=$member->semester?></td>
               <td><?=$member->year?></td>
-              <td><?=date('n/j/y g:ia',strtotime($member->created))?></td>
               <td><?=date('n/j/y g:ia',strtotime($member->updated))?></td>
+              <td><?=date('n/j/y g:ia',strtotime($member->created))?></td>
             </tr>
           <?php endforeach; ?>
         </tbody>

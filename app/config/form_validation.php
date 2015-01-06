@@ -42,6 +42,9 @@ $config = array(
     array('field' => 'name','label' => 'Name',
       'rules' => 'trim|required|max_length[65500]'
     ),
+    array('field' => 'rank','label' => 'Rank',
+      'rules' => 'required|integer|greater_than[0]'
+    ),
     array('field' => 'position','label' => 'Position',
       'rules' => 'trim|required|max_length[65500]'
     ),
@@ -50,9 +53,6 @@ $config = array(
     ),
     array('field' => 'grad_year','label' => 'Graduation Year',
       'rules' => 'required|integer|exact_length[4]|greater_than[2012]'
-    ),
-    array('field' => 'bio','label' => 'Bio',
-      'rules' => 'trim|required|max_length[65500]'
     ),
     array('field' => 'semester','label' => 'Semester',
       'rules' => 'required'

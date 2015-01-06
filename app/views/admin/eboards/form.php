@@ -11,14 +11,16 @@
 <body>
 
 <div class="row">
-  <div class="small-12 columns">
+  <div class="small-12 medium-10 medium-centered large-8 columns">
     <h1><a href="<?=base_url()?>admin">Admin Dashboard</a></h1>
     <hr />
     <h4><?=$title?></h4>
+    <p>* required field</p>
+
     <?=form_open('admin/eboards/'.$action)?>
       <div class="row">
         <div class="small-12 columns">
-          <label>Name
+          <label>Name *
             <input type="text" name="name"
               <?php if (isset($member->name)): ?>
                 value="<?=$member->name?>"
@@ -31,8 +33,20 @@
         </div>
       </div>
       <div class="row">
-        <div class="small-12 columns">
-          <label>Position
+        <div class="small-12 medium-2 columns">
+          <label>Rank *
+            <input type="text" name="rank"
+              <?php if (isset($member->rank)): ?>
+                value="<?=$member->rank?>"
+              <?php else: ?>
+                value="<?=set_value('rank')?>"
+              <?php endif; ?>
+            />
+          </label>
+          <?=form_error('rank')?>
+        </div>
+        <div class="small-12 medium-10 columns">
+          <label>Position *
             <input type="text" name="position"
               <?php if (isset($member->position)): ?>
                 value="<?=$member->position?>"
@@ -45,8 +59,8 @@
         </div>
       </div>
       <div class="row">
-        <div class="small-12 medium-6 columns">
-          <label>Major
+        <div class="small-12 medium-8 columns">
+          <label>Major *
             <input type="text" name="major"
               <?php if (isset($member->major)): ?>
                 value="<?=$member->major?>"
@@ -57,8 +71,8 @@
           </label>
           <?=form_error('major')?>
         </div>
-        <div class="small-12 medium-6 columns">
-          <label>Graduation Year
+        <div class="small-12 medium-4 columns">
+          <label>Graduation Year *
             <input type="text" name="grad_year" placeholder="YYYY"
               <?php if (isset($member->grad_year)): ?>
                 value="<?=$member->grad_year?>"
@@ -71,48 +85,36 @@
         </div>
       </div>
       <div class="row">
-        <div class="small-12 columns">
-          <label>Bio
-            <?php if (isset($member->bio)): ?>
-              <textarea name="bio" rows="5"><?=$member->bio?></textarea>
-            <?php else: ?>
-              <textarea name="bio" rows="5"><?=set_value('bio')?></textarea>
-            <?php endif; ?>
-          </label>
-          <?=form_error('bio')?>
-        </div>
-      </div>
-      <div class="row">
         <div class="small-12 medium-6 columns">
-          <label>Semester
+          <label>Semester *
             <select name="semester">
               <option
-                <?php if (isset($member->semester_fall)): ?>
-                  <?=$member->semester_fall?>
+                <?php if (isset($member->semester) && $member->semester == 'fall'): ?>
+                  selected
                 <?php else: ?>
                   <?=set_select('semester','fall',TRUE)?>
                 <?php endif; ?>
                 value="fall">Fall
               </option>
               <option
-                <?php if (isset($member->semester_spring)): ?>
-                  <?=$member->semester_spring?>
+                <?php if (isset($member->semester) && $member->semester == 'spring'): ?>
+                  selected
                 <?php else: ?>
                   <?=set_select('semester','spring')?>
                 <?php endif; ?>
                 value="spring">Spring
               </option>
               <option
-                <?php if (isset($member->semester_summer1)): ?>
-                  <?=$member->semester_summer1?>
+                <?php if (isset($member->semester) && $member->semester == 'summer1'): ?>
+                  selected
                 <?php else: ?>
                   <?=set_select('semester','summer1')?>
                 <?php endif; ?>
                 value="summer1">Summer 1
               </option>
               <option
-                <?php if (isset($member->semester_summer2)): ?>
-                  <?=$member->semester_summer2?>
+                <?php if (isset($member->semester) && $member->semester == 'summer2'): ?>
+                  selected
                 <?php else: ?>
                   <?=set_select('semester','summer2')?>
                 <?php endif; ?>
@@ -123,7 +125,7 @@
           <?=form_error('semester')?>
         </div>
         <div class="small-12 medium-6 columns">
-          <label>Year
+          <label>Year *
             <input type="text" name="year" placeholder="YYYY"
               <?php if (isset($member->year)): ?>
                 value="<?=$member->year?>"
@@ -143,6 +145,7 @@
         </div>
       </div>
     <?=form_close()?>
+
   </div>
 </div>
 
