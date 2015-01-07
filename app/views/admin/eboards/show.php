@@ -65,10 +65,8 @@
     <hr />
     <div class="small-12 columns">
       <a href="<?=base_url()?>admin/eboards/edit/<?=$member->id?>" class="button radius">Edit</a>
-      <a href="<?=base_url()?>admin/eboards/delete_img/<?=$member->id?>"
-        class="button secondary radius">Reset Picture
-      </a>
-      <input type="button" class="button radius alert" id="delete" value="Delete" />
+      <input type="button" class="button radius secondary" id="reset" value="Reset Picture"/>
+      <input type="button" class="button radius alert" id="delete" value="Delete"/>
     </div>
   </div>
 </div>
@@ -81,6 +79,12 @@
     var response = confirm('Warning: data will be lost!\n\nContinue to delete eboard member?');
     if (response) {
       window.location.href = '<?=base_url()?>admin/eboards/destroy/<?=$member->id?>';
+    }
+  });
+  $('#reset').click(function() {
+    var response = confirm('Reset the eboard picture to default?');
+    if (response) {
+      window.location.href= '<?=base_url()?>admin/eboards/delete_img/<?=$member->id?>';
     }
   });
 </script>
