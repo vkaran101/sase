@@ -2,6 +2,8 @@
 
 class Eboards extends CI_Controller {
 
+  private $default_img = 'public/img/eboard/generic.png';
+
   public function __construct()
   {
     parent::__construct();
@@ -46,7 +48,7 @@ class Eboards extends CI_Controller {
     // grab the post data and set a default pic path
     $input = $this->input->post(NULL, TRUE);
     $member = $this->parse_post_input($input);
-    $member['pic'] = 'public/img/eboard/generic.png';
+    $member['pic'] = $this->default_img;
 
     // configure and load the upload helper
     $config['upload_path'] = 'public/img/eboard/uploads/';
@@ -166,12 +168,45 @@ class Eboards extends CI_Controller {
     }
 
     $copy = $this->eboards_model->remove($id);
+    if (!file_exists($copy->pic) || $copy->pic ==  $this->default_img)
+    {
+      redirect('/admin/eboards', 'refresh');
+    }
+
     if (!unlink($copy->pic))
     {
       // could not delete the uploaded picture, show error
       show_error('Unable to delete eboard picture: '.$copy->pic);
     }
+
     redirect('/admin/eboards', 'refresh');
+  }
+
+  public function delete_img($id = 0)
+  {
+    if ($id == 0)
+    {
+      show_error('Missing eboard member identifier. No eboard images deleted.');
+    }
+
+    $member = $this->eboards_model->get_by_id($id)->row();
+    if ($member->pic == $this->default_img)
+    {
+      // already has default image
+      redirect('/admin/eboards/show/'.$id, 'refresh');
+    }
+
+    if (file_exists($member->pic) && !unlink($member->pic))
+    {
+      // could not delete the uploaded picture, show error
+      show_error('Unable to delete eboard picture: '.$member->pic);
+    }
+
+    // restore image to default
+    $member->pic = $this->default_img;
+    $this->eboards_model->update($id, $member);
+
+    redirect('/admin/eboards/show/'.$id, 'refresh');
   }
 
   private function set_form_validation_delimiters()

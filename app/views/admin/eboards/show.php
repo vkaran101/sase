@@ -65,6 +65,9 @@
     <hr />
     <div class="small-12 columns">
       <a href="<?=base_url()?>admin/eboards/edit/<?=$member->id?>" class="button radius">Edit</a>
+      <a href="<?=base_url()?>admin/eboards/delete_img/<?=$member->id?>"
+        class="button secondary radius">Reset Picture
+      </a>
       <input type="button" class="button radius alert" id="delete" value="Delete" />
     </div>
   </div>
