@@ -11,9 +11,9 @@
     <div class="eboard-placeholder">No members in current eboard.</div>
     <br />
   <?php else: ?>
-    <?php $count = 0; ?>
+    <ul class="small-block-grid-1 medium-block-grid-2 large-block-grid-3">
     <?php foreach ($eboard->result() as $member): ?>
-      <div class="small-12 medium-6 columns">
+      <li>
         <ul class="eboard-card">
           <li class="pic"><img src="<?=base_url().$member->pic?>" width="200"/></li>
           <li class="position"><?=$member->position?></li>
@@ -21,13 +21,9 @@
           <li class="major"><?=$member->major?></li>
           <li class="year">Class of <?=$member->grad_year?></li>
         </ul>
-      </div>
-      <?php $count++; ?>
-      <?php if ($count % 2 == 0): ?>
-        </div><!-- close row -->
-        <div class="row">
-      <?php endif; ?>
+      </li>
     <?php endforeach; ?>
+    </ul>
   <?php endif; ?>
 </div>
 </div>
