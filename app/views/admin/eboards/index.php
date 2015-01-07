@@ -26,7 +26,7 @@
             <?php foreach ($query->list_fields() as $column): ?>
               <?php if($column == 'id'): ?>
                 <th>rank</th>
-              <?php elseif($column == 'rank'): #do nothing ?>
+              <?php elseif($column == 'rank' || $column == 'pic'): #do nothing ?>
               <?php else: ?>
                 <th><?=$column?></th>
               <?php endif; ?>

@@ -17,7 +17,18 @@
     <h4><?=$title?></h4>
     <p>* required field</p>
 
-    <?=form_open('admin/eboards/'.$action)?>
+    <?=form_open_multipart('admin/eboards/'.$action)?>
+      <div class="row">
+        <div class="small-12 columns text-center">
+          <?php if (isset($member->pic) && $member->pic != ''): ?>
+            <img class="img-circle" src="<?=base_url().$member->pic?>"/>
+          <?php else: ?>
+            <img class="img-circle" src="<?=base_url()?>public/img/eboard/generic.png"/>
+          <?php endif; ?>
+          <input type="file" name="pic" id="pic" accept="image/*"/>
+          <?=$pic_errors?>
+        </div>
+      </div>
       <div class="row">
         <div class="small-12 columns">
           <label>Name *

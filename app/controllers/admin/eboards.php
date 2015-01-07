@@ -30,6 +30,7 @@ class Eboards extends CI_Controller {
     $this->data['title'] = 'Add New Eboard Member';
     $this->data['action'] = 'add';
     $this->data['cancel_action'] = base_url().'admin/eboards';
+    $this->data['pic_errors'] = '';
     $this->load->view('admin/eboards/form', $this->data);
   }
 
@@ -37,15 +38,45 @@ class Eboards extends CI_Controller {
   {
     if ($this->form_validation->run('eboards') == FALSE)
     {
+      // form validation failed, load the form view
       $this->create();
+      return;
+    }
+
+    // grab the post data and set a default pic path
+    $input = $this->input->post(NULL, TRUE);
+    $member = $this->parse_post_input($input);
+    $member['pic'] = 'public/img/eboard/generic.png';
+
+    // configure and load the upload helper
+    $config['upload_path'] = 'public/img/eboard/uploads/';
+    $config['allowed_types'] = 'gif|jpg|jpeg|png';
+    $config['overwrite'] = TRUE;
+    $config['file_name'] = $member['position'].'_'.$member['semester'].'_'.$member['year'];
+    $this->load->library('upload', $config);
+
+    $field = 'pic';
+    if (!$this->upload->do_upload($field))
+    {
+      // upload failed, reload the form view with upload errors
+      $this->data['title'] = 'Add New Eboard Member';
+      $this->data['action'] = 'add';
+      $this->data['cancel_action'] = base_url().'admin/eboards';
+      $this->data['pic_errors'] = $this->upload->display_errors(
+        '<div data-alert class="alert-box alert radius">',
+        '<a href="#" class="close">&times;</a></div>'
+      );
+      $this->load->view('admin/eboards/form', $this->data);
     }
     else
     {
-      $input = $this->input->post(NULL, TRUE);
-      $member = $this->parse_input($input);
-      $id = $this->eboards_model->save($member);
-      redirect('/admin/eboards/show/'.$id, 'refresh');
+      // upload successful, set the pic path
+      $pic = $this->upload->data();
+      $member['pic'] = 'public/img/eboard/uploads/'.$pic['file_name'];
     }
+
+    $id = $this->eboards_model->save($member);
+    redirect('/admin/eboards/show/'.$id, 'refresh');
   }
 
   public function show($id = 0)
@@ -54,6 +85,7 @@ class Eboards extends CI_Controller {
     {
       show_error('Missing eboard member identifier.');
     }
+
     $this->data['member'] = $this->eboards_model->get_by_id($id)->row();
     $this->load->view('admin/eboards/show', $this->data);
   }
@@ -64,10 +96,12 @@ class Eboards extends CI_Controller {
     {
       show_error('Missing eboard member identifier.');
     }
+
     $member = $this->eboards_model->get_by_id($id)->row();
     $this->data['title'] = 'Edit Eboard Member';
     $this->data['action'] = 'update/'.$id;
     $this->data['cancel_action'] = base_url().'admin/eboards/show/'.$id;
+    $this->data['pic_errors'] = '';
     $this->data['member'] = $member;
     $this->load->view('admin/eboards/form', $this->data);
   }
@@ -78,20 +112,50 @@ class Eboards extends CI_Controller {
     {
       show_error('Missing eboard memeber identifier. Update action not completed.');
     }
+
     if ($this->form_validation->run('eboards') == FALSE)
     {
+      // form validation failed, load the form view
       $this->data['title'] = 'Edit Eboard Member';
       $this->data['action'] = 'update/'.$id;
       $this->data['cancel_action'] = base_url().'admin/eboards/show/'.$id;
+      $this->data['pic_errors'] = '';
+      $this->load->view('admin/eboards/form', $this->data);
+    }
+
+    // grab the post data
+    $input = $this->input->post(NULL, TRUE);
+    $member = $this->parse_post_input($input);
+
+    // configure and load the upload helper
+    $config['upload_path'] = 'public/img/eboard/uploads/';
+    $config['allowed_types'] = 'gif|jpg|jpeg|png';
+    $config['overwrite'] = TRUE;
+    $config['file_name'] = $member['position'].'_'.$member['semester'].'_'.$member['year'];
+    $this->load->library('upload', $config);
+
+    $field = 'pic';
+    if (!$this->upload->do_upload($field))
+    {
+      // upload failed, reload form view with upload errors
+      $this->data['title'] = 'Edit Eboard Member';
+      $this->data['action'] = 'update/'.$id;
+      $this->data['cancel_action'] = base_url().'admin/eboards/show/'.$id;
+      $this->data['pic_errors'] = $this->upload->display_errors(
+        '<div data-alert class="alert-box alert radius">',
+        '<a href="#" class="close">&times;</a></div>'
+      );
       $this->load->view('admin/eboards/form', $this->data);
     }
     else
     {
-      $input = $this->input->post(NULL, TRUE);
-      $member= $this->parse_input($input);
-      $this->eboards_model->update($id, $member);
-      redirect('/admin/eboards/show/'.$id, 'refresh');
+      // upload successful, set the new pic path
+      $pic = $this->upload->data();
+      $member['pic'] = 'public/img/eboard/uploads/'.$pic['file_name'];
     }
+
+    $this->eboards_model->update($id, $member);
+    redirect('/admin/eboards/show/'.$id, 'refresh');
   }
 
   public function destroy($id = 0)
@@ -100,7 +164,13 @@ class Eboards extends CI_Controller {
     {
       show_error('Missing eboard member identifier. No member deleted.');
     }
+
     $copy = $this->eboards_model->remove($id);
+    if (!unlink($copy->pic))
+    {
+      // could not delete the uploaded picture, show error
+      show_error('Unable to delete eboard picture: '.$copy->pic);
+    }
     redirect('/admin/eboards', 'refresh');
   }
 
@@ -112,7 +182,7 @@ class Eboards extends CI_Controller {
     );
   }
 
-  private function parse_input($input)
+  private function parse_post_input($input)
   {
     $member = array(
       'name' => $input['name'],

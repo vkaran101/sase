@@ -25,8 +25,8 @@ class Eboards_model extends CI_Model {
     return $this->db->get('eboards');
   }
 
-  // get eboard members in current semester and year sorted by rank
-  function get_current_eboard($sem, $yr)
+  // get eboard members in specified semester and year sorted by rank
+  function get_eboard($sem, $yr)
   {
     $this->db->order_by('rank', 'asc');
     $this->db->order_by('name', 'asc');

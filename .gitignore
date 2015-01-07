@@ -13,3 +13,5 @@ foundation5/bower_components/*
 foundation5/.sass-cache/*
 
 font-awesome/.sass-cache/*
+
+public/img/eboard/uploads/*

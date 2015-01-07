@@ -19,6 +19,12 @@
       href="<?=base_url()?>admin/eboards"> Back to All Eboards</a>
     </p>
     <div class="row">
+      <div class="small-12 columns text-center">
+        <img class="img-circle" src="<?=base_url().$member->pic?>"/>
+      </div>
+    </div>
+    <br/>
+    <div class="row">
       <div class="small-12 columns">
         <h4><?=$member->name?></h4>
       </div>
@@ -43,21 +49,16 @@
         <strong>Graduation Year: </strong><?=$member->grad_year?>
       </div>
     </div>
-    <br />
     <div class="row">
-      <div class="small-12 medium-6 columns">
-        <strong>Semester: </strong><?=$member->semester?>
-      </div>
-      <div class="small-12 medium-6 columns">
-        <strong>Year: </strong><?=$member->year?>
+      <div class="small-12 columns">
+        <strong>Semester: </strong><?=ucfirst($member->semester)?> <?=$member->year?>
       </div>
     </div>
     <br />
     <div class="row">
-      <div class="small-12 medium-6 columns">
+      <div class="small-12 columns">
         <strong>Created: </strong><?=date('n/j/y g:i a',strtotime($member->created))?>
-      </div>
-      <div class="small-12 medium-6 columns">
+        <br/>
         <strong>Updated: </strong><?=date('n/j/y g:i a',strtotime($member->updated))?>
       </div>
     </div>
