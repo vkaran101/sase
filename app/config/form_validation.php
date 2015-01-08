@@ -85,6 +85,14 @@ $config = array(
     array('field' => 'message','label' => 'Message',
       'rules' => 'trim|required'
     )
+  ),
+  'semester_change' => array(
+    array('field' => 'semester', 'label' => 'Semester',
+      'rules' => 'required'
+    ),
+    array('field' => 'year', 'label' => 'Year',
+      'rules' => 'required|integer|exact_length[4]|greater_than[2012]'
+    )
   )
 );
 
