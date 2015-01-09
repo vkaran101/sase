@@ -51,7 +51,7 @@
 
 <div class="row">
   <div class="small-5 small-centered columns show-for-small-only">
-    <a href="<?=base_url()?>"><img src="<?=base_url()?>public/img/sase_stamp_light.png"></a>
+    <a href="<?=base_url()?>"><img src="<?=base_url()?>public/img/site/sase_stamp_light.png"></a>
   </div>
 </div>
 

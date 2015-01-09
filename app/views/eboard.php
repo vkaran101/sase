@@ -8,10 +8,17 @@
 <div class="container">
 <div class="row">
   <?php if (count($eboard->result()) == 0): ?>
-    <div class="eboard-placeholder">No members in current eboard.</div>
-    <br />
+    <div class="small-12 medium-8 medium-centered columns">
+      <div class="placeholder">No members in current eboard.</div>
+    </div>
   <?php else: ?>
-    <ul class="small-block-grid-1 medium-block-grid-2 large-block-grid-3">
+    <?php if (count($eboard->result()) == 1): ?>
+      <ul class="small-block-grid-1 medium-block-grid-1 large-block-grid-1">
+    <?php elseif (count($eboard->result()) == 2): ?>
+      <ul class="small-block-grid-1 medium-block-grid-2 large-block-grid-2">
+    <?php else: ?>
+      <ul class="small-block-grid-1 medium-block-grid-2 large-block-grid-3">
+    <?php endif; ?>
     <?php foreach ($eboard->result() as $member): ?>
       <li>
         <ul class="eboard-card">

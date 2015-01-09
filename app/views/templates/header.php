@@ -27,7 +27,7 @@
   <header>
     <div class="row">
       <div class="small-9 medium-4 columns">
-        <a href="<?=base_url()?>"><img src="<?=base_url()?>public/img/northeastern_sase_white.png"
+        <a href="<?=base_url()?>"><img src="<?=base_url()?>public/img/site/northeastern_sase_white.png"
           width="300" />
         </a>
       </div>
