@@ -47,8 +47,8 @@
               <td><?=$member->grad_year?></td>
               <td><?=$member->semester?></td>
               <td><?=$member->year?></td>
-              <td><?=date('n/j/y g:ia',strtotime($member->updated))?></td>
               <td><?=date('n/j/y g:ia',strtotime($member->created))?></td>
+              <td><?=date('n/j/y g:ia',strtotime($member->updated))?></td>
             </tr>
           <?php endforeach; ?>
         </tbody>

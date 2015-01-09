@@ -7,18 +7,21 @@
   <link rel="stylesheet" href="<?=base_url()?>public/css/foundation5.css" />
   <link rel="stylesheet" href="<?=base_url()?>public/css/font-awesome.css" />
   <script src="<?=base_url()?>public/js/modernizr.js"></script>
+  <script src="<?=base_url()?>public/js/jquery.min.js"></script>
 </head>
 <body>
 
 <div class="row">
-  <div class="small-12 columns">
+  <div class="small-12 medium-10 medium-centered large-8 columns">
     <h1><a href="<?=base_url()?>admin">Admin Dashboard</a></h1>
     <hr />
     <h4><?=$title?></h4>
+    <p>* required field</p>
+
     <?=form_open('admin/events/'.$action)?>
       <div class="row">
         <div class="small-12 columns">
-          <label>Title
+          <label>Title *
             <input type="text" name="title"
               <?php if (isset($entry->title)): ?>
                 value="<?=$entry->title?>"
@@ -32,12 +35,12 @@
       </div>
       <div class="row">
         <div class="small-12 medium-6 columns">
-          <label>Date</label>
+          <label>Date *</label>
           <div class="row collapse">
             <div class="small-3 columns">
               <input type="text" name="date_month" placeholder="MM"
-                <?php if (isset($entry->date_month)): ?>
-                  value="<?=$entry->date_month?>"
+                <?php if (isset($entry->date)): ?>
+                  value="<?=date('m', strtotime($entry->date))?>"
                 <?php else: ?>
                   value="<?=set_value('date_month')?>"
                 <?php endif; ?>
@@ -46,8 +49,8 @@
             <div class="small-1 columns"><span class="midfix">/</span></div>
             <div class="small-3 columns">
               <input type="text" name="date_day" placeholder="DD"
-                <?php if (isset($entry->date_day)): ?>
-                  value="<?=$entry->date_day?>"
+                <?php if (isset($entry->date)): ?>
+                  value="<?=date('d', strtotime($entry->date))?>"
                 <?php else: ?>
                   value="<?=set_value('date_day')?>"
                 <?php endif; ?>
@@ -56,8 +59,8 @@
             <div class="small-1 columns"><span class="midfix">/</span></div>
             <div class="small-4 columns">
               <input type="text" name="date_year" placeholder="YYYY"
-                <?php if (isset($entry->date_year)): ?>
-                  value="<?=$entry->date_year?>"
+                <?php if (isset($entry->date)): ?>
+                  value="<?=date('Y', strtotime($entry->date))?>"
                 <?php else: ?>
                   value="<?=set_value('date_year')?>"
                 <?php endif; ?>
@@ -67,12 +70,23 @@
           <?=form_error('date_month')?><?=form_error('date_day')?><?=form_error('date_year')?>
         </div>
         <div class="small-12 medium-6 columns">
-          <label>Time (not required)</label>
+          <label class="clearfix">Time *
+            <span class="right">
+              <input type="checkbox" name="all_day" value="1"
+                <?php if (isset($entry->all_day) && $entry->all_day == 1): ?>
+                  checked
+                <?php else: ?>
+                  <?=set_checkbox('all_day','1',FALSE)?>
+                <?php endif; ?>
+              />
+              <label for="all_day">All day</label>
+            </span>
+          </label>
           <div class="row collapse">
             <div class="small-3 columns">
               <input type="text" name="time_hour" placeholder="HH"
-                <?php if (isset($entry->time_hour)): ?>
-                  value="<?=$entry->time_hour?>"
+                <?php if (isset($entry->time)): ?>
+                  value="<?=date('h', strtotime($entry->time))?>"
                 <?php else: ?>
                   value="<?=set_value('time_hour')?>"
                 <?php endif; ?>
@@ -81,8 +95,8 @@
             <div class="small-1 columns"><span class="midfix">:</span></div>
             <div class="small-3 columns">
               <input type="text" name="time_minute" placeholder="MM"
-                <?php if (isset($entry->time_minute)): ?>
-                  value="<?=$entry->time_minute?>"
+                <?php if (isset($entry->time)): ?>
+                  value="<?=date('i', strtotime($entry->time))?>"
                 <?php else: ?>
                   value="<?=set_value('time_minute')?>"
                 <?php endif; ?>
@@ -91,16 +105,16 @@
             <div class="small-5 columns">
               <select name="time_oclock" class="postfix">
                 <option
-                  <?php if (isset($entry->time_oclock_am)): ?>
-                    <?=$entry->time_oclock_am?>
+                  <?php if (isset($entry->time) && date('a', strtotime($entry->time)) == 'am'): ?>
+                    selected
                   <?php else: ?>
                     <?=set_select('time_oclock','am')?>
                   <?php endif; ?>
                   value="am">AM
                 </option>
                 <option
-                  <?php if (isset($entry->time_oclock_pm)): ?>
-                    <?=$entry->time_oclock_pm?>
+                  <?php if (isset($entry->time) && date('a', strtotime($entry->time)) == 'pm'): ?>
+                    selected
                   <?php else: ?>
                     <?=set_select('time_oclock','pm',TRUE)?>
                   <?php endif; ?>
@@ -114,7 +128,7 @@
       </div>
       <div class="row">
         <div class="small-12 columns">
-          <label>Location
+          <label>Location *
             <input type="text" name="location" placeholder="i.e. 410 Ell Hall"
               <?php if (isset($entry->location)): ?>
                 value="<?=$entry->location?>"
@@ -128,7 +142,7 @@
       </div>
       <div class="row">
         <div class="small-12 columns">
-          <label>Description
+          <label>Description *
             <?php if (isset($entry->description)): ?>
               <textarea name="description" rows="5"><?=$entry->description?></textarea>
             <?php else: ?>
@@ -140,35 +154,35 @@
       </div>
       <div class="row">
         <div class="small-12 medium-6 columns">
-          <label>Semester
+          <label>Semester *
             <select name="semester">
               <option
-                <?php if (isset($entry->semester_fall)): ?>
-                  <?=$entry->semester_fall?>
+                <?php if (isset($entry->semester) && $entry->semester == 'fall'): ?>
+                  selected
                 <?php else: ?>
                   <?=set_select('semester','fall',TRUE)?>
                 <?php endif; ?>
                 value="fall">Fall
               </option>
               <option
-                <?php if (isset($entry->semester_spring)): ?>
-                  <?=$entry->semester_spring?>
+                <?php if (isset($entry->semester) && $entry->semester == 'spring'): ?>
+                  selected
                 <?php else: ?>
                   <?=set_select('semester','spring')?>
                 <?php endif; ?>
                 value="spring">Spring
               </option>
               <option
-                <?php if (isset($entry->semester_summer1)): ?>
-                  <?=$entry->semester_summer1?>
+                <?php if (isset($entry->semester) && $entry->semester == 'summer1'): ?>
+                  selected
                 <?php else: ?>
                   <?=set_select('semester','summer1')?>
                 <?php endif; ?>
                 value="summer1">Summer 1
               </option>
               <option
-                <?php if (isset($entry->semester_summer2)): ?>
-                  <?=$entry->semester_summer2?>
+                <?php if (isset($entry->semester) && $entry->semester == 'summer2'): ?>
+                  selected
                 <?php else: ?>
                   <?=set_select('semester','summer2')?>
                 <?php endif; ?>
@@ -179,7 +193,7 @@
           <?=form_error('semester')?>
         </div>
         <div class="small-12 medium-6 columns">
-          <label>Year
+          <label>Year *
             <input type="text" name="year" placeholder="YYYY"
               <?php if (isset($entry->year)): ?>
                 value="<?=$entry->year?>"
@@ -193,20 +207,20 @@
       </div>
       <div class="row">
         <div class="small-12 columns">
-          <input type="checkbox" value="meeting" id="meeting" name="meeting"
-            <?php if (isset($entry->meeting_checkbox)): ?>
-              <?=$entry->meeting_checkbox?>
+          <input type="checkbox" name="meeting" value="1"
+            <?php if (isset($entry->meeting) && $entry->meeting == 1): ?>
+              checked
             <?php else: ?>
-              <?=set_checkbox('meeting','meeting',FALSE)?>
+              <?=set_checkbox('meeting','1',FALSE)?>
             <?php endif; ?>
           />
           <label for="meeting">general meeting</label>
           <br />
-          <input type="checkbox" value="service" id="service" name="service"
-            <?php if (isset($entry->service_checkbox)): ?>
-              <?=$entry->service_checkbox?>
+          <input type="checkbox" name="service" value="1"
+            <?php if (isset($entry->service) && $entry->service == 1): ?>
+              checked
             <?php else: ?>
-              <?=set_checkbox('service','service',FALSE)?>
+              <?=set_checkbox('service','1',FALSE)?>
             <?php endif; ?>
           />
           <label for="service">community service</label>
@@ -220,10 +234,54 @@
         </div>
       </div>
     <?=form_close()?>
+
   </div>
 </div>
 
-<script src="<?=base_url()?>public/js/jquery.min.js"></script>
+<script>
+  function update_checkbox_value(name) {
+    var value = 0;
+    var elem = 'input[name="' + name + '"]';
+
+    if ($(elem).prop('checked')) {
+      value = 1;
+    }
+    $(elem).val(value);
+  }
+
+  function update_all_day_checkbox() {
+    update_checkbox_value('all_day');
+
+    var state = false;
+    if ($('input[name="all_day"]').prop('checked')) {
+      state = true;
+    }
+
+    $('input[name="time_hour"]').prop('disabled', state);
+    $('input[name="time_minute"]').prop('disabled', state);
+    $('select[name="time_oclock"]').prop('disabled', state);
+  }
+
+  $(document).ready(function() {
+    update_checkbox_value('meeting');
+    $('input[name="meeting"]').change(function() {
+      update_checkbox_value('meeting');
+    });
+
+    update_checkbox_value('service');
+    $('input[name="service"]').change(function() {
+      update_checkbox_value('service');
+    });
+
+    update_all_day_checkbox();
+    var box = $('input[name="all_day"]');
+    box.css('margin-bottom', 0);
+    box.change(function() {
+      update_all_day_checkbox();
+    });
+  });
+</script>
+
 <script src="<?=base_url()?>public/js/foundation.min.js"></script>
 <script src="<?=base_url()?>public/js/foundation5.js"></script>
 

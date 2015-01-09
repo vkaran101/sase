@@ -24,7 +24,8 @@
         <thead>
           <tr>
             <?php foreach ($query->list_fields() as $column): ?>
-              <?php if($column != 'id'): ?>
+              <?php if ($column == 'id' || $column == 'all_day'): #do nothing ?>
+              <?php else: ?>
                 <th><?=$column?></th>
               <?php endif; ?>
             <?php endforeach; ?>
@@ -35,31 +36,31 @@
             <tr>
               <td>
                 <a href="<?=base_url()?>admin/events/show/<?=$entry->id?>">
-                  <?php if (strlen($entry->title) > 30): ?>
-                    <?=substr($entry->title,0,30).' ...'?>
+                  <?php if (strlen($entry->title) > 20): ?>
+                    <?=substr($entry->title,0,20).' ...'?>
                   <?php else: ?>
                     <?=$entry->title?>
                   <?php endif; ?>
                 </a>
               </td>
-              <td><?=date('n/j/y',strtotime($entry->date))?></td>
+              <td><?=date('n/j/y', strtotime($entry->date))?></td>
               <td>
-                <?php if ($entry->time !== ''): ?>
-                  <?=date('g:ia',strtotime($entry->time))?>
+                <?php if ($entry->all_day): ?>
+                  All day
                 <?php else: ?>
-                  not set
+                  <?=date('g:ia', strtotime($entry->time))?>
                 <?php endif; ?>
               </td>
               <td>
-                <?php if (strlen($entry->location) > 30): ?>
-                  <?=substr($entry->location,0,30).' ...'?>
+                <?php if (strlen($entry->location) > 20): ?>
+                  <?=substr($entry->location,0,20).' ...'?>
                 <?php else: ?>
                   <?=$entry->location?>
                 <?php endif; ?>
               </td>
               <td>
-                <?php if (strlen($entry->description) > 50): ?>
-                  <?=substr($entry->description,0,50).' ...'?>
+                <?php if (strlen($entry->description) > 20): ?>
+                  <?=substr($entry->description,0,20).' ...'?>
                 <?php else: ?>
                   <?=$entry->description?>
                 <?php endif; ?>

@@ -11,47 +11,47 @@
 <body>
 
 <div class="row">
-  <div class="small-12 columns">
+  <div class="small-12 medium-10 medium-centered large-8 columns">
     <h1><a href="<?=base_url()?>admin">Admin Dashboard</a></h1>
     <hr />
     <p>
-      <i class="fa fw fa-arrow-circle-left"></i><a
-      href="<?=base_url()?>admin/events"> Back to All Events</a>
+      <i class="fa fw fa-arrow-circle-left"></i><a href="<?=base_url()?>admin/events"> Back to All Events</a>
     </p>
     <div class="row">
       <div class="small-12 columns">
-        <h4><?=$entry->title?></h4>
+        <h3><?=$entry->title?></h3>
       </div>
     </div>
     <div class="row">
-      <div class="small-12 medium-3 columns">
-        <strong>Date: </strong><?=date('n/j/y',strtotime($entry->date))?>
+      <div class="small-12 columns">
+        <strong>Date: </strong><?=date('n/j/y', strtotime($entry->date))?>
       </div>
-      <div class="small-12 medium-3 columns">
+    </div>
+    <div class="row">
+      <div class="small-12 columns">
         <strong>Time: </strong>
-        <?php if ($entry->time !== ''): ?>
-          <?=date('g:i a',strtotime($entry->time))?>
+        <?php if ($entry->all_day): ?>
+          All day
         <?php else: ?>
-          not set
+          <?=date('g:i a', strtotime($entry->time))?>
         <?php endif; ?>
       </div>
-      <div class="small-12 medium-6 columns">
+    </div>
+    <div class="row">
+      <div class="small-12 columns">
         <strong>Location: </strong><?=$entry->location?>
       </div>
     </div>
     <div class="row">
-      <div class="small-12 medium-6 columns">
-        <strong>Semester: </strong><?=$entry->semester?>
-      </div>
-      <div class="small-12 medium-6 columns">
-        <strong>Year: </strong><?=$entry->year?>
+      <div class="small-12 columns">
+        <strong>Semester: </strong><?=ucfirst($entry->semester)?> <?=$entry->year?>
       </div>
     </div>
-    <br />
     <div class="row">
       <div class="small-12 columns">
+        <br/>
         <strong>Description:</strong>
-        <br />
+        <br/>
         <?=$entry->description?>
       </div>
     </div>
@@ -75,10 +75,9 @@
     </div>
     <br />
     <div class="row">
-      <div class="small-12 medium-6 columns">
+      <div class="small-12 columns">
         <strong>Created: </strong><?=date('n/j/y g:i a',strtotime($entry->created))?>
-      </div>
-      <div class="small-12 medium-6 columns">
+        <br/>
         <strong>Updated: </strong><?=date('n/j/y g:i a',strtotime($entry->updated))?>
       </div>
     </div>
@@ -98,7 +97,6 @@
     var response = confirm('Warning: data will be lost!\n\nContinue to delete event entry?');
     if (response) {
       window.location.href = '<?=base_url()?>admin/events/destroy/<?=$entry->id?>';
-      alert('Event entry has been deleted.');
     }
   });
 </script>

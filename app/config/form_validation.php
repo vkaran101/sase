@@ -14,15 +14,14 @@ $config = array(
     array('field' => 'date_year','label' => 'Date Year',
       'rules' => 'required|integer|exact_length[4]|greater_than[2012]'
     ),
+    array('field' => 'all_day','label' => 'All day','rules' => ''),
     array('field' => 'time_hour','label' => 'Time Hour',
       'rules' => 'integer|max_length[2]|greater_than[0]|less_than[13]'
     ),
     array('field' => 'time_minute','label' => 'Time Minute',
       'rules' => 'integer|exact_length[2]|greater_than[-1]|less_than[60]'
     ),
-    array('field' => 'time_oclock','label' => 'Time Clock Zone',
-      'rules' => ''
-    ),
+    array('field' => 'time_oclock','label' => 'Time Clock Zone','rules' => ''),
     array('field' => 'location','label' => 'Location',
       'rules' => 'trim|required|max_length[65500]'
     ),
