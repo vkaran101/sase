@@ -362,3 +362,16 @@ footer {
   @include border-radius(50%);
 }
 
+#login-bg {
+  background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url('../img/site/northeastern_winter.jpg');
+  background-position: center center;
+  background-repeat: no-repeat;
+  @include background-cover;
+}
+
+#login-card {
+  background: #fff;
+  border: 1px solid #eee;
+  padding: 20px;
+  margin-top: 100px;
+}

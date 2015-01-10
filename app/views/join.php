@@ -82,3 +82,21 @@
   </div>
 </div>
 </div>
+
+<script>
+  // overlay the google map iframe
+  function overlayGoogleMaps() {
+    var w = $('#gmap').width();
+    var h = $('#gmap').height();
+
+    $('.map-overlay').width(w);
+    $('.map-overlay').height(h);
+  }
+
+  $(document).ready(function() {
+    overlayGoogleMaps();
+    $(window).resize(function() {
+      overlayGoogleMaps();
+    });
+  });
+</script>
