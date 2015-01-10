@@ -39,16 +39,22 @@
 
 header {
   .top-bar-section {
-    @media (max-width:840px) { display: none; }
+    @media (max-width:$topbar-breakpoint) { display: none; }
     ul li {
-      margin: 0 5px;
-      border: 1px solid transparent;
+      margin: 0;
+      border-bottom: 2px solid transparent;
     }
     ul li.active { border-color: #fff; }
     ul li:hover { border-color: #fff; }
   }
-  .title-area li a { border: 1px solid transparent; }
-  .title-area li a:hover { border: 1px solid #fff; }
+
+  .top-bar .toggle-topbar a {
+    border: 1px solid transparent;
+    padding: 5px 12px 0;
+    &:hover {
+      border: 1px solid #fff;
+    }
+  }
 
   background: $sase-blue;
   background-position: center center;

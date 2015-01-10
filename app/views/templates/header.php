@@ -4,11 +4,11 @@
 <!--[if IE 8]>        <html lang="en" class="no-js lt-ie9"><![endif]-->
 <!--[if gt IE 8]><!--><html lang="en" class="no-js"><!--<![endif]-->
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
   <title><?=$title?></title>
-  <link rel="stylesheet" href="<?=base_url()?>public/css/foundation5.css" />
-  <link rel="stylesheet" href="<?=base_url()?>public/css/font-awesome.css" />
+  <link rel="stylesheet" href="<?=base_url()?>public/css/foundation5.css"/>
+  <link rel="stylesheet" href="<?=base_url()?>public/css/font-awesome.css"/>
   <script src="<?=base_url()?>public/js/modernizr.js"></script>
   <script src="<?=base_url()?>public/js/jquery.min.js"></script>
 </head>
@@ -28,7 +28,7 @@
     <div class="row">
       <div class="small-9 medium-4 columns">
         <a href="<?=base_url()?>"><img src="<?=base_url()?>public/img/site/northeastern_sase_white.png"
-          width="300" />
+          width="300"/>
         </a>
       </div>
       <div class="small-3 medium-8 columns">
