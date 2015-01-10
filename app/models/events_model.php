@@ -67,9 +67,7 @@ class Events_model extends CI_Model {
     $this->db->where('date >=', $today);
     $this->db->where('semester', $semester);
     $this->db->where('year', $year);
-
-    $this->db->where('meeting', 0);
-    $this->db->where('service', 0);
+    $this->db->where('type', 'event');
 
     $this->db->order_by('date', 'asc');
     $this->db->order_by('time', 'asc');
@@ -83,8 +81,7 @@ class Events_model extends CI_Model {
     $this->db->where('date >=', $today);
     $this->db->where('semester', $semester);
     $this->db->where('year', $year);
-
-    $this->db->where('meeting', 1);
+    $this->db->where('type', 'meeting');
 
     $this->db->order_by('date', 'asc');
     $this->db->order_by('time', 'asc');
@@ -98,8 +95,7 @@ class Events_model extends CI_Model {
     $this->db->where('date >=', $today);
     $this->db->where('semester', $semester);
     $this->db->where('year', $year);
-
-    $this->db->where('service', 1);
+    $this->db->where('type', 'service');
 
     $this->db->order_by('date', 'asc');
     $this->db->order_by('time', 'asc');
