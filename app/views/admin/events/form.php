@@ -207,23 +207,28 @@
       </div>
       <div class="row">
         <div class="small-12 columns">
-          <input type="checkbox" name="meeting" value="1"
-            <?php if (isset($entry->meeting) && $entry->meeting == 1): ?>
+          <label>Event Type</label>
+          <input type="radio" name="type" id="event" value="event"
+            <?php if (isset($entry->type) && $entry->type == 'event'): ?>
               checked
             <?php else: ?>
-              <?=set_checkbox('meeting','1',FALSE)?>
+              <?=set_radio('type','event',TRUE)?>
             <?php endif; ?>
-          />
-          <label for="meeting">general meeting</label>
-          <br />
-          <input type="checkbox" name="service" value="1"
-            <?php if (isset($entry->service) && $entry->service == 1): ?>
+          /><label for="event">event</label>
+          <input type="radio" name="type" id="meeting" value="meeting"
+            <?php if (isset($entry->type) && $entry->type == 'meeting'): ?>
               checked
             <?php else: ?>
-              <?=set_checkbox('service','1',FALSE)?>
+              <?=set_radio('type','meeting')?>
             <?php endif; ?>
-          />
-          <label for="service">community service</label>
+          /><label for="meeting">meeting</label>
+          <input type="radio" name="type" id="service" value="service"
+            <?php if (isset($entry->type) && $entry->type == 'service'): ?>
+              checked
+            <?php else: ?>
+              <?=set_radio('type','service')?>
+            <?php endif; ?>
+          /><label for="service">service</label>
         </div>
       </div>
       <hr />
@@ -239,19 +244,7 @@
 </div>
 
 <script>
-  function update_checkbox_value(name) {
-    var value = 0;
-    var elem = 'input[name="' + name + '"]';
-
-    if ($(elem).prop('checked')) {
-      value = 1;
-    }
-    $(elem).val(value);
-  }
-
   function update_all_day_checkbox() {
-    update_checkbox_value('all_day');
-
     var state = false;
     if ($('input[name="all_day"]').prop('checked')) {
       state = true;
@@ -263,16 +256,6 @@
   }
 
   $(document).ready(function() {
-    update_checkbox_value('meeting');
-    $('input[name="meeting"]').change(function() {
-      update_checkbox_value('meeting');
-    });
-
-    update_checkbox_value('service');
-    $('input[name="service"]').change(function() {
-      update_checkbox_value('service');
-    });
-
     update_all_day_checkbox();
     var box = $('input[name="all_day"]');
     box.css('margin-bottom', 0);

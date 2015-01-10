@@ -137,7 +137,7 @@ class Events extends CI_Controller {
 
     if (isset($input['all_day']))
     {
-      $parsed_time = '';
+      $parsed_time = date('H:i:s', strtotime('00:00:00'));
     }
     else
     {
@@ -153,8 +153,7 @@ class Events extends CI_Controller {
       'description' => $input['description'],
       'semester' => $input['semester'],
       'year' => $input['year'],
-      'meeting' => (isset($input['meeting']) ? 1 : 0),
-      'service' => (isset($input['service']) ? 1 : 0),
+      'type' => $input['type'],
       'all_day' => (isset($input['all_day']) ? 1 : 0)
     );
     return $entry;

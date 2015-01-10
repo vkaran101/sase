@@ -23,10 +23,11 @@
       <table>
         <thead>
           <tr>
-            <?php foreach ($query->list_fields() as $column): ?>
-              <?php if ($column == 'id' || $column == 'all_day'): #do nothing ?>
+            <?php foreach ($query->list_fields() as $col): ?>
+              <?php if ($col == 'id' || $col == 'all_day' || $col == 'year'): #do nothing ?>
+              <?php elseif ($col == 'created' || $col == 'updated'): #do nothing ?>
               <?php else: ?>
-                <th><?=$column?></th>
+                <th><?=$col?></th>
               <?php endif; ?>
             <?php endforeach; ?>
           </tr>
@@ -36,8 +37,8 @@
             <tr>
               <td>
                 <a href="<?=base_url()?>admin/events/show/<?=$entry->id?>">
-                  <?php if (strlen($entry->title) > 20): ?>
-                    <?=substr($entry->title,0,20).' ...'?>
+                  <?php if (strlen($entry->title) > 15): ?>
+                    <?=substr($entry->title,0,15).' ...'?>
                   <?php else: ?>
                     <?=$entry->title?>
                   <?php endif; ?>
@@ -52,8 +53,8 @@
                 <?php endif; ?>
               </td>
               <td>
-                <?php if (strlen($entry->location) > 20): ?>
-                  <?=substr($entry->location,0,20).' ...'?>
+                <?php if (strlen($entry->location) > 15): ?>
+                  <?=substr($entry->location,0,15).' ...'?>
                 <?php else: ?>
                   <?=$entry->location?>
                 <?php endif; ?>
@@ -65,24 +66,8 @@
                   <?=$entry->description?>
                 <?php endif; ?>
               </td>
-              <td><?=$entry->semester?></td>
-              <td><?=$entry->year?></td>
-              <td>
-                <?php if ($entry->meeting): ?>
-                  <i class="fa fw fa-check"></i>
-                <?php else: ?>
-                  <i class="fa fw fa-minus"></i>
-                <?php endif; ?>
-              </td>
-              <td>
-                <?php if ($entry->service): ?>
-                  <i class="fa fw fa-check"></i>
-                <?php else: ?>
-                  <i class="fa fw fa-minus"></i>
-                <?php endif; ?>
-              </td>
-              <td><?=date('n/j/y g:ia',strtotime($entry->created))?></td>
-              <td><?=date('n/j/y g:ia',strtotime($entry->updated))?></td>
+              <td><?=$entry->semester.' '.$entry->year?></td>
+              <td><?=$entry->type?></td>
             </tr>
           <?php endforeach; ?>
         </tbody>

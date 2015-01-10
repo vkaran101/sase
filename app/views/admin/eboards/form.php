@@ -21,9 +21,9 @@
       <div class="row">
         <div class="small-12 columns text-center">
           <?php if (isset($member->pic) && $member->pic != ''): ?>
-            <img class="img-circle" src="<?=base_url().$member->pic?>"/>
+            <img class="img-circle" src="<?=base_url().$member->pic?>" width="200"/>
           <?php else: ?>
-            <img class="img-circle" src="<?=base_url()?>public/img/eboard/generic.png"/>
+            <img class="img-circle" src="<?=base_url()?>public/img/eboard/generic.png" width="200"/>
           <?php endif; ?>
           <input type="file" name="pic" id="pic" accept="image/*"/>
           <?=$pic_errors?>

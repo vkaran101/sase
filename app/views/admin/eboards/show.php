@@ -20,7 +20,7 @@
     </p>
     <div class="row">
       <div class="small-12 columns text-center">
-        <img class="img-circle" src="<?=base_url().$member->pic?>"/>
+        <img class="img-circle" src="<?=base_url().$member->pic?>" width="200"/>
       </div>
     </div>
     <br/>
@@ -57,9 +57,9 @@
     <br />
     <div class="row">
       <div class="small-12 columns">
-        <strong>Created: </strong><?=date('n/j/y g:i a',strtotime($member->created))?>
+        <strong>Created: </strong><?=date('n/j/Y g:i a',strtotime($member->created))?>
         <br/>
-        <strong>Updated: </strong><?=date('n/j/y g:i a',strtotime($member->updated))?>
+        <strong>Updated: </strong><?=date('n/j/Y g:i a',strtotime($member->updated))?>
       </div>
     </div>
     <hr />

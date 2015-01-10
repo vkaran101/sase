@@ -24,7 +24,7 @@
     </div>
     <div class="row">
       <div class="small-12 columns">
-        <strong>Date: </strong><?=date('n/j/y', strtotime($entry->date))?>
+        <strong>Date: </strong><?=date('n/j/Y', strtotime($entry->date))?>
       </div>
     </div>
     <div class="row">
@@ -49,6 +49,11 @@
     </div>
     <div class="row">
       <div class="small-12 columns">
+        <strong>Event Type: </strong><?=$entry->type?>
+      </div>
+    </div>
+    <div class="row">
+      <div class="small-12 columns">
         <br/>
         <strong>Description:</strong>
         <br/>
@@ -58,27 +63,9 @@
     <br />
     <div class="row">
       <div class="small-12 columns">
-        <?php if ($entry->meeting): ?>
-          <i class="fa fw fa-check"></i>
-        <?php else: ?>
-          <i class="fa fw fa-minus"></i>
-        <?php endif; ?>
-        general meeting
-        <br />
-        <?php if ($entry->service): ?>
-          <i class="fa fw fa-check"></i>
-        <?php else: ?>
-          <i class="fa fw fa-minus"></i>
-        <?php endif; ?>
-        community service
-      </div>
-    </div>
-    <br />
-    <div class="row">
-      <div class="small-12 columns">
-        <strong>Created: </strong><?=date('n/j/y g:i a',strtotime($entry->created))?>
+        <strong>Created: </strong><?=date('n/j/Y g:i a',strtotime($entry->created))?>
         <br/>
-        <strong>Updated: </strong><?=date('n/j/y g:i a',strtotime($entry->updated))?>
+        <strong>Updated: </strong><?=date('n/j/Y g:i a',strtotime($entry->updated))?>
       </div>
     </div>
     <hr />

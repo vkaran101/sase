@@ -34,8 +34,9 @@ $config = array(
     array('field' => 'year','label' => 'Year',
       'rules' => 'required|integer|exact_length[4]|greater_than[2012]'
     ),
-    array('field' => 'meeting','label' => 'General meeting checkbox','rules' => ''),
-    array('field' => 'service','label' => 'Community service checkbox','rules' => '')
+    array('field' => 'type','label' => 'Event Type',
+      'rules' => 'required'
+    )
   ),
   'eboards' => array(
     array('field' => 'name','label' => 'Name',

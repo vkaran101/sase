@@ -119,7 +119,6 @@ class Events_model extends CI_Model {
     $data['created'] = date('Y-m-d H:i:s');
     $this->db->insert('events', $data);
 
-    unset($data['time']);
     $this->db->select('id');
     $this->db->where($data);
     $query = $this->db->get('events');

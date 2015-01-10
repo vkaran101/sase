@@ -23,12 +23,13 @@
       <table>
         <thead>
           <tr>
-            <?php foreach ($query->list_fields() as $column): ?>
-              <?php if($column == 'id'): ?>
+            <?php foreach ($query->list_fields() as $col): ?>
+              <?php if($col == 'id'): ?>
                 <th>rank</th>
-              <?php elseif($column == 'rank' || $column == 'pic'): #do nothing ?>
+              <?php elseif($col == 'rank' || $col == 'pic' || $col == 'year'): #do nothing ?>
+              <?php elseif($col == 'created' || $col == 'updated'): #do nothing ?>
               <?php else: ?>
-                <th><?=$column?></th>
+                <th><?=$col?></th>
               <?php endif; ?>
             <?php endforeach; ?>
           </tr>
@@ -45,10 +46,7 @@
               <td><?=$member->position?></td>
               <td><?=$member->major?></td>
               <td><?=$member->grad_year?></td>
-              <td><?=$member->semester?></td>
-              <td><?=$member->year?></td>
-              <td><?=date('n/j/y g:ia',strtotime($member->created))?></td>
-              <td><?=date('n/j/y g:ia',strtotime($member->updated))?></td>
+              <td><?=$member->semester.' '.$member->year?></td>
             </tr>
           <?php endforeach; ?>
         </tbody>
