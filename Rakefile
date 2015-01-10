@@ -21,6 +21,7 @@ task :update do
 
   files = Rake::FileList["**/foundation/js/foundation.min.js",
                          "**/dist/jquery.min.js",
+                         "**/dist/jquery.min.map",
                          "**/modernizr/modernizr.js"]
   files.each do |js_file|
     public_file = "public/js/" + js_file.pathmap("%f")
