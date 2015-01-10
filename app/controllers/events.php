@@ -25,25 +25,21 @@ class Events extends CI_Controller {
     $this->load->view('templates/footer');
   }
 
-  public function past($sem = NULL, $yr = NULL)
+  public function past($semester = NULL, $year = NULL)
   {
-    if (!$sem)
+    if (!$semester || !$year)
     {
-      $sem = $this->settings_model->get_by_name('current_semester')->row()->value;
+      $semester = $this->settings_model->get_by_name('current_semester')->row()->value;
+      $year = $this->settings_model->get_by_name('current_year')->row()->value;
     }
 
-    if (!$yr)
-    {
-      $yr = $this->settings_model->get_by_name('current_year')->row()->value;
-    }
-
-    $this->data['query'] = $this->events_model->get_all_past($sem, $yr);
+    $this->data['events'] = $this->events_model->get_all_past($semester, $year);
     $this->data['semester_list'] = $this->events_model->get_all_semesters();
-    $this->data['semester'] = $sem;
-    $this->data['year'] = $yr;
+    $this->data['semester'] = $semester;
+    $this->data['year'] = $year;
     $this->data['title'] = 'Past Events - Northeastern SASE';
 
-    $this->load->view('templates/header',$this->data);
+    $this->load->view('templates/header', $this->data);
     $this->load->view('past_events', $this->data);
     $this->load->view('templates/footer');
   }

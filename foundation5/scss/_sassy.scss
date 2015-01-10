@@ -204,8 +204,31 @@ footer {
   }
 }
 
-.side-nav li.active {
-  background-color: #eee;
+// past events
+
+.side-label-nav {
+  @include side-nav();
+  padding: 0;
+  li {
+    margin: 0;
+    border-left: 3px solid #eee;
+    &:hover {
+      border-left: 3px solid $sase-blue;
+    }
+  }
+  li.active {
+    background: rgba(0,0,0,0.03);
+    border-left: 3px solid $sase-blue;
+  }
+  li a:not(.button) {
+    color: rgba(0,0,0,0.7);
+    &:hover {
+      color: $sase-blue;
+    }
+  }
+  li.active > a:first-child:not(.button) {
+    color: $sase-blue;
+  }
 }
 
 /************************************************/
