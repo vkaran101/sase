@@ -375,3 +375,14 @@ footer {
   padding: 20px;
   margin-top: 100px;
 }
+
+#user {
+  padding-top: 10px;
+  a { color: #fff; }
+  a:hover { color: $sase-green; }
+}
+
+.actions {
+  a { color: #000 };
+  a:hover { color: $sase-blue; };
+}

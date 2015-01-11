@@ -86,12 +86,12 @@ $config = array(
       'rules' => 'trim|required'
     )
   ),
-  'semester_change' => array(
-    array('field' => 'semester', 'label' => 'Semester',
-      'rules' => 'required'
+  'settings' => array(
+    array('field' => 'name', 'label' => 'Name',
+      'rules' => 'trim|required'
     ),
-    array('field' => 'year', 'label' => 'Year',
-      'rules' => 'required|integer|exact_length[4]|greater_than[2012]'
+    array('field' => 'value', 'label' => 'Value',
+      'rules' => 'trim|required'
     )
   )
 );

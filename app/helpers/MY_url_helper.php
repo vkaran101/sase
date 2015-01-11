@@ -3,12 +3,11 @@
 function active_nav($link)
 {
   $uri = current_url();
-
-  if (strpos($uri,$link) !== false)
+  if (strpos($uri, $link) !== false)
   {
     echo 'active';
   }
-  else if ($link === 'home' && $uri === base_url())
+  elseif ($link === 'home' && $uri === base_url())
   {
     echo 'active';
   }
@@ -18,3 +17,22 @@ function active_nav($link)
   }
 }
 
+function admin_nav($link)
+{
+  $uri = current_url();
+  if (strpos($uri, $link) !== false)
+  {
+    echo 'active';
+  }
+  elseif ($link === 'home')
+  {
+    if ($uri === base_url().'admin' || $uri === base_url().'admin/')
+    {
+      echo 'active';
+    }
+  }
+  else
+  {
+    echo '';
+  }
+}
