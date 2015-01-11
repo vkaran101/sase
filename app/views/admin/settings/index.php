@@ -12,41 +12,43 @@
     <h3>Settings</h3>
     <i class="fa fa-fw fa-plus-square"></i>
     <a href="<?=base_url()?>admin/settings/create">create new setting</a>
-    <table>
-      <thead>
-        <tr>
-          <th>actions</th><th>id</th>
-          <th>name</th><th>value</th>
-          <th>created</th><th>updated</th>
-        </tr>
-      </thead>
-      <tbody>
-        <?php if ($settings->num_rows() == 0): ?>
-          <tr><td></td></tr>
-        <?php else: ?>
-          <?php foreach ($settings->result() as $setting): ?>
-            <tr>
-              <td>
-                <div class="actions">
-                  <a href="<?=base_url()?>admin/settings/edit/<?=$setting->id?>" title="Edit">
-                    <i class="fa fa-fw fa-pencil-square-o"></i>
-                  </a>
-                  <a href="<?=base_url()?>admin/settings/destroy/<?=$setting->id?>"
-                    title="Delete" class="delete">
-                    <i class="fa fa-fw fa-trash-o"></i>
-                  </a>
-                </div>
-              </td>
-              <td><?=$setting->id?></td>
-              <td><?=$setting->name?></td>
-              <td><?=$setting->value?></td>
-              <td><?=date('n/j/y g:ia', strtotime($setting->created))?></td>
-              <td><?=date('n/j/y g:ia', strtotime($setting->updated))?></td>
-            </tr>
-          <?php endforeach; ?>
-        <?php endif; ?>
-      </tbody>
-    </table>
+    <div class="overflow">
+      <table>
+        <thead>
+          <tr>
+            <th>actions</th><th>id</th>
+            <th>name</th><th>value</th>
+            <th>created</th><th>updated</th>
+          </tr>
+        </thead>
+        <tbody>
+          <?php if ($settings->num_rows() == 0): ?>
+            <tr><td></td></tr>
+          <?php else: ?>
+            <?php foreach ($settings->result() as $setting): ?>
+              <tr>
+                <td>
+                  <div class="actions">
+                    <a href="<?=base_url()?>admin/settings/edit/<?=$setting->id?>" title="Edit">
+                      <i class="fa fa-fw fa-pencil-square-o"></i>
+                    </a>
+                    <a href="<?=base_url()?>admin/settings/destroy/<?=$setting->id?>"
+                      title="Delete" class="delete">
+                      <i class="fa fa-fw fa-trash-o"></i>
+                    </a>
+                  </div>
+                </td>
+                <td><?=$setting->id?></td>
+                <td><?=$setting->name?></td>
+                <td><?=$setting->value?></td>
+                <td><?=date('n/j/y g:ia', strtotime($setting->created))?></td>
+                <td><?=date('n/j/y g:ia', strtotime($setting->updated))?></td>
+              </tr>
+            <?php endforeach; ?>
+          <?php endif; ?>
+        </tbody>
+      </table>
+    </div>
     <p>Total <?=$settings->num_rows()?> entries</p>
   </div>
 </div>

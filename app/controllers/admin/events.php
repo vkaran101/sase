@@ -13,16 +13,29 @@ class Events extends CI_Controller {
     }
 
     $this->load->model('events_model');
+    $this->load->model('settings_model');
     $this->load->library('form_validation');
     $this->load->helper('form');
     $this->load->helper('url');
     $this->set_form_validation_delimiters();
+    $this->data['user'] = $this->ion_auth->user()->row();
+    $this->data['semester_list'] = $this->events_model->get_all_semesters();
   }
 
-  public function index()
+  public function index($semester = NULL, $year = NULL)
   {
-    $this->data['query'] = $this->events_model->get_all();
+    if (!$semester || !$year)
+    {
+      $semester = $this->settings_model->get_by_name('current_semester')->row()->value;
+      $year = $this->settings_model->get_by_name('current_year')->row()->value;
+    }
+    $this->data['events'] = $this->events_model->get_all($semester, $year);
+    $this->data['title'] = 'Events';
+    $this->data['semester'] = $semester;
+    $this->data['year'] = $year;
+    $this->load->view('admin/templates/header', $this->data);
     $this->load->view('admin/events/index', $this->data);
+    $this->load->view('admin/templates/footer');
   }
 
   public function create()
@@ -30,7 +43,9 @@ class Events extends CI_Controller {
     $this->data['title'] = 'Create New Event';
     $this->data['action'] = 'add';
     $this->data['cancel_action'] = base_url().'admin/events';
+    $this->load->view('admin/templates/header', $this->data);
     $this->load->view('admin/events/form', $this->data);
+    $this->load->view('admin/templates/footer');
   }
 
   public function add()
@@ -61,8 +76,11 @@ class Events extends CI_Controller {
       show_error('Missing event entry identifier.');
     }
 
+    $this->data['title'] = 'Event Entry';
     $this->data['entry'] = $this->events_model->get_by_id($id)->row();
+    $this->load->view('admin/templates/header', $this->data);
     $this->load->view('admin/events/show', $this->data);
+    $this->load->view('admin/templates/footer');
   }
 
   public function edit($id = 0)
@@ -76,7 +94,9 @@ class Events extends CI_Controller {
     $this->data['action'] = 'update/'.$id;
     $this->data['cancel_action'] = base_url().'admin/events/show/'.$id;
     $this->data['entry'] = $this->events_model->get_by_id($id)->row();
+    $this->load->view('admin/templates/header', $this->data);
     $this->load->view('admin/events/form', $this->data);
+    $this->load->view('admin/templates/footer');
   }
 
   public function update($id = 0)
@@ -91,7 +111,9 @@ class Events extends CI_Controller {
       $this->data['title'] = 'Edit Event Entry';
       $this->data['action'] = 'update/'.$id;
       $this->data['cancel_action'] = base_url().'admin/events/show/'.$id;
+      $this->load->view('admin/templates/header', $this->data);
       $this->load->view('admin/events/form', $this->data);
+      $this->load->view('admin/templates/footer');
       return;
     }
 
@@ -102,7 +124,9 @@ class Events extends CI_Controller {
       $this->data['title'] = 'Edit Event Entry';
       $this->data['action'] = 'update/'.$id;
       $this->data['cancel_action'] = base_url().'admin/events/show/'.$id;
+      $this->load->view('admin/templates/header', $this->data);
       $this->load->view('admin/events/form', $this->data);
+      $this->load->view('admin/templates/footer');
       return;
     }
 
