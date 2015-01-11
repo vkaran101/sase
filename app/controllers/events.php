@@ -12,8 +12,8 @@ class Events extends CI_Controller {
 
   public function index()
   {
-    $semester = $this->settings_model->get_by_name('current_semester')->row()->value;
-    $year = $this->settings_model->get_by_name('current_year')->row()->value;
+    $semester = $this->settings_model->get_value('current_semester');
+    $year = $this->settings_model->get_value('current_year');
 
     $this->data['title'] = 'Events - Northeastern SASE';
     $this->data['upcoming'] = $this->events_model->get_upcoming_events($semester, $year);
@@ -29,8 +29,8 @@ class Events extends CI_Controller {
   {
     if (!$semester || !$year)
     {
-      $semester = $this->settings_model->get_by_name('current_semester')->row()->value;
-      $year = $this->settings_model->get_by_name('current_year')->row()->value;
+      $semester = $this->settings_model->get_value('current_semester');
+      $year = $this->settings_model->get_value('current_year');
     }
 
     $this->data['events'] = $this->events_model->get_all_past($semester, $year);

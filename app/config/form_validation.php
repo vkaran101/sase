@@ -59,7 +59,8 @@ $config = array(
     ),
     array('field' => 'year','label' => 'Year',
       'rules' => 'required|integer|exact_length[4]|greater_than[2012]'
-    )
+    ),
+    array('field' => 'pic-value','label' => 'Picture Value','rules' => '')
   ),
   'newsletter' => array(
     array('field'=>'fname','label'=>'First Name',

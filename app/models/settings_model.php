@@ -27,6 +27,16 @@ class Settings_model extends CI_Model {
     return $this->db->get('settings');
   }
 
+  function get_value($setting)
+  {
+    $query = $this->get_by_name($setting);
+    if ($query->num_rows() == 0)
+    {
+      return '';
+    }
+    return $query->row()->value;
+  }
+
   // insert new setting into table and return id
   // created and updated timestamps set to current time
   function save($data)

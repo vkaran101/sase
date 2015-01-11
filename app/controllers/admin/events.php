@@ -26,13 +26,14 @@ class Events extends CI_Controller {
   {
     if (!$semester || !$year)
     {
-      $semester = $this->settings_model->get_by_name('current_semester')->row()->value;
-      $year = $this->settings_model->get_by_name('current_year')->row()->value;
+      $semester = $this->settings_model->get_value('current_semester');
+      $year = $this->settings_model->get_value('current_year');
     }
-    $this->data['events'] = $this->events_model->get_all($semester, $year);
+
     $this->data['title'] = 'Events';
     $this->data['semester'] = $semester;
     $this->data['year'] = $year;
+    $this->data['events'] = $this->events_model->get_all($semester, $year);
     $this->load->view('admin/templates/header', $this->data);
     $this->load->view('admin/events/index', $this->data);
     $this->load->view('admin/templates/footer');

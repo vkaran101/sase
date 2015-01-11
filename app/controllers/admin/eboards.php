@@ -15,16 +15,30 @@ class Eboards extends CI_Controller {
     }
 
     $this->load->model('eboards_model');
+    $this->load->model('settings_model');
     $this->load->library('form_validation');
     $this->load->helper('form');
     $this->load->helper('url');
     $this->set_form_validation_delimiters();
+    $this->data['user'] = $this->ion_auth->user()->row();
+    $this->data['semester_list'] = $this->eboards_model->get_all_semesters();
   }
 
-  public function index()
+  public function index($semester = NULL, $year = NULL)
   {
-    $this->data['query'] = $this->eboards_model->get_all();
+    if (!$semester || !$year)
+    {
+      $semester = $this->settings_model->get_value('current_semester');
+      $year = $this->settings_model->get_value('current_year');
+    }
+
+    $this->data['title'] = 'Eboards';
+    $this->data['semester'] = $semester;
+    $this->data['year'] = $year;
+    $this->data['eboards'] = $this->eboards_model->get_all($semester, $year);
+    $this->load->view('admin/templates/header', $this->data);
     $this->load->view('admin/eboards/index', $this->data);
+    $this->load->view('admin/templates/footer');
   }
 
   public function create()
@@ -33,7 +47,9 @@ class Eboards extends CI_Controller {
     $this->data['action'] = 'add';
     $this->data['cancel_action'] = base_url().'admin/eboards';
     $this->data['pic_errors'] = '';
+    $this->load->view('admin/templates/header', $this->data);
     $this->load->view('admin/eboards/form', $this->data);
+    $this->load->view('admin/templates/footer');
   }
 
   public function add()
@@ -50,31 +66,37 @@ class Eboards extends CI_Controller {
     $member = $this->parse_post_input($input);
     $member['pic'] = $this->default_img;
 
-    // configure and load the upload helper
-    $config['upload_path'] = 'public/img/eboard/uploads/';
-    $config['allowed_types'] = 'gif|jpg|jpeg|png';
-    $config['overwrite'] = TRUE;
-    $config['file_name'] = $member['position'].'_'.$member['semester'].'_'.$member['year'];
-    $this->load->library('upload', $config);
+    if (!$input['pic-value'] == '')
+    {
+      // configure and load the upload helper
+      $config['upload_path'] = 'public/img/eboard/uploads/';
+      $config['allowed_types'] = 'gif|jpg|jpeg|png';
+      $config['overwrite'] = TRUE;
+      $config['file_name'] = $member['position'].'_'.$member['semester'].'_'.$member['year'];
+      $this->load->library('upload', $config);
 
-    $field = 'pic';
-    if (!$this->upload->do_upload($field))
-    {
-      // upload failed, reload the form view with upload errors
-      $this->data['title'] = 'Add New Eboard Member';
-      $this->data['action'] = 'add';
-      $this->data['cancel_action'] = base_url().'admin/eboards';
-      $this->data['pic_errors'] = $this->upload->display_errors(
-        '<div data-alert class="alert-box alert radius">',
-        '<a href="#" class="close">&times;</a></div>'
-      );
-      $this->load->view('admin/eboards/form', $this->data);
-    }
-    else
-    {
-      // upload successful, set the pic path
-      $pic = $this->upload->data();
-      $member['pic'] = 'public/img/eboard/uploads/'.$pic['file_name'];
+      $field = 'pic';
+      if (!$this->upload->do_upload($field))
+      {
+        // upload failed, reload the form view with upload errors
+        $this->data['title'] = 'Add New Eboard Member';
+        $this->data['action'] = 'add';
+        $this->data['cancel_action'] = base_url().'admin/eboards';
+        $this->data['pic_errors'] = $this->upload->display_errors(
+          '<div data-alert class="alert-box alert radius">',
+          '<a href="#" class="close">&times;</a></div>'
+        );
+        $this->load->view('admin/templates/header', $this->data);
+        $this->load->view('admin/eboards/form', $this->data);
+        $this->load->view('admin/templates/footer');
+        return;
+      }
+      else
+      {
+        // upload successful, set the pic path
+        $pic = $this->upload->data();
+        $member['pic'] = 'public/img/eboard/uploads/'.$pic['file_name'];
+      }
     }
 
     $id = $this->eboards_model->save($member);
@@ -88,8 +110,11 @@ class Eboards extends CI_Controller {
       show_error('Missing eboard member identifier.');
     }
 
+    $this->data['title'] = 'Eboard Member';
     $this->data['member'] = $this->eboards_model->get_by_id($id)->row();
+    $this->load->view('admin/templates/header', $this->data);
     $this->load->view('admin/eboards/show', $this->data);
+    $this->load->view('admin/templates/footer');
   }
 
   public function edit($id = 0)
@@ -99,13 +124,14 @@ class Eboards extends CI_Controller {
       show_error('Missing eboard member identifier.');
     }
 
-    $member = $this->eboards_model->get_by_id($id)->row();
     $this->data['title'] = 'Edit Eboard Member';
     $this->data['action'] = 'update/'.$id;
     $this->data['cancel_action'] = base_url().'admin/eboards/show/'.$id;
     $this->data['pic_errors'] = '';
-    $this->data['member'] = $member;
+    $this->data['member'] = $this->eboards_model->get_by_id($id)->row();
+    $this->load->view('admin/templates/header', $this->data);
     $this->load->view('admin/eboards/form', $this->data);
+    $this->load->view('admin/templates/footer');
   }
 
   public function update($id = 0)
@@ -122,38 +148,47 @@ class Eboards extends CI_Controller {
       $this->data['action'] = 'update/'.$id;
       $this->data['cancel_action'] = base_url().'admin/eboards/show/'.$id;
       $this->data['pic_errors'] = '';
+      $this->load->view('admin/templates/header', $this->data);
       $this->load->view('admin/eboards/form', $this->data);
+      $this->load->view('admin/templates/footer');
+      return;
     }
 
     // grab the post data
     $input = $this->input->post(NULL, TRUE);
     $member = $this->parse_post_input($input);
 
-    // configure and load the upload helper
-    $config['upload_path'] = 'public/img/eboard/uploads/';
-    $config['allowed_types'] = 'gif|jpg|jpeg|png';
-    $config['overwrite'] = TRUE;
-    $config['file_name'] = $member['position'].'_'.$member['semester'].'_'.$member['year'];
-    $this->load->library('upload', $config);
+    if (!$input['pic-value'] == '')
+    {
+      // configure and load the upload helper
+      $config['upload_path'] = 'public/img/eboard/uploads/';
+      $config['allowed_types'] = 'gif|jpg|jpeg|png';
+      $config['overwrite'] = TRUE;
+      $config['file_name'] = $member['position'].'_'.$member['semester'].'_'.$member['year'];
+      $this->load->library('upload', $config);
 
-    $field = 'pic';
-    if (!$this->upload->do_upload($field))
-    {
-      // upload failed, reload form view with upload errors
-      $this->data['title'] = 'Edit Eboard Member';
-      $this->data['action'] = 'update/'.$id;
-      $this->data['cancel_action'] = base_url().'admin/eboards/show/'.$id;
-      $this->data['pic_errors'] = $this->upload->display_errors(
-        '<div data-alert class="alert-box alert radius">',
-        '<a href="#" class="close">&times;</a></div>'
-      );
-      $this->load->view('admin/eboards/form', $this->data);
-    }
-    else
-    {
-      // upload successful, set the new pic path
-      $pic = $this->upload->data();
-      $member['pic'] = 'public/img/eboard/uploads/'.$pic['file_name'];
+      $field = 'pic';
+      if (!$this->upload->do_upload($field))
+      {
+        // upload failed, reload form view with upload errors
+        $this->data['title'] = 'Edit Eboard Member';
+        $this->data['action'] = 'update/'.$id;
+        $this->data['cancel_action'] = base_url().'admin/eboards/show/'.$id;
+        $this->data['pic_errors'] = $this->upload->display_errors(
+          '<div data-alert class="alert-box alert radius">',
+          '<a href="#" class="close">&times;</a></div>'
+        );
+        $this->load->view('admin/templates/header', $this->data);
+        $this->load->view('admin/eboards/form', $this->data);
+        $this->load->view('admin/templates/footer');
+        return;
+      }
+      else
+      {
+        // upload successful, set the new pic path
+        $pic = $this->upload->data();
+        $member['pic'] = 'public/img/eboard/uploads/'.$pic['file_name'];
+      }
     }
 
     $this->eboards_model->update($id, $member);

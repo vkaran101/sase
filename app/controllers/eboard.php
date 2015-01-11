@@ -12,11 +12,11 @@ class Eboard extends CI_Controller {
 
   public function index()
   {
-    $semester = $this->settings_model->get_by_name('current_semester')->row()->value;
-    $year = $this->settings_model->get_by_name('current_year')->row()->value;
+    $semester = $this->settings_model->get_value('current_semester');
+    $year = $this->settings_model->get_value('current_year');
 
     $this->data['title'] = 'Eboard - Northeastern SASE';
-    $this->data['eboard'] = $this->eboards_model->get_eboard($semester, $year);
+    $this->data['eboard'] = $this->eboards_model->get_all($semester, $year);
 
     $this->load->view('templates/header', $this->data);
     $this->load->view('eboard', $this->data);

@@ -48,7 +48,8 @@
           <thead>
             <tr>
               <?php foreach ($events->list_fields() as $col): ?>
-                <?php if ($col == 'id' || $col == 'all_day' || $col == 'year'): #do nothing ?>
+                <?php if ($col == 'id' || $col == 'all_day'): #do nothing ?>
+                <?php elseif ($col == 'semester' || $col == 'year'): #do nothing ?>
                 <?php elseif ($col == 'created' || $col == 'updated'): #do nothing ?>
                 <?php else: ?>
                   <th><?=$col?></th>
@@ -86,7 +87,6 @@
                     <?=$entry->description?>
                   <?php endif; ?>
                 </td>
-                <td><?=$entry->semester.' '.$entry->year?></td>
                 <td><?=$entry->type?></td>
               </tr>
             <?php endforeach; ?>
@@ -122,67 +122,3 @@
   </div>
   <a class="close-reveal-modal">&#215;</a>
 </div>
-
-<?php /*
-<div>
-  <div>
-    <?php if ($events->num_rows() == 0): ?>
-      <div class="placeholder">no events in database</div>
-    <?php else: ?>
-      <table>
-        <thead>
-          <tr>
-            <?php foreach ($events->list_fields() as $col): ?>
-              <?php if ($col == 'id' || $col == 'all_day' || $col == 'year'): #do nothing ?>
-              <?php elseif ($col == 'created' || $col == 'updated'): #do nothing ?>
-              <?php else: ?>
-                <th><?=$col?></th>
-              <?php endif; ?>
-            <?php endforeach; ?>
-          </tr>
-        </thead>
-        <tbody>
-          <?php foreach ($events->result() as $entry): ?>
-            <tr>
-              <td>
-                <a href="<?=base_url()?>admin/events/show/<?=$entry->id?>">
-                  <?php if (strlen($entry->title) > 15): ?>
-                    <?=substr($entry->title,0,15).' ...'?>
-                  <?php else: ?>
-                    <?=$entry->title?>
-                  <?php endif; ?>
-                </a>
-              </td>
-              <td><?=date('n/j/y', strtotime($entry->date))?></td>
-              <td>
-                <?php if ($entry->all_day): ?>
-                  All day
-                <?php else: ?>
-                  <?=date('g:ia', strtotime($entry->time))?>
-                <?php endif; ?>
-              </td>
-              <td>
-                <?php if (strlen($entry->location) > 15): ?>
-                  <?=substr($entry->location,0,15).' ...'?>
-                <?php else: ?>
-                  <?=$entry->location?>
-                <?php endif; ?>
-              </td>
-              <td>
-                <?php if (strlen($entry->description) > 20): ?>
-                  <?=substr($entry->description,0,20).' ...'?>
-                <?php else: ?>
-                  <?=$entry->description?>
-                <?php endif; ?>
-              </td>
-              <td><?=$entry->semester.' '.$entry->year?></td>
-              <td><?=$entry->type?></td>
-            </tr>
-          <?php endforeach; ?>
-        </tbody>
-      </table>
-      <p>Total <?=$events->num_rows()?> entries</p>
-    <?php endif; ?>
-  </div>
-</div>
- */?>

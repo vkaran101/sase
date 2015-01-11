@@ -1,64 +1,107 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <meta charset="utf-8" />
-  <title>Eboards - NUSASE Admin</title>
-  <meta name="viewport" content="width=device-width,initial-scale=1.0" />
-  <link rel="stylesheet" href="<?=base_url()?>public/css/foundation5.css" />
-  <link rel="stylesheet" href="<?=base_url()?>public/css/font-awesome.css" />
-  <script src="<?=base_url()?>public/js/modernizr.js"></script>
-</head>
-<body>
+<div class="banner text-left">
+  <div class="row">
+    <div class="small-12 columns">
+      <h3>Manage Eboards</h3>
+      <p>
+        Click on name to view more information about eboard member,
+        and to access actions like Edit and Delete.
+      </p>
+      <i class="fa fa-fw fa-plus-square"></i>
+      <a href="<?=base_url()?>admin/eboards/create">add new eboard member</a>
+    </div>
+  </div>
+</div>
 
 <div class="row">
-  <div class="small-12 columns">
-    <h1><a href="<?=base_url()?>admin">Admin Dashboard</a></h1>
-    <hr />
-    <h3>Manage Eboards</h3>
-    <p>Click on name to view more information about eboard member, and to access actions like Edit and Delete.</p>
-    <i class="fa fa-fw fa-plus-square"></i><a href="<?=base_url()?>admin/eboards/create">add new eboard member</a>
-    <?php if ($query->num_rows() == 0): ?>
-      <div class="eboard-placeholder">no eboards in database</div>
+  <div class="small-12 medium-3 columns hide-for-small-only">
+    <h3>Semesters</h3>
+    <?php if ($semester_list->num_rows() == 0): ?>
+      <div class="placeholder">No semesters available to be selected.</div>
     <?php else: ?>
-      <table>
-        <thead>
-          <tr>
-            <?php foreach ($query->list_fields() as $col): ?>
-              <?php if($col == 'id'): ?>
-                <th>rank</th>
-              <?php elseif($col == 'rank' || $col == 'pic' || $col == 'year'): #do nothing ?>
-              <?php elseif($col == 'created' || $col == 'updated'): #do nothing ?>
-              <?php else: ?>
-                <th><?=$col?></th>
-              <?php endif; ?>
-            <?php endforeach; ?>
-          </tr>
-        </thead>
-        <tbody>
-          <?php foreach ($query->result() as $member): ?>
+      <ul class="side-label-nav">
+      <?php foreach ($semester_list->result() as $pair): ?>
+        <?php if (($pair->semester == $semester) && ($pair->year == $year)): ?>
+          <li class="active">
+        <?php else: ?>
+          <li>
+        <?php endif; ?>
+        <a href="<?=base_url().'admin/eboards/index/'.$pair->semester.'/'.$pair->year?>">
+          <?=ucfirst($pair->semester).' '.$pair->year?>
+        </a>
+      <?php endforeach; ?>
+      </ul>
+    <?php endif; ?>
+  </div>
+  <div class="small-12 medium-9 columns">
+    <h3 class="clearfix">
+      <?=ucfirst($semester).' '.$year?>
+      <a data-reveal-id="semester-list" class="button radius secondary tiny right show-for-small-only">
+        Select
+      </a>
+    </h3>
+    <hr/>
+    <?php if ($eboards->num_rows() == 0): ?>
+      <div class="placeholder">No eboard members found.</div>
+    <?php else: ?>
+      <div class="overflow">
+        <table>
+          <thead>
             <tr>
-              <td><?=$member->rank?></td>
-              <td>
-                <a href="<?=base_url()?>admin/eboards/show/<?=$member->id?>">
-                  <?=$member->name?>
-                </a>
-              </td>
-              <td><?=$member->position?></td>
-              <td><?=$member->major?></td>
-              <td><?=$member->grad_year?></td>
-              <td><?=$member->semester.' '.$member->year?></td>
+              <?php foreach ($eboards->list_fields() as $col): ?>
+                <?php if($col == 'id'): ?>
+                  <th>rank</th>
+                <?php elseif ($col == 'rank' || $col == 'pic'): #do nothing ?>
+                <?php elseif ($col == 'semester' || $col == 'year'): #do nothing ?>
+                <?php elseif ($col == 'created' || $col == 'updated'): #do nothing ?>
+                <?php else: ?>
+                  <th><?=$col?></th>
+                <?php endif; ?>
+              <?php endforeach; ?>
             </tr>
-          <?php endforeach; ?>
-        </tbody>
-      </table>
-      <p>Total <?=$query->num_rows()?> entries</p>
+          </thead>
+          <tbody>
+            <?php foreach ($eboards->result() as $member): ?>
+              <tr>
+                <td><?=$member->rank?></td>
+                <td>
+                  <a href="<?=base_url()?>admin/eboards/show/<?=$member->id?>">
+                    <?=$member->name?>
+                  </a>
+                </td>
+                <td><?=$member->position?></td>
+                <td><?=$member->major?></td>
+                <td><?=$member->grad_year?></td>
+              </tr>
+            <?php endforeach; ?>
+          </tbody>
+        </table>
+      </div>
+      <p>Total <?=$eboards->num_rows()?> entries</p>
     <?php endif; ?>
   </div>
 </div>
 
-<script src="<?=base_url()?>public/js/jquery.min.js"></script>
-<script src="<?=base_url()?>public/js/foundation.min.js"></script>
-<script src="<?=base_url()?>public/js/foundation5.js"></script>
-
-</body>
-</html>
+<div id="semester-list" class="reveal-modal" data-reveal>
+  <div class="row">
+    <div class="small-12 columns">
+      <h3>Select Semester</h3>
+      <?php if ($semester_list->num_rows() == 0): ?>
+        <div class="placeholder">No semesters available to be selected.</div>
+      <?php else: ?>
+        <ul class="side-label-nav">
+        <?php foreach ($semester_list->result() as $pair): ?>
+          <?php if (($pair->semester == $semester) && ($pair->year == $year)): ?>
+            <li class="active">
+          <?php else: ?>
+            <li>
+          <?php endif; ?>
+          <a href="<?=base_url().'admin/eboards/index/'.$pair->semester.'/'.$pair->year?>">
+            <?=ucfirst($pair->semester).' '.$pair->year?>
+          </a>
+        <?php endforeach; ?>
+        </ul>
+      <?php endif; ?>
+    </div>
+  </div>
+  <a class="close-reveal-modal">&#215;</a>
+</div>

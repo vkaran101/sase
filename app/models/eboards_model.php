@@ -10,12 +10,19 @@ class Eboards_model extends CI_Model {
   }
 
   // get all members from table
-  function get_all()
+  function get_all($sem = NULL, $yr = NULL)
   {
     $this->db->order_by('year', 'desc');
     $this->db->order_by('semester', 'asc');
     $this->db->order_by('rank', 'asc');
     $this->db->order_by('name', 'asc');
+
+    if ($sem && $yr)
+    {
+      $this->db->where('semester', $sem);
+      $this->db->where('year', $yr);
+    }
+
     return $this->db->get('eboards');
   }
 
@@ -25,13 +32,12 @@ class Eboards_model extends CI_Model {
     return $this->db->get('eboards');
   }
 
-  // get eboard members in specified semester and year sorted by rank
-  function get_eboard($sem, $yr)
+  function get_all_semesters()
   {
-    $this->db->order_by('rank', 'asc');
-    $this->db->order_by('name', 'asc');
-    $this->db->where('semester', $sem);
-    $this->db->where('year', $yr);
+    $this->db->order_by('year', 'desc');
+    $this->db->order_by('semester', 'asc');
+    $this->db->distinct();
+    $this->db->select('semester, year');
     return $this->db->get('eboards');
   }
 

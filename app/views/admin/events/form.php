@@ -212,7 +212,7 @@
         </div>
 
         <hr />
-        <input type="submit" value="Submit" class="button radius small" />
+        <input type="submit" value="Submit" class="button radius small"/>
         <a href="<?=$cancel_action?>" class="button radius small secondary">Cancel</a>
       <?=form_close()?>
 
