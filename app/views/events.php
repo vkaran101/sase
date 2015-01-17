@@ -126,7 +126,7 @@
         <p>Check out our past events to see what we have done!</p>
       </div>
       <div class="small-12 medium-5 columns text-center">
-        <a href="<?=base_url()?>events/past" class="button radius">Past Events</a>
+        <a href="<?=base_url()?>events/past" class="button btn-outline radius">Past Events</a>
       </div>
     </div>
   </div>

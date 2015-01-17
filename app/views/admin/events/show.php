@@ -54,8 +54,8 @@
         </div>
       </div>
       <hr />
-      <a href="<?=base_url()?>admin/events/edit/<?=$entry->id?>" class="button radius small">Edit</a>
-      <input type="button" class="button radius small alert" id="delete" value="Delete"/>
+      <a href="<?=base_url()?>admin/events/edit/<?=$entry->id?>" class="button btn-outline radius small">Edit</a>
+      <input type="button" class="button btn-alert radius small" id="delete" value="Delete"/>
     </div>
   </div>
 </div>

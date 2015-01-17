@@ -22,7 +22,7 @@
         <a href="<?=base_url()?>contact">let us know</a>!
       </p>
       <hr />
-      <a href="<?=base_url()?>" class="button radius">Return Home</a>
+      <a href="<?=base_url()?>" class="button btn-outline radius">Return Home</a>
     </div>
   </div>
 </div>

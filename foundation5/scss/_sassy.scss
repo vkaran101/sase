@@ -144,6 +144,66 @@ footer {
   font-weight: $font-weight-bold;
 }
 
+@mixin button-outline($border, $text) {
+  border: 1px solid $border;
+  color: $border;
+  background: transparent;
+  &:hover,
+  &:focus,
+  &:active {
+    background: $border;
+    color: $text;
+  }
+}
+
+.btn-outline {
+  @include button-outline($sase-blue, #fefefe);
+}
+
+.btn-outline-inverse {
+  @include button-outline(#fefefe, $sase-blue);
+}
+
+.btn-secondary {
+  @include button-outline($charcoal, #fefefe);
+}
+
+.btn-secondary-inverse {
+  @include button-outline(#fefefe, $charcoal);
+}
+
+.btn-alert {
+  @include button-outline($alert-color, #fefefe);
+}
+
+.btn-alert-inverse {
+  @include button-outline(#fefefe, $alert-color);
+}
+
+.btn-success {
+  @include button-outline($success-color, #fefefe);
+}
+
+.btn-success-inverse {
+  @include button-outline(#fefefe, $success-color);
+}
+
+.btn-warning {
+  @include button-outline($warning-color, #fefefe);
+}
+
+.btn-warning-inverse {
+  @include button-outline(#fefefe, $warning-color);
+}
+
+.btn-info {
+  @include button-outline(scale-color($info-color, $lightness: -30%), #fefefe);
+}
+
+.btn-info-inverse {
+  @include button-outline(#fefefe, scale-color($info-color, $lightness: -30%));
+}
+
 /************************************************/
 // home page
 

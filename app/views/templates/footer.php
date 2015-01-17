@@ -2,11 +2,11 @@
 <div class="row">
   <div class="small-12 medium-3 medium-push-3 columns small-only-text-center">
     <p>Subscribe to our mailing list and get awesome updates right in your mailbox!</p>
-    <a href="<?=base_url()?>newsletter" class="button small radius">Sign Up</a>
+    <a href="<?=base_url()?>newsletter" class="button btn-outline-inverse small radius">Sign Up</a>
   </div>
   <div class="small-12 medium-3 medium-push-3 columns small-only-text-center">
     <p>Get involved. Join our SASE chapter or become a national member for free!</p>
-    <a href="<?=base_url()?>join" class="button small radius">Join SASE</a>
+    <a href="<?=base_url()?>join" class="button btn-outline-inverse small radius">Join SASE</a>
     <hr class="divider" />
   </div>
   <div class="small-6 medium-3 medium-pull-6 columns small-only-text-center">

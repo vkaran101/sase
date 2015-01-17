@@ -46,9 +46,11 @@
         </div>
       </div>
       <hr />
-      <a href="<?=base_url()?>admin/eboards/edit/<?=$member->id?>" class="button radius small">Edit</a>
-      <input type="button" class="button radius small secondary" id="reset" value="Reset Picture"/>
-      <input type="button" class="button radius small alert" id="delete" value="Delete"/>
+      <a href="<?=base_url()?>admin/eboards/edit/<?=$member->id?>"
+        class="button btn-outline radius small">Edit
+      </a>
+      <input type="button" class="button btn-secondary radius small" id="reset" value="Reset Picture"/>
+      <input type="button" class="button btn-alert radius small" id="delete" value="Delete"/>
     </div>
   </div>
 </div>

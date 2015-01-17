@@ -44,7 +44,7 @@
         <div class="row">
           <div class="small-12 columns">
             <div class="clear">
-              <button class="button radius" type="submit" name="subscribe" id="mc-embedded-subscribe">
+              <button class="button btn-outline radius" type="submit" name="subscribe" id="mc-embedded-subscribe">
                 <i class="fa fa-fw fa-send"></i>&nbsp; Subscribe
               </button>
             </div>

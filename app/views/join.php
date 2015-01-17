@@ -43,7 +43,7 @@
   </div>
   <div class="small-12 medium-4 columns text-center">
     <a href="http://saseneregion.weebly.com/professional-boston-chapter.html"
-      class="button radius">Learn More
+      class="button btn-outline radius">Learn More
     </a>
   </div>
 </div>
@@ -76,7 +76,7 @@
     </p>
   </div>
   <div class="small-12 medium-4 columns text-center">
-    <a href="http://www.saseconnect.org/become-a-member" class="button radius">
+    <a href="http://www.saseconnect.org/become-a-member" class="button btn-outline radius">
       Become a Member!
     </a>
   </div>

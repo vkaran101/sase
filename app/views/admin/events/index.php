@@ -35,7 +35,7 @@
   <div class="small-12 medium-9 columns">
     <h3 class="clearfix">
       <?=ucfirst($semester).' '.$year?>
-      <a data-reveal-id="semester-list" class="button radius secondary tiny right show-for-small-only">
+      <a data-reveal-id="semester-list" class="button btn-secondary radius tiny right show-for-small-only">
         Select
       </a>
     </h3>

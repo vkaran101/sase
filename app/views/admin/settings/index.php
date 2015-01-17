@@ -2,7 +2,7 @@
   <div class="small-12 columns">
     <br/>
     <a href="<?=base_url()?>">view site</a>
-    <button class="button radius tiny right" id="migrate">Migrate Database</button>
+    <button class="button btn-outline radius tiny right" id="migrate">Migrate Database</button>
     <hr/>
   </div>
 </div>

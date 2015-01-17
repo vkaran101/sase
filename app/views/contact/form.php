@@ -73,7 +73,7 @@
         <hr />
         <div class="row">
           <div class="small-12 columns">
-            <button class="button radius" type="submit">
+            <button class="button btn-outline radius" type="submit">
               <i class="fa fa-fw fa-send"></i> Send!
             </button>
           </div>

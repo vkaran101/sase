@@ -39,7 +39,7 @@
               <?=form_error('password')?>
               <input type="checkbox" value="1" name="remember" id="remember"/>
               <label for="remember">Remember Me</label>
-              <div><input type="submit" value="Login" class="button radius small"/></div>
+              <div><input type="submit" value="Login" class="button btn-outline radius small"/></div>
             <?=form_close()?>
           </div>
         </div>
