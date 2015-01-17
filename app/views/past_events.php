@@ -5,7 +5,7 @@
 </header>
 <section class="main">
 
-<div class="banner text-left">
+<div class="section">
   <div class="row">
     <div class="small-12 medium-4 columns hide-for-small-only">
       <h3>Semesters</h3>

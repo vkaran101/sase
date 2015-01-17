@@ -1,4 +1,4 @@
-<div class="banner text-left">
+<div class="section">
   <div class="row">
     <div class="small-12 medium-8 medium-centered columns">
       <div class="row">

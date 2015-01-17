@@ -1,4 +1,4 @@
-<div class="banner text-left">
+<div class="section">
   <div class="row">
     <div class="small-12 medium-10 medium-centered large-8 columns">
       <h4><?=$title?></h4>

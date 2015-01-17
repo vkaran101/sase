@@ -5,10 +5,10 @@
 </header>
 <section class="main">
 
-<div class="banner" id="upcoming">
+<div class="heading" id="upcoming">
   <h3>Upcoming Events</h3>
 </div>
-<div class="row banner">
+<div class="row section text-center">
   <?php if ($upcoming->num_rows() == 0): ?>
     <div class="small-12 medium-8 medium-centered columns">
       <div class="placeholder">No events planned yet. Check back soon!</div>
@@ -43,10 +43,10 @@
   <?php endif; ?>
 </div>
 
-<div class="banner" id="meeting">
+<div class="heading" id="meeting">
   <h3>General Meetings</h3>
 </div>
-<div class="row banner">
+<div class="row section text-center">
   <?php if ($meetings->num_rows() == 0): ?>
     <div class="small-12 medium-8 medium-centered columns">
       <div class="placeholder">No general meetings planned yet. Check back soon!</div>
@@ -81,10 +81,10 @@
   <?php endif; ?>
 </div>
 
-<div class="banner" id="service">
+<div class="heading" id="service">
   <h3>Community Service</h3>
 </div>
-<div class="row banner">
+<div class="row section text-center">
   <?php if ($services->num_rows() == 0): ?>
     <div class="small-12 medium-8 medium-centered columns">
       <div class="placeholder">No community services planned yet. Check back soon!</div>

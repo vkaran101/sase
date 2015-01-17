@@ -1,4 +1,4 @@
-<div class="banner text-left">
+<div class="section">
   <div class="row">
     <div class="small-12 columns">
       <h3>Manage Eboards</h3>
