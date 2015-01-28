@@ -52,7 +52,7 @@
   // setup homepage background image
 
   var image = "url(/sase/public/img/site/northeastern_winter.jpg)";
-  var shade = "linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5))";
+  var shade = "linear-gradient(rgba(0,0,0,0.45),rgba(0,0,0,0.45))";
   var attribute = shade + ", " + image;
 
   $('header').css("background-image", attribute);
