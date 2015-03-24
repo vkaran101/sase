@@ -15,9 +15,9 @@
       <li><a href="http://saseconnect.org">SASE National</a></li>
       <li><a href="http://saseneregion.weebly.com">SASE Northeast</a></li>
       <li><a href="http://www.northeastern.edu">Northeastern</a></li>
-      <li><a href="http://www.coe.neu.edu/coe/index.html">College of Engineering</a></li>
-      <li><a href="http://www.northeastern.edu/cos/">College of Science</a></li>
-      <li><a href="http://www.northeastern.edu/aac/paac/index.html">PAAC</a></li>
+      <li><a href="http://www.coe.neu.edu">College of Engineering</a></li>
+      <li><a href="http://www.northeastern.edu/cos">College of Science</a></li>
+      <li><a href="http://www.northeastern.edu/aac">PAAC</a></li>
     </ul>
   </div>
   <div class="small-6 medium-3 columns small-only-text-center">
