@@ -66,6 +66,21 @@ header {
   color: #fff;
 }
 
+header.conference-header {
+  background: #333;
+  .top-bar-section {
+    text-align: center;
+    ul  {
+      display: inline-block;
+      float:none;
+    }
+    ul li.active { border-color: $sase-green; }
+    ul li:hover { border-color: $sase-green; }
+  }
+  padding: rem-calc(10) 0 rem-calc(10);
+  //border-bottom: 5px solid $sase-green;
+}
+
 .banner {
   padding: rem-calc(50) rem-calc(10);
   text-align: center;

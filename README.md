@@ -1,5 +1,11 @@
 # Northeastern SASE Website
 
+## Notes for Regional Site Devs
+ - To get this working locally, be sure to go to 'app/config/config.php' and change the base_url variable to '/' from 'http://localhost'
+ - Also be sure to run the 'rake' command
+ - When that's all done, start up a local php server in the base folder: 'php -S localhost:3000'. If you use windows...get cygwin...I guess...may the gods help you, sweet child.
+ - Stuff we care about is probably gonna be in 'app/views' or 'app/controllers'
+
 ## Overview
 
 Website for the Society of Asian Scientists and Engineers (SASE) chapter at

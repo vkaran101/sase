@@ -1,8 +1,3 @@
-<div class="banner">
-  <h2>Northeast Regional Conference 2016</h2>
-  <h3>We Don't Know Our Theme Yet!</h3>
-</div>
-</header>
 <section class="main">
 
 <div class="container">

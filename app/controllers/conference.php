@@ -9,6 +9,7 @@ class Conference extends CI_Controller {
     $this->data['title'] = 'Northeast Regional Conference 2016 - Northeastern SASE';
 
     $this->load->view('templates/header',$this->data);
+    $this->load->view('templates/conference_header',$this->data);
     $this->load->view('conference');
     $this->load->view('templates/footer');
   }
