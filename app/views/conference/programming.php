@@ -8,8 +8,10 @@
     </ul>
     <section class="top-bar-section">
       <ul>
-        <li class="<?=active_nav('conference/theme')?>"><a href="<?=base_url()?>conference/theme">Volunteer Registration</a></li>
-        <li class="<?=active_nav('conference/committee')?>"><a href="<?=base_url()?>conference/committee">Attendee Registration</a></li>
+        <li class="<?=active_nav('conference/theme')?>"><a href="<?=base_url()?>conference/theme">Schedule</a></li>
+        <li class="<?=active_nav('conference/committee')?>"><a href="<?=base_url()?>conference/committee">Logistics</a></li>
+        <li class="<?=active_nav('conference/faq')?>"><a href="<?=base_url()?>conference/faq">Workshops and Speakers</a></li>
+        <li class="<?=active_nav('conference/theme')?>"><a href="<?=base_url()?>conference/theme">Maps</a></li>
       </ul>
     </section>
   </nav>

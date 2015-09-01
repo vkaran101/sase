@@ -66,21 +66,6 @@ header {
   color: #fff;
 }
 
-header.conference-header {
-  background: #333;
-  .top-bar-section {
-    text-align: center;
-    ul  {
-      display: inline-block;
-      float:none;
-    }
-    ul li.active { border-color: $sase-green; }
-    ul li:hover { border-color: $sase-green; }
-  }
-  padding: rem-calc(10) 0 rem-calc(10);
-  //border-bottom: 5px solid $sase-green;
-}
-
 .banner {
   padding: rem-calc(50) rem-calc(10);
   text-align: center;
@@ -473,4 +458,38 @@ footer {
 
 .overflow {
   overflow-x: auto;
+}
+
+/**********************************************/
+// conference
+header.conference-header {
+  background: #333;
+  .top-bar-section {
+    text-align: center;
+    ul  {
+      display: inline-block;
+      float:none;
+    }
+    ul li.active { border-color: $sase-green; }
+    ul li:hover { border-color: $sase-green; }
+  }
+  padding: rem-calc(10) 0 rem-calc(10);
+  nav ul li a { font-size: 17px; height:40px;}
+  //border-bottom: 5px solid $sase-green;
+}
+
+header.conference-subheader {
+  background: $sase-green;
+  .top-bar-section {
+    text-align: center;
+    ul  {
+      display: inline-block;
+      float:none;
+    }
+    ul li.active { border-color: #fff; }
+    ul li:hover { border-color: #fff; }
+  }
+  padding: rem-calc(0) 0 rem-calc(0);
+  // height:30px;
+  nav ul li a { font-size: 15px; height:36px;}
 }

@@ -5,6 +5,7 @@
  - Also be sure to run the 'rake' command
  - When that's all done, start up a local php server in the base folder: 'php -S localhost:3000'. If you use windows...get cygwin...I guess...may the gods help you, sweet child.
  - Stuff we care about is probably gonna be in 'app/views' or 'app/controllers'
+ - to compile scss, just run "rake f5"
 
 ## Overview
 
