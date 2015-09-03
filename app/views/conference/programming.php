@@ -19,9 +19,37 @@
 <section class="main">
 
 <div class="container">
-  <div class="row">
+  <div class="row body-row">
     <div class="small-11 small-centered medium-5 medium-uncentered columns">
-      <h3>stuubbbbb</h3>
+      <h3>Schedule</h3>
+      <p>bla bla bla CONSPIREEE</p>
+    </div>
+  </div>
+</div>
+
+<div class="container light-grey">
+  <div class="row body-row">
+    <div class="small-11 small-centered medium-5 medium-uncentered columns">
+      <h3>Logistics</h3>
+      <p>bla bla bla CONSPIREEE</p>
+    </div>
+  </div>
+</div>
+
+<div class="container grey">
+  <div class="row body-row">
+    <div class="small-11 small-centered medium-5 medium-uncentered columns">
+      <h3>Workshops and Speakers</h3>
+      <p>bla bla bla CONSPIREEE</p>
+    </div>
+  </div>
+</div>
+
+<div class="container smoke">
+  <div class="row body-row">
+    <div class="small-11 small-centered medium-5 medium-uncentered columns">
+      <h3>Maps</h3>
+      <p>bla bla bla CONSPIREEE</p>
     </div>
   </div>
 </div>

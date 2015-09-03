@@ -1,5 +1,5 @@
 <!-- begin secondary nav for conference sub-site -->
-<div class="banner">
+<div class="banner conference-banner">
   <h2>Northeast Regional Conference 2016</h2>
   <h3>Collaborate, Create, Inspire: We Are the Solution</h3>
 </div>
@@ -22,6 +22,7 @@
     </section>
   </nav>
 </header>
+
 <!-- <aside class="left-off-canvas-menu">
 <ul class="off-canvas-list">
   <li><label><a href="<?=base_url()?>">Northeastern SASE</a></label></li>
@@ -34,3 +35,4 @@
   <li class="<?=active_nav('contact')?>"><a href="<?=base_url()?>contact">Contact</a></li>
 </ul>
 </aside> -->
+<div class="conference-content fade">

@@ -11,7 +11,7 @@ class Conference extends CI_Controller {
     $this->load->view('templates/header',$this->data);
     $this->load->view('templates/conference_header',$this->data);
     $this->load->view('conference');
-    $this->load->view('templates/footer');
+    $this->load->view('templates/conference_footer');
   }
 
   public function about()
@@ -23,7 +23,7 @@ class Conference extends CI_Controller {
     $this->load->view('templates/header',$this->data);
     $this->load->view('templates/conference_header',$this->data);
     $this->load->view('conference/about');
-    $this->load->view('templates/footer');
+    $this->load->view('templates/conference_footer');
   }
 
   public function programming()
@@ -35,7 +35,7 @@ class Conference extends CI_Controller {
     $this->load->view('templates/header',$this->data);
     $this->load->view('templates/conference_header',$this->data);
     $this->load->view('conference/programming');
-    $this->load->view('templates/footer');
+    $this->load->view('templates/conference_footer');
   }
 
   public function registration()
@@ -47,7 +47,7 @@ class Conference extends CI_Controller {
     $this->load->view('templates/header',$this->data);
     $this->load->view('templates/conference_header',$this->data);
     $this->load->view('conference/registration');
-    $this->load->view('templates/footer');
+    $this->load->view('templates/conference_footer');
   }
 
   public function sponsors()
@@ -59,7 +59,7 @@ class Conference extends CI_Controller {
     $this->load->view('templates/header',$this->data);
     $this->load->view('templates/conference_header',$this->data);
     $this->load->view('conference/sponsors');
-    $this->load->view('templates/footer');
+    $this->load->view('templates/conference_footer');
   }
 }
 

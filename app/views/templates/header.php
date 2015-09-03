@@ -11,6 +11,7 @@
   <link rel="stylesheet" href="<?=base_url()?>public/css/font-awesome.css"/>
   <script src="<?=base_url()?>public/js/modernizr.js"></script>
   <script src="<?=base_url()?>public/js/jquery.min.js"></script>
+  <script src="<?=base_url()?>public/js/conference_script.js" type="text/javascript"></script>
 </head>
 <body>
 
