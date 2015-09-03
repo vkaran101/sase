@@ -8,16 +8,16 @@
     </ul>
     <section class="top-bar-section">
       <ul>
-        <li class="<?=active_nav('conference/about#Theme')?>"><a href="#Theme">Theme</a></li>
-        <li class="<?=active_nav('conference/committee')?>"><a href="<?=base_url()?>conference/committee">Committee</a></li>
-        <li class="<?=active_nav('conference/faq')?>"><a href="<?=base_url()?>conference/faq">FAQ</a></li>
+        <li><a href="#theme">Theme</a></li>
+        <li><a href="#committee">Committee</a></li>
+        <li><a href="#faq">FAQ</a></li>
       </ul>
     </section>
   </nav>
 </header>
 <section class="main">
 
-<div class="container">
+<div class="container" id="theme">
   <div class="row body-row">
     <div class="small-11 small-centered medium-5 medium-uncentered columns">
       <h3>Theme</h3>
@@ -26,16 +26,76 @@
   </div>
 </div>
 
-<div class="container light-grey">
+<div class="container light-grey" id='committee'>
   <div class="row body-row">
-    <div class="small-11 small-centered medium-5 medium-uncentered columns">
-      <h3>Committee</h3>
-      <p>bla bla bla CONSPIREEE</p>
-    </div>
+    <center><h3>Conference Committee</h3></center>
+    <ul class="small-block-grid-1 medium-block-grid-2 large-block-grid-2">
+      <li>
+        <ul class="eboard-card">
+          <li class="pic">poop</li>
+          <li class="position">Conference Co-Chair</li>
+          <li class="name">Celine Chin</li>
+        </ul>
+      </li>
+      <li>
+        <ul class="eboard-card">
+          <li class="pic">poop</li>
+          <li class="position">Conference Co-Chair</li>
+          <li class="name">Deborah Chen</li>
+        </ul>
+      </li>
+      </ul>
+      <ul class="small-block-grid-1 medium-block-grid-3 large-block-grid-3">
+      <li>
+        <ul class="eboard-card">
+          <li class="pic">poop</li>
+          <li class="position">Logistics</li>
+          <li class="name">Derek Tran</li>
+        </ul>
+      </li>
+      <li>
+        <ul class="eboard-card">
+          <li class="pic">poop</li>
+          <li class="position">Speakers & Workshops</li>
+          <li class="name">Vandana Karan</li>
+        </ul>
+      </li>
+      <li>
+        <ul class="eboard-card">
+          <li class="pic">poop</li>
+          <li class="position">Corporate Relations</li>
+          <li class="name">Liane Wong</li>
+        </ul>
+      </li>
+      <li>
+        <ul class="eboard-card">
+          <li class="pic">poop</li>
+          <li class="position">Finance</li>
+          <li class="name">Jenny Cheung</li>
+        </ul>
+      </li>
+      <li>
+        <ul class="eboard-card">
+          <li class="pic">poop</li>
+          <li class="position">Transportation & Housing</li>
+          <li class="name">Lynn Tsao</li>
+        </ul>
+      </li>
+      <li>
+        <ul class="eboard-card">
+          <li class="pic">poop</li>
+          <li class="position">Advertising & Webmaster</li>
+          <li class="name">Michael Hu</li>
+        </ul>
+      </li>
+    </ul>
+    <center>
+     <a href="<?=base_url()?>newsletter" class="button btn-outline small radius">View Subcommittees</a>
+    </center>
   </div>
 </div>
 
-<div class="container smoke">
+<div class="container smoke" id="faq">
   <div class="row body-row">
     <div class="small-11 small-centered medium-5 medium-uncentered columns">
       <h3>FAQ</h3>

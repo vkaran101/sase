@@ -8,14 +8,14 @@
     </ul>
     <section class="top-bar-section">
       <ul>
-        <li class="<?=active_nav('conference/theme')?>"><a href="<?=base_url()?>conference/theme">Sponsors</a></li>
+        <li><a href="#sponsors">Sponsors</a></li>
       </ul>
     </section>
   </nav>
 </header>
 <section class="main">
 
-<div class="container">
+<div class="container" id="sponsors">
   <div class="row body-row">
     <div class="small-11 small-centered medium-5 medium-uncentered columns">
       <h3>Sponsors</h3>

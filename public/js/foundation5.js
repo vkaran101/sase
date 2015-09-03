@@ -5,7 +5,7 @@ $(document).foundation();
 $(document).ready(function() {
   // show or hide the scroller
   $(window).scroll(function() {
-    var scrollBreakpoint = 1000;
+    var scrollBreakpoint = ($(window).height())/3;
     var fadeDelay = 300;
 
     if ($(this).scrollTop() > scrollBreakpoint) {

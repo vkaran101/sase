@@ -1,8 +1,10 @@
 <!-- begin secondary nav for conference sub-site -->
-<div class="banner conference-banner">
-  <h2>Northeast Regional Conference 2016</h2>
-  <h3>Collaborate, Create, Inspire: We Are the Solution</h3>
-</div>
+<a href="<?=base_url()?>conference">
+  <div class="banner conference-banner">
+    <h2>Northeast Regional Conference 2016</h2>
+    <h3>Collaborate, Create, Inspire: We Are the Solution</h3>
+  </div>
+</a>
 </header>
 <header class="conference-header">
   <nav class="top-bar" data-topbar role="navigation">
