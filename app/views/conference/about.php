@@ -16,13 +16,12 @@
   </nav>
 </header>
 <section class="main">
+<center>
 
 <div class="container" id="theme">
   <div class="row body-row">
-    <div class="small-11 small-centered medium-5 medium-uncentered columns">
-      <h3>Theme</h3>
-      <p>bla bla bla CONSPIREEE</p>
-    </div>
+    <h3>Theme</h3>
+    <p>bla bla bla CONSPIREEE</p>
   </div>
 </div>
 
@@ -89,17 +88,14 @@
         </ul>
       </li>
     </ul>
-    <center>
-     <a href="<?=base_url()?>newsletter" class="button btn-outline small radius">View Subcommittees</a>
-    </center>
+     <a href="<?=base_url()?>newsletter" class="button btn-green radius">View Subcommittees</a>
   </div>
 </div>
 
 <div class="container smoke" id="faq">
   <div class="row body-row">
-    <div class="small-11 small-centered medium-5 medium-uncentered columns">
-      <h3>FAQ</h3>
-      <p>bla bla bla CONSPIREEE</p>
-    </div>
+    <h3>FAQ</h3>
+    <p>bla bla bla CONSPIREEE</p>
   </div>
 </div>
+</center>

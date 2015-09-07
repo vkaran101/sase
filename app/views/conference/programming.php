@@ -17,13 +17,21 @@
   </nav>
 </header>
 <section class="main">
+<center>
 
 <div class="container" id="schedule">
   <div class="row body-row">
-    <div class="small-11 small-centered medium-5 medium-uncentered columns">
-      <h3>Schedule</h3>
-      <p>bla bla bla CONSPIREEE</p>
-    </div>
+    <h3>Event Schedule</h3>
+    <table style="width:50%">
+      <tr>
+        <td>poop</td>
+        <td>moop</td>
+      </tr>
+      <tr>
+        <td>poop</td>
+        <td>moop</td>
+      </tr>
+    </table>
   </div>
 </div>
 
@@ -53,3 +61,5 @@
     </div>
   </div>
 </div>
+
+</center>

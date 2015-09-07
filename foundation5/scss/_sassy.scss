@@ -173,6 +173,14 @@ footer {
   @include button-outline(#fefefe, $sase-blue);
 }
 
+.btn-green {
+  @include button-outline($sase-green, #fefefe);
+}
+
+.btn-green-inverse {
+  @include button-outline(#fefefe, $sase-green);
+}
+
 .btn-secondary {
   @include button-outline($charcoal, #fefefe);
 }
@@ -510,6 +518,10 @@ header.conference-subheader {
 
 .conference-content {
   .body-row {
-    min-height: 300px;
+    min-height: 200px;
   }
+}
+
+.blue-text {
+  color:$sase-blue;
 }
