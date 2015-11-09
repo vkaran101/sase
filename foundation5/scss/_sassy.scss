@@ -476,13 +476,14 @@ footer {
 }
 
 .conference-banner {
-  // Do the thing sase nationals does, it looks cool
-  // make boston silohette!
+  padding: 0;
+  height: 300px;
+  background: url('../../public/img/site/banners1.png') center center no-repeat;
+  @include background-cover;
+}
 
-  // background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url('../img/site/northeastern.png');
-  // background-position: center center;
-  // background-repeat: no-repeat;
-  // @include background-cover;
+header#less-padding-header {
+  padding-bottom: 0;
 }
 
 header.conference-header {
@@ -519,6 +520,10 @@ header.conference-subheader {
 .conference-content {
   .body-row {
     min-height: 200px;
+  }
+
+  .row {
+    padding: 0 100 0;
   }
 }
 

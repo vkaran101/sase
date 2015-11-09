@@ -4,12 +4,10 @@
 <footer>
 <div class="row">
   <div class="small-12 medium-3 medium-push-3 columns small-only-text-center">
-    <p>Subscribe to our mailing list and get awesome updates right in your mailbox!</p>
-    <a href="<?=base_url()?>newsletter" class="button btn-outline-inverse small radius">Sign Up</a>
+    <p>Registraction opens in December!</p>
   </div>
   <div class="small-12 medium-3 medium-push-3 columns small-only-text-center">
-    <p>Get involved. Join our SASE chapter or become a national member for free!</p>
-    <a href="<?=base_url()?>join" class="button btn-outline-inverse small radius">Join SASE</a>
+    <p>Site under construction!</p>
     <hr class="divider" />
   </div>
   <div class="small-6 medium-3 medium-pull-6 columns small-only-text-center">
@@ -17,16 +15,14 @@
     <ul>
       <li><a href="http://saseconnect.org">SASE National</a></li>
       <li><a href="http://saseneregion.weebly.com">SASE Northeast</a></li>
-      <li><a href="http://www.northeastern.edu">Northeastern</a></li>
       <li><a href="http://www.coe.neu.edu">College of Engineering</a></li>
-      <li><a href="http://www.northeastern.edu/cos">College of Science</a></li>
-      <li><a href="http://www.northeastern.edu/aac">PAAC</a></li>
+      <li><b>More to come, site under construction</b></li>
     </ul>
   </div>
   <div class="small-6 medium-3 columns small-only-text-center">
     <h3>Connect</h3>
     <ul>
-      <li><a href="mailto:northeastern.sase@gmail.com">
+      <li><a href="mailto:nesaseregionals2016@gmail.com">
         <span class="fa-stack">
           <i class="fa fa-square-o fa-stack-2x"></i>
           <i class="fa fa-envelope fa-stack-1x"></i>
@@ -38,15 +34,15 @@
           <i class="fa fa-square-o fa-stack-2x"></i>
           <i class="fa fa-facebook fa-stack-1x"></i>
         </span>
-        Follow Us</a>
+        Event Page</a>
       </li>
-      <li><a href="https://orgsync.com/67847/chapter" target="_blank">
+      <!-- <li><a href="https://orgsync.com/67847/chapter" target="_blank">
         <span class="fa-stack">
           <i class="fa fa-square-o fa-stack-2x"></i>
           <i class="fa fa-repeat fa-stack-1x"></i>
         </span>
-        Join Us</a>
-      </li>
+        Register</a>
+      </li> -->
     </ul>
     <hr class="divider" />
   </div>

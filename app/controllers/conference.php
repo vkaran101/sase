@@ -8,7 +8,6 @@ class Conference extends CI_Controller {
 
     $this->data['title'] = 'Northeast Regional Conference 2016 - Northeastern SASE';
 
-    $this->load->view('templates/header',$this->data);
     $this->load->view('templates/conference_header',$this->data);
     $this->load->view('conference');
     $this->load->view('templates/conference_footer');
@@ -20,9 +19,9 @@ class Conference extends CI_Controller {
 
     $this->data['title'] = 'Northeast Regional Conference 2016 - Northeastern SASE';
 
-    $this->load->view('templates/header',$this->data);
     $this->load->view('templates/conference_header',$this->data);
-    $this->load->view('conference/about');
+    // $this->load->view('conference/about');
+    $this->load->view('conference/under-construction');
     $this->load->view('templates/conference_footer');
   }
 
@@ -32,9 +31,9 @@ class Conference extends CI_Controller {
 
     $this->data['title'] = 'Northeast Regional Conference 2016 - Northeastern SASE';
 
-    $this->load->view('templates/header',$this->data);
     $this->load->view('templates/conference_header',$this->data);
-    $this->load->view('conference/programming');
+    // $this->load->view('conference/programming');
+    $this->load->view('conference/under-construction');
     $this->load->view('templates/conference_footer');
   }
 
@@ -44,9 +43,9 @@ class Conference extends CI_Controller {
 
     $this->data['title'] = 'Northeast Regional Conference 2016 - Northeastern SASE';
 
-    $this->load->view('templates/header',$this->data);
     $this->load->view('templates/conference_header',$this->data);
-    $this->load->view('conference/registration');
+    // $this->load->view('conference/registration');
+    $this->load->view('conference/under-construction');
     $this->load->view('templates/conference_footer');
   }
 
@@ -56,9 +55,9 @@ class Conference extends CI_Controller {
 
     $this->data['title'] = 'Northeast Regional Conference 2016 - Northeastern SASE';
 
-    $this->load->view('templates/header',$this->data);
     $this->load->view('templates/conference_header',$this->data);
-    $this->load->view('conference/sponsors');
+    // $this->load->view('conference/sponsors');
+    $this->load->view('conference/under-construction');
     $this->load->view('templates/conference_footer');
   }
 }
