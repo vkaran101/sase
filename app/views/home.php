@@ -51,7 +51,7 @@
 <script>
   // setup homepage background image
 
-  var image = "url(/sase/public/img/site/northeastern.png)";
+  var image = "url(public/img/site/northeastern.png)";
   var shade = "linear-gradient(rgba(0,0,0,0.45),rgba(0,0,0,0.45))";
   var attribute = shade + ", " + image;
 

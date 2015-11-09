@@ -25,7 +25,7 @@
 
 <div class="off-canvas-wrap" data-offcanvas>
 <div class="inner-wrap">
-  <header>
+  <header id="less-padding-header">
     <div class="row">
       <div class="small-9 medium-4 columns">
         <a href="<?=base_url()?>"><img src="<?=base_url()?>public/img/site/northeastern_sase_white.png"
@@ -67,3 +67,44 @@
       </ul>
     </aside>
 <!-- end header -->
+
+
+<!-- begin secondary nav for conference sub-site -->
+<a href="<?=base_url()?>conference">
+  <div class="banner conference-banner">
+  </div>
+</a>
+
+</header>
+<header class="conference-header">
+  <nav class="top-bar" data-topbar role="navigation">
+    <ul class="title-area">
+      <li class="name"></li>
+      <li class="toggle-topbar">
+        <a class="left-off-canvas-toggle" href="#"><i class="fa fa-2x fa-navicon"></i></a>
+      </li>
+    </ul>
+    <section class="top-bar-section">
+      <ul>
+        <li class="<?=active_nav('conference/about')?>"><a href="<?=base_url()?>conference/about">About</a></li>
+        <li class="<?=active_nav('conference/programming')?>"><a href="<?=base_url()?>conference/programming">Programming</a></li>
+        <li class="<?=active_nav('conference/registration')?>"><a href="<?=base_url()?>conference/registration">Registration</a></li>
+        <li class="<?=active_nav('conference/sponsors')?>"><a href="<?=base_url()?>conference/sponsors">Sponsors</a></li>
+      </ul>
+    </section>
+  </nav>
+</header>
+
+<!-- <aside class="left-off-canvas-menu">
+<ul class="off-canvas-list">
+  <li><label><a href="<?=base_url()?>">Northeastern SASE</a></label></li>
+  <li class="<?=active_nav('conference')?>"><a href="<?=base_url()?>conference">Conference</a></li>
+  <li class="<?=active_nav('events')?>"><a href="<?=base_url()?>events">Events</a></li>
+  <li class="<?=active_nav('programs')?>"><a href="<?=base_url()?>programs">Programs</a></li>
+  <li class="<?=active_nav('eboard')?>"><a href="<?=base_url()?>eboard">Eboard</a></li>
+  <li class="<?=active_nav('sponsors')?>"><a href="<?=base_url()?>sponsors">Sponsors</a></li>
+  <li class="<?=active_nav('about')?>"><a href="<?=base_url()?>about">About</a></li>
+  <li class="<?=active_nav('contact')?>"><a href="<?=base_url()?>contact">Contact</a></li>
+</ul>
+</aside> -->
+<div class="conference-content fade">

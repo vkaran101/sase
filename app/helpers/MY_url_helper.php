@@ -3,7 +3,7 @@
 function active_nav($link)
 {
   $uri = current_url();
-  if (strpos($uri, $link) !== false)
+  if (strpos($uri, $link) == 1)
   {
     echo 'active';
   }
@@ -20,7 +20,7 @@ function active_nav($link)
 function admin_nav($link)
 {
   $uri = current_url();
-  if (strpos($uri, $link) !== false)
+  if (strpos($uri, $link) == 1)
   {
     echo 'active';
   }
