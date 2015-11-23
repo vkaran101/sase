@@ -36,5 +36,17 @@ $(document).ready(function() {
 			   window.location.hash = hash;
 			});
 		});
+
+		$(function() {
+		    $(".pic img")
+		        .mouseover(function() { 
+		            $(this).attr("src", $(this).attr("src").substring(0, $(this).attr("src").length-5) 
+		            	+ "2.jpg");
+		        })
+		        .mouseout(function() {
+		            $(this).attr("src", $(this).attr("src").substring(0, $(this).attr("src").length-5)
+		             + "1.jpg");
+		        });
+		});
 	}
 });
