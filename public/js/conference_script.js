@@ -38,7 +38,7 @@ $(document).ready(function() {
 		});
 
 		$(function() {
-		    $(".pic img")
+		    $("#committee .pic img")
 		        .mouseover(function() { 
 		            $(this).attr("src", $(this).attr("src").substring(0, $(this).attr("src").length-5) 
 		            	+ "2.jpg");
