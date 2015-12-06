@@ -129,8 +129,8 @@
 
 <div class="container smoke" id="faq">
   <div class="row body-row">
-    <h3>FAQ</h3>
-    <p>bla bla bla CONSPIREEE</p>
+    <center><h3>FAQ</h3>
+    <p>Under Construction</p></center>
   </div>
 </div>
 

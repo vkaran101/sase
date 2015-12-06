@@ -10,6 +10,7 @@
       <ul>
         <li><a href="#attendee">Attendee Registration</a></li>
         <li><a href="#volunteer">Volunteer Registration</a></li>
+        <li><a href="#resume">Résumé Submission</a></li>
       </ul>
     </section>
   </nav>
@@ -18,18 +19,29 @@
 
 <div class="container" id="attendee">
   <div class="row body-row">
-    <div class="small-11 small-centered medium-5 medium-uncentered columns">
+    <center>
       <h3>Attendee Registration</h3>
-      <p>bla bla bla CONSPIREEE</p>
-    </div>
+      <p>Add Pricing info</p>
+    </center>
   </div>
 </div>
 
-<div class="container smoke" id="volunteer">
+<div class="container light-grey" id="volunteer">
   <div class="row body-row">
-    <div class="small-11 small-centered medium-5 medium-uncentered columns">
+    <center>
       <h3>Volunteer Registration</h3>
-      <p>bla bla bla CONSPIREEE</p>
-    </div>
+      <p>Information coming soon!</p>
+    </center>
   </div>
 </div>
+
+<div class="container white" id="resume">
+  <div class="row body-row">
+    <center>
+      <h3>Résumé Submission</h3>
+      <p>Please fill out the following form to submit your résumé. Add more about networking and stuff.</p>
+      <script type="text/javascript" src="https://form.jotform.com/jsform/53390841536155"></script>
+    </center>
+  </div>
+</div>
+

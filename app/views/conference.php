@@ -14,7 +14,7 @@
 
 <div class="container grey">
   <div class="row body-row">
-    <h3>Sponsors</h3>
-    <p>None :(</p>
+    <center><h3>Sponsors</h3>
+    <p>Under Construction</p></center>
   </div>
 </div>
