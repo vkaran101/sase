@@ -28,7 +28,7 @@
         </span>
         Email Us</a>
       </li>
-      <li><a href="https://www.facebook.com/NortheasternSASE" target="_blank">
+      <li><a href="https://www.facebook.com/events/1560315674210565/" target="_blank">
         <span class="fa-stack">
           <i class="fa fa-square-o fa-stack-2x"></i>
           <i class="fa fa-facebook fa-stack-1x"></i>
