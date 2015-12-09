@@ -9,7 +9,6 @@
     <section class="top-bar-section">
       <ul>
         <li><a href="#attendee">Attendee Registration</a></li>
-        <li><a href="#volunteer">Volunteer Registration</a></li>
         <li><a href="#resume">Résumé Submission</a></li>
       </ul>
     </section>
@@ -49,15 +48,6 @@
       <li> Check out our <a href="<?=base_url()?>conference/programming">programming section</a> to help plan out your
       traveling/lodging, and to see the incredible speakers and workshops we have lined up for you!</li>
     </ol>
-  </div>
-</div>
-
-<div class="container light-grey" id="volunteer">
-  <div class="row body-row">
-    <center>
-      <h3>Volunteer Registration</h3>
-      <p>Information coming soon!</p>
-    </center>
   </div>
 </div>
 
