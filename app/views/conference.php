@@ -6,8 +6,8 @@
       <h2 class="blue-text">Get Excited!</h2>
       <p>This year's conference will be on <b>Febuary 13, 2016</b> in <b>Boston, MA!</b></p>
       <br>
-      <p><b>Registration opens in December!</b></p>
-      <a href="<?=base_url()?>newsletter" class="button btn-outline large radius">Register</a>
+      <p><b>Early bird registration is now open!</b></p>
+      <a href="<?=base_url()?>conference/registration#attendee" class="button btn-outline large radius">Register</a>
     </div>
   </div>
 </center>

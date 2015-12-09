@@ -184,7 +184,7 @@
       <li>
         <ul class="eboard-card">
           <li class="pic">
-            <img src="<?=base_url()?>public/img/committee/derek1.jpg"/>
+            <img src="<?=base_url()?>public/img/committee/sub/joanne.jpg"/>
           </li>
           <li class="name">Joanne Truong</li>
         </ul>
@@ -192,7 +192,7 @@
        <li>
       <ul class="eboard-card">
           <li class="pic">
-            <img src="<?=base_url()?>public/img/committee/derek1.jpg"/>
+            <img src="<?=base_url()?>public/img/committee/sub/jaejun.jpg"/>
           </li>
           <li class="name">Jaejun Byun</li>
         </ul>
@@ -221,22 +221,23 @@
       <li>
         <ul class="eboard-card">
           <li class="pic">
-            <img src="<?=base_url()?>public/img/committee/derek1.jpg"/>
+            <img src="<?=base_url()?>public/img/committee/sub/missing.jpg"/>
           </li>
           <li class="name">Annie Edge</li>
         </ul>
       </li>
-       <li>
-      <ul class="eboard-card">
+      <li>
+        <ul class="eboard-card">
           <li class="pic">
-            <img src="<?=base_url()?>public/img/committee/derek1.jpg"/>
+            <img src="<?=base_url()?>public/img/committee/sub/missing.jpg"/>
           </li>
           <li class="name">Akshay Kaushik</li>
         </ul>
       </li>
-      <ul class="eboard-card">
+      <li>
+        <ul class="eboard-card">
           <li class="pic">
-            <img src="<?=base_url()?>public/img/committee/derek1.jpg"/>
+            <img src="<?=base_url()?>public/img/committee/sub/missing.jpg"/>
           </li>
           <li class="name">Michelle Ng</li>
         </ul>
@@ -257,7 +258,7 @@
       <p>Major: Electrical Engineering
       <br>Minor: Biomedical Engineering
       <br>Year: 4th</p>
-      <p>Collects plush rabbits and her favorite show is <i>Bee and Puppycat</i> </p>
+      <p>Collects plush rabbits. Her favorite show is <i>Bee and Puppycat</i> </p>
     </div>
   </div>
   <hr>
@@ -266,7 +267,7 @@
       <li>
         <ul class="eboard-card">
           <li class="pic">
-            <img src="<?=base_url()?>public/img/committee/derek1.jpg"/>
+            <img src="<?=base_url()?>public/img/committee/sub/missing.jpg"/>
           </li>
           <li class="name">Christina Nguyen</li>
         </ul>
@@ -274,7 +275,7 @@
       <li>
       <ul class="eboard-card">
           <li class="pic">
-            <img src="<?=base_url()?>public/img/committee/derek1.jpg"/>
+            <img src="<?=base_url()?>public/img/committee/sub/dang.jpg"/>
           </li>
           <li class="name">Dang Nuguyen</li>
         </ul>
@@ -282,7 +283,7 @@
       <li>
       <ul class="eboard-card">
           <li class="pic">
-            <img src="<?=base_url()?>public/img/committee/derek1.jpg"/>
+            <img src="<?=base_url()?>public/img/committee/sub/joy.jpg"/>
           </li>
           <li class="name">Joy Rebustes</li>
         </ul>
@@ -299,7 +300,7 @@
       <h3>Jenny Cheung</h3>
       <p>Major: Electrical & Computer Engineering
       <br>Year: 2nd</p>
-      <p>Really good at rapping and memorizing song lyrics. Everyone check out her fire mixtape #swaggie</p>
+      <p>Is allergic to mangos, eats them anyways.</p>
     </div>
     <div class="small-5 columns">
       <img src="<?=base_url()?>public/img/committee/jenny1.jpg"/>
@@ -311,7 +312,7 @@
       <li>
         <ul class="eboard-card">
           <li class="pic">
-            <img src="<?=base_url()?>public/img/committee/derek1.jpg"/>
+            <img src="<?=base_url()?>public/img/committee/sub/joanne.jpg"/>
           </li>
           <li class="name">Joanne Truong</li>
         </ul>
@@ -319,7 +320,7 @@
        <li>
       <ul class="eboard-card">
           <li class="pic">
-            <img src="<?=base_url()?>public/img/committee/derek1.jpg"/>
+            <img src="<?=base_url()?>public/img/committee/sub/jaejun.jpg"/>
           </li>
           <li class="name">Jaejun Byun</li>
         </ul>
@@ -348,7 +349,7 @@
       <li>
         <ul class="eboard-card">
           <li class="pic">
-            <img src="<?=base_url()?>public/img/committee/derek1.jpg"/>
+            <img src="<?=base_url()?>public/img/committee/sub/briany.jpg"/>
           </li>
           <li class="name">Brian Yeung</li>
         </ul>
@@ -366,7 +367,7 @@
       <p>Major: Computer Science
       <br>Minor: Math
       <br>Year: 3rd</p>
-      <p>Lives life in perpetual confusion. Somehow people still think he's qualified to do things</p>
+      <p>Spun poi once, didn't die.</p>
     </div>
     <div class="small-5 columns">
       <img src="<?=base_url()?>public/img/committee/michael2.jpg"/>
@@ -378,7 +379,7 @@
       <li>
         <ul class="eboard-card">
           <li class="pic">
-            <img src="<?=base_url()?>public/img/committee/derek1.jpg"/>
+            <img src="<?=base_url()?>public/img/committee/sub/maggie.jpg"/>
           </li>
           <li class="name">Maggie Zhang</li>
         </ul>
@@ -386,7 +387,7 @@
        <li>
       <ul class="eboard-card">
           <li class="pic">
-            <img src="<?=base_url()?>public/img/committee/derek1.jpg"/>
+            <img src="<?=base_url()?>public/img/committee/sub/brianz1.jpg"/>
           </li>
           <li class="name">Brian Zhu</li>
         </ul>

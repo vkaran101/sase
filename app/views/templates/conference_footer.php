@@ -4,7 +4,7 @@
 <footer>
 <div class="row">
   <div class="small-12 medium-3 medium-push-3 columns small-only-text-center">
-    <p>Registration opens in December!</p>
+    <p></p>
   </div>
   <div class="small-12 medium-3 medium-push-3 columns small-only-text-center">
     <hr class="divider" />
