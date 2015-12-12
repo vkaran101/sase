@@ -81,7 +81,7 @@ header {
 }
 
 .container {
-  padding: rem-calc(50) 0;
+  padding: rem-calc(100) 0;
   h1,h2,h3,h4,h5,h6 {
     margin-bottom: rem-calc(35);
   }
@@ -322,7 +322,7 @@ footer {
   list-style-type: none;
   text-align: center;
   .pic img {
-    width: 400px;
+    border-radius: 50%;
   }
   .position {
     margin-top: 20px;
@@ -519,22 +519,7 @@ header.conference-subheader {
 
 .conference-content {
   .body-row {
-    min-height: 100%;
-
-    h3 {
-      font-size: 35px;
-      margin-bottom: 50px;
-    }
-
-    p{
-      padding-left: 50px;
-      padding-right: 50px;
-    }
-
-    ol {
-      padding-left: 100px;
-      padding-right: 100px;
-    }
+    min-height: 200px;
   }
 
   .row {
@@ -542,40 +527,6 @@ header.conference-subheader {
   }
 }
 
-
-#committee {
-  .eboard-card {
-    color:#333;
-  }
-
-  .eboard-card:hover {
-    color:#000;
-  }
-}
-
 .blue-text {
   color:$sase-blue;
 }
-
-.left-off-canvas-menu-conference {
-  -webkit-backface-visibility: hidden;
-  background: #333333;
-  bottom: 0;
-  box-sizing: content-box;
-  -webkit-overflow-scrolling: touch;
-  -ms-overflow-style: -ms-autohiding-scrollbar;
-  overflow-x: hidden;
-  overflow-y: auto;
-  position: absolute;
-  transition: transform 500ms ease 0s;
-  width: 15.625rem;
-  z-index: 1001;
-  -webkit-transform: translate3d(-100%, 0, 0);
-  -moz-transform: translate3d(-100%, 0, 0);
-  -ms-transform: translate(-100%, 0);
-  -o-transform: translate3d(-100%, 0, 0);
-  transform: translate3d(-100%, 0, 0);
-  left: 0;
-  top: 0; }
-  .left-off-canvas-menu-conference * {
-    -webkit-backface-visibility: hidden; }
