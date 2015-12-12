@@ -17,9 +17,9 @@
 
 <div class="container" id="sponsors">
   <div class="row body-row">
-    <center>
+    <div class="small-11 small-centered medium-5 medium-uncentered columns">
       <h3>Sponsors</h3>
-      <p>Under Construction</p>
-    </center>
+      <p>bla bla bla CONSPIREEE</p>
+    </div>
   </div>
 </div>

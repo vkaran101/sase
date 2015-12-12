@@ -93,15 +93,6 @@
       </ul>
     </section>
   </nav>
-  <aside class="left-off-canvas-menu-conference">
-      <ul class="off-canvas-list">
-        <li><label><a href="<?=base_url()?>">SASE Northeast Regional Conference 2016</a></label></li>
-        <li class="<?=active_nav('conference/about')?>"><a href="<?=base_url()?>conference/about">About</a></li>
-        <li class="<?=active_nav('conference/programming')?>"><a href="<?=base_url()?>conference/programming">Programming</a></li>
-        <li class="<?=active_nav('conference/registration')?>"><a href="<?=base_url()?>conference/registration">Registration</a></li>
-        <li class="<?=active_nav('conference/sponsors')?>"><a href="<?=base_url()?>conference/sponsors">Sponsors</a></li>
-      </ul>
-    </aside>
 </header>
 
 <!-- <aside class="left-off-canvas-menu">
