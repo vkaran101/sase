@@ -24,7 +24,7 @@
     <p>Looking to attend the conference? We're super excited to have you! Please refer to the following steps to register. If you have any questions,
     feel free to refer to our <a href="<?=base_url()?>conference/about#faq">FAQ</a> or send us an <a href="mailto:nesaseregionals2016@gmail.com">email</a>.</p>
     <ol>
-      <li>Fill out the <a href="https://commerce.cashnet.com/SFNESASE2016" target="_blank">registration form</a>, the
+      <li>Fill out the <a href="https://commerce.cashnet.com/cashnetg/selfserve/EditItem.aspx?PC=SFSASE-RFEE&ItemCount=1" target="_blank">registration form</a>, the
       fee is based on the pricing list below:</li>
       <br>
       <center>
