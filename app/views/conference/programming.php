@@ -18,7 +18,7 @@
 <section class="main">
 <center>
 
-<div class="container" id="schedule">
+<div class="container first" id="schedule">
   <div class="row body-row">
     <h3>Event Schedule</h3>
     <h4>Main Events</h4>

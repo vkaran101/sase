@@ -17,7 +17,7 @@
 </header>
 <section class="main">
 
-<div class="container" id="theme">
+<div class="container first" id="theme">
   <div class="row body-row">
     <center><h3>Theme</h3></center>
       <p><b>Collaborate, Create, Inspire: We Are the Solution</b> emphasizes the importance of working in a team. No matter what career path we choose, we will always be working in multidisciplinary teams comprised of people with a diverse set of skills and experiences.
