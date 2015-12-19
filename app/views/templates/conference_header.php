@@ -88,6 +88,7 @@
       <ul>
         <li class="<?=active_nav('conference/about')?>"><a href="<?=base_url()?>conference/about">About</a></li>
         <li class="<?=active_nav('conference/programming')?>"><a href="<?=base_url()?>conference/programming">Programming</a></li>
+        <li class="<?=active_nav('conference/logistics')?>"><a href="<?=base_url()?>conference/logistics">Logistics</a></li>
         <li class="<?=active_nav('conference/registration')?>"><a href="<?=base_url()?>conference/registration">Registration</a></li>
         <li class="<?=active_nav('conference/sponsors')?>"><a href="<?=base_url()?>conference/sponsors">Sponsors</a></li>
       </ul>
@@ -98,6 +99,7 @@
         <li><label><a href="<?=base_url()?>">SASE Northeast Regional Conference 2016</a></label></li>
         <li class="<?=active_nav('conference/about')?>"><a href="<?=base_url()?>conference/about">About</a></li>
         <li class="<?=active_nav('conference/programming')?>"><a href="<?=base_url()?>conference/programming">Programming</a></li>
+        <li class="<?=active_nav('conference/logistics')?>"><a href="<?=base_url()?>conference/logistics">Logistics</a></li>
         <li class="<?=active_nav('conference/registration')?>"><a href="<?=base_url()?>conference/registration">Registration</a></li>
         <li class="<?=active_nav('conference/sponsors')?>"><a href="<?=base_url()?>conference/sponsors">Sponsors</a></li>
       </ul>

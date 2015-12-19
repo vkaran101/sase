@@ -34,7 +34,7 @@
 <div class="container light-grey" id='committee'>
   <div class="row body-row">
     <center><h3>Conference Committee</h3></center>
-    <ul class="small-block-grid-3 medium-block-grid-3 large-block-grid-4">
+    <ul class="small-block-grid-3 medium-block-grid-4 large-block-grid-4">
       <li>
         <a href="#" data-reveal-id="modal-co-chair">
           <ul class="eboard-card">
@@ -129,8 +129,29 @@
 
 <div class="container smoke" id="faq">
   <div class="row body-row">
-    <center><h3>FAQ</h3>
-    <p>Under Construction</p></center>
+    <center><h3>FAQ</h3></center>
+
+    <p><b>How do I register and how much does it cost?</b>
+    <br>Early Bird Registration ends January 21st. Register beforehand to take advantage of the early bird price of $30. Regular registration begins on January 22nd and is $35. Additional discounts are available to attendees who are in the Boston area who are willing to house out-of-state attendees and to those who are volunteers from sponsoring chapters. The registration fee includes speakers, workshops, panels, networking, breakfast, lunch and snacks.
+    <br>The registration page can be found <a href="<?=base_url()?>conference/registration#attendee">here</a>.</p>
+
+    <p><b>Where can I expect to find updates on the conference?</b>
+    <br>Regularly check back on this website, our facebook event page and through email for updates! The website will always feature new items each day leading up to the conference. Do not hesitate to check back!
+    </p>
+
+    <p><b>I’m not from the Boston area. Where do I stay?</b>
+    <br>We are offering an option where we can pair you up with a student-host that has signed up to house attendees from outside of the area. During registration, please indicate whether or not you require housing and visit our Logistics tab where you will find the attendee and host forms. Hotel options will be updated soon. 
+    <br><b>Student Hosted Housing is FIRST COME FIRST SERVE.</b></p>
+
+    <p><b>What is your refund policy?</b>
+    <br>Due to the system that we are using, we will not be able to provide refunds. Any questions or concerns about this should be emailed to <a href="mailto:nesaseregionals2016@gmail.com">nesaseregionals2016@gmail.com</a>.</p>
+
+    <p><b>Who is eligible for a discount?</b>
+    <br>Only volunteers from sponsoring chapters and Boston attendees who are willing to house out-of-state attendees will receive a discount on registration. Do not register until you had received an email confirming your volunteering and/or housing status. You should expect to receive one about a week after filling out the volunteering and/or housing form.</p>
+
+    <p><b>I received a discount code (from volunteering, housing or doing both), how do I use it when registering?</b>
+If you had received a discount code, be sure to apply it on the registration website before paying. There will be a section where you will be able to input the code. </p>
+
   </div>
 </div>
 
@@ -144,7 +165,7 @@
     <div class="small-7 columns">
       <h3>Celine Chin</h3>
       <p>Major: Mechanical Engineering
-      <br>Year: 2nd</p>
+      <br>Year: 3rd</p>
       <p>Crochets Pokemon plushies in her spare time</p>
     </div>
   </div>
