@@ -16,7 +16,7 @@
 </header>
 <section class="main">
 
-<div class="container" id="attendee">
+<div class="container first" id="attendee">
   <div class="row body-row">
     <center>
       <h3>Attendee Registration</h3>
@@ -34,19 +34,19 @@
           </tr>
           <tr>
             <td>Early Bird</td>
-            <td>12/19 - 1/16</td>
+            <td>12/19 - 1/21</td>
             <td>$30</td>
           </tr>
            <tr>
             <td>Regular</td>
-            <td>1/17 - 2/12</td>
+            <td>1/22 - 2/12</td>
             <td>$35</td>
           </tr>
         </table>
       </center>
       <li> If you are a student attendee, consider <a href="#resume">submitting your résumé</a> so that we can pass it to our sponsoring corporations.</li>
-      <li> Check out our <a href="<?=base_url()?>conference/programming">programming section</a> to help plan out your
-      traveling/lodging, and to see the incredible speakers and workshops we have lined up for you!</li>
+      <li> Check out our <a href="<?=base_url()?>conference/programming">programming section</a> to see the incredible speakers and workshops we have lined up for you! Also,
+      don't forget to read through the <a href="<?=base_url()?>conference/logistics">logistics section</a> to figure out any housing or travel plans.</li>
     </ol>
   </div>
 </div>
