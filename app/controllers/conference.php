@@ -35,6 +35,17 @@ class Conference extends CI_Controller {
     $this->load->view('templates/conference_footer');
   }
 
+  public function logistics()
+  {
+    $this->load->helper('url');
+
+    $this->data['title'] = 'Northeast Regional Conference 2016 - Northeastern SASE';
+
+    $this->load->view('templates/conference_header',$this->data);
+    $this->load->view('conference/logistics');
+    $this->load->view('templates/conference_footer');
+  }
+
   public function registration()
   {
     $this->load->helper('url');
