@@ -31,14 +31,17 @@ $(document).ready(function() {
 		$("a[href^='#']").on('click', function(e) {
 			e.preventDefault();
 			var hash = this.hash;
-			$('html, body').animate({scrollTop: $(hash).offset().top},
-			 300, function() {
-				window.location.hash = hash;
-				$('html, body').animate({scrollTop: $(hash).offset().top},
-				 300, function(){
-				   window.location.hash = hash;
+			var offs = 45;
+			if($(hash).offset()) {
+				$('html, body').animate({scrollTop: $(hash).offset().top - offs},
+				 300, function() {
+					window.location.hash = hash;
+					$('html, body').animate({scrollTop: $(hash).offset().top - offs},
+					 300, function(){
+					   window.location.hash = hash;
+					});
 				});
-			});
+			}
 		});
 
 		$(function() {
