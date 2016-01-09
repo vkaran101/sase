@@ -1,0 +1,115 @@
+.fade {
+  visibility: hidden;
+}
+
+.conference-banner {
+  padding: 0;
+  height: 300px;
+  background: url('../../public/img/site/banners1.png') center center no-repeat;
+  @include background-cover;
+}
+
+header#less-padding-header {
+  padding-bottom: 0;
+}
+
+header.conference-header {
+  background: #333;
+  .top-bar-section {
+    text-align: center;
+    ul  {
+      display: inline-block;
+      float:none;
+    }
+    ul li.active { border-color: $sase-green; }
+    ul li:hover { border-color: $sase-green; }
+  }
+  padding: rem-calc(10) 0 rem-calc(10);
+  nav ul li a { font-size: 17px; height:40px;}
+  //border-bottom: 5px solid $sase-green;
+}
+
+header.conference-subheader {
+  background: $sase-green;
+  .top-bar-section {
+    text-align: center;
+    ul  {
+      display: inline-block;
+      float:none;
+    }
+    ul li.active { border-color: #fff; }
+    ul li:hover { border-color: #fff; }
+  }
+  padding: rem-calc(0) 0 rem-calc(0);
+  nav ul li a { font-size: 15px; height:36px;}
+}
+
+.conference-content {
+  .first {
+    padding-top:100px;
+  }
+
+  .body-row {
+    min-height: 100%;
+
+    h3 {
+      font-size: 35px;
+      margin-bottom: 50px;
+    }
+
+    p{
+      padding-left: 50px;
+      padding-right: 50px;
+    }
+
+    ol, ul {
+      padding-left: 75px;
+      padding-right: 75px;
+    }
+  }
+
+  .row {
+    padding: 0 100 0;
+  }
+  .container {
+    padding: rem-calc(50) 0;
+  }
+}
+
+
+#committee {
+  .eboard-card {
+    color:#333;
+  }
+
+  .eboard-card:hover {
+    color:#000;
+  }
+}
+
+.blue-text {
+  color:$sase-blue;
+}
+
+.left-off-canvas-menu-conference {
+  -webkit-backface-visibility: hidden;
+  background: #333333;
+  bottom: 0;
+  box-sizing: content-box;
+  -webkit-overflow-scrolling: touch;
+  -ms-overflow-style: -ms-autohiding-scrollbar;
+  overflow-x: hidden;
+  overflow-y: auto;
+  position: absolute;
+  transition: transform 500ms ease 0s;
+  width: 15.625rem;
+  z-index: 1001;
+  -webkit-transform: translate3d(-100%, 0, 0);
+  -moz-transform: translate3d(-100%, 0, 0);
+  -ms-transform: translate(-100%, 0);
+  -o-transform: translate3d(-100%, 0, 0);
+  transform: translate3d(-100%, 0, 0);
+  left: 0;
+  top: 0; }
+  .left-off-canvas-menu-conference * {
+    -webkit-backface-visibility: hidden; }

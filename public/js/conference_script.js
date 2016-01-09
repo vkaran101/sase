@@ -16,7 +16,7 @@ $(document).ready(function() {
 
 		// Sticky navbar
 		$(window).scroll(function () {
-		    subheaderPos = $('.conference-header').offset().top+$('.conference-header').height();
+		    subheaderPos = $('.conference-header').offset().top+$('.conference-header').height()-30;
 		    if ($(window).scrollTop() > subheaderPos) {
 		        $('.conference-subheader').css('position', 'fixed');
 		        $('.conference-subheader').css('width', '100%');
@@ -28,10 +28,15 @@ $(document).ready(function() {
 		});
 
 		// AutoScroll
-		$("a[href^='#']").on('click', function(e) {
+		$(":not(.accordion-navigation) a[href^='#']").on('click', function(e) {
 			e.preventDefault();
 			var hash = this.hash;
-			var offs = 45;
+			var offs = 0;
+
+			subheaderPos = $('.conference-header').offset().top+$('.conference-header').height() - 30;
+		    if ($(window).scrollTop() > subheaderPos) {
+				offs = $('.conference-header').height();
+			}
 			if($(hash).offset()) {
 				$('html, body').animate({scrollTop: $(hash).offset().top - offs},
 				 300, function() {
