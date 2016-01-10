@@ -139,11 +139,8 @@
           <b>A Different Approach to Your Design</b>
           <br>When is it time for us to pivot and choose a new design? While many of us have attachment issues with our design, part of being a designer is adding onto our structure, and using different perspectives to assess our pitfalls and strengths. 
           <hr>
-          <b>Panel - How Can Your Leadership Skills Make a Difference? </b>
+          <b>Leadership Workshop</b>
           <br>The switch from STEM to management. Learn about how you can make a difference in a project with your experience and knowledge!
-          <hr>
-          <b>Networks and Distributed Systems</b>
-          <br>Cristo's gonna be a boss.
         </div>
       </li>
       <li class="accordion-navigation" id="breakout2">
@@ -152,23 +149,23 @@
           <br><i>Participate in interactive workshops that encourage creativity, independent thinking and coming up with original ideas.</i>
         </a>
         <div id="breakout2" class="content">
-          <b>Choosing Projects That You Are Passionate About</b>
-          <br>Even within your desired field, you have an endless amount of concentrations, specializations, and paths. How will you decide on your next project? Come to this panel and learn how to choose projects that align with your interests and passions
-          <hr>
           <b>Developing Your Online Profile</b>
           <br>Professionals are more interconnected than ever through not only LinkedIn, but through various other online profiles such as Twitter, AngelList, and personal websites. Learn how to develop your online profile and improve your online footprint.
           <hr>
           <b>Why choose R&D?</b>
           <br>Learn about the differences between researching a university, vs. researching at a firm. R&D is a great route for scientists who may not want to go into academia; come to this workshop to learn all about it!
           <hr>
-          <b>Panel - Start Up Panel</b>
+          <b>Panel: Start Up Panel</b>
           <br>Everything you have ever wondered about a start-up, debunked. This panel of entrepreneurs will detail their own involvement in startups, as well as tips and tricks to those new to the game.
-          <hr>
-          <b>What You Need to Know Before Diving Into Your Startup</b>
-          <br>You too can follow your dreams, what do you need?
           <hr>
           <b>3D Printing</b>
           <br>Learn the basics of 3D printing! OR Workshop about the current uses of 3D printing in rapid prototype product designs, structure models, etc. Maybe give out free 3D printed objects?
+          <hr>
+          <b>Auditing Algorithms: Towards Transparency in the Age of Big Data</b>
+          <br>In recent years, there has been growing awareness of and concern about powerful algorithms that mediate our daily lives. For example, Google Search and Facebook both personalize the information shown to each user, while e-commerce sites leverage purchase history to drive advertisements and product recommendations. In many cases, these algorithms make our lives simpler, more efficient, and delightful. However, opaque algorithms can also lead to harmful outcomes, such as politically-polarizing "echo chambers", price discrimination by e-commerce sites against consumers, and even racial discrimination.
+          <br><br>
+          In this workshop, we will discuss our work towards "auditing algorithms", were we use carefully controlled experiments to understand the data and algorithms used by companies, and assess the impact of these algorithms on normal people. Case studies on Google Search, e-commerce discrimination, and Uber's Surge Pricing will be discussed. Ultimately, we view algorithmic auditing as a way to increase transparency, and inform societal discussions about how our personal data is being collected and used.
+          <hr>
         </div>
       </li>
       <li class="accordion-navigation" id="breakout3">
@@ -180,8 +177,8 @@
           <b>Panel: Finding Your Asian American Identity as a Professional</b>
           <br>Having lived under the mask of "Model Minority" in school, what is it like to finally end up as a professional after years of Model Minority stereotypes? What challenges do we face as Asian-Americans in the workplace? Come to this workshop to learn more about how your Asian American identity affects you as a professional
           <hr>
-          <b>The Beauty of an Open Mind</b>
-          <br>The mind is a funny thing. As individuals with so many doubts and worries, we tend to shut out anything unfamiliar or strange. What happens when we try to fight against that doubt and certainty, as we open our mind? With an open mind, we not only come up with more creative ideas, but we also build stronger connections, friendships, and a more fulfilling life.
+          <b>Assertive Communications</b>
+          <br>More Information to come!
           <hr>
           <b>Where Do My Passions Intersect?</b>
           <br>As a professional, your career should not seem like a "chore", but should be something fulfilling and important to you. Come to this workshop to learn how you can take joy in your work through interweaving your passions in your day-to-day work life.
@@ -189,7 +186,7 @@
           <b>Our Generation's Next Problems</b>
           <br>Learn about what problems our generation is facing, and what you can do to help through the vehicles of science and engineering!
           <hr>
-          <b>Panel - Academia vs. Industry</b>
+          <b>Panel: Academia vs. Industry</b>
           <br>It is often said that your career diverges into two paths; academia and industry. Come to this panel to learn more about each path, and which one may be a better career option for you!
         </div>
       </li>
