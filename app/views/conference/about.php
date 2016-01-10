@@ -131,27 +131,81 @@
   <div class="row body-row">
     <center><h3>FAQ</h3></center>
 
-    <p><b>How do I register and how much does it cost?</b>
-    <br>Early Bird Registration ends January 21st. Register beforehand to take advantage of the early bird price of $30. Regular registration begins on January 22nd and is $35. Additional discounts are available to attendees who are in the Boston area who are willing to house out-of-state attendees and to those who are volunteers from sponsoring chapters. The registration fee includes speakers, workshops, panels, networking, breakfast, lunch and snacks.
-    <br>The registration page can be found <a href="<?=base_url()?>conference/registration#attendee">here</a>.</p>
-
-    <p><b>Where can I expect to find updates on the conference?</b>
-    <br>Regularly check back on this website, our facebook event page and through email for updates! The website will always feature new items each day leading up to the conference. Do not hesitate to check back!
-    </p>
-
-    <p><b>I’m not from the Boston area. Where do I stay?</b>
-    <br>We are offering an option where we can pair you up with a student-host that has signed up to house attendees from outside of the area. During registration, please indicate whether or not you require housing and visit our Logistics tab where you will find the attendee and host forms. Hotel options will be updated soon. 
-    <br><b>Student Hosted Housing is FIRST COME FIRST SERVE.</b></p>
-
-    <p><b>What is your refund policy?</b>
-    <br>Due to the system that we are using, we will not be able to provide refunds. Any questions or concerns about this should be emailed to <a href="mailto:nesaseregionals2016@gmail.com">nesaseregionals2016@gmail.com</a>.</p>
-
-    <p><b>Who is eligible for a discount?</b>
-    <br>Only volunteers from sponsoring chapters and Boston attendees who are willing to house out-of-state attendees will receive a discount on registration. Do not register until you had received an email confirming your volunteering and/or housing status. You should expect to receive one about a week after filling out the volunteering and/or housing form.</p>
-
-    <p><b>I received a discount code (from volunteering, housing or doing both), how do I use it when registering?</b>
-If you had received a discount code, be sure to apply it on the registration website before paying. There will be a section where you will be able to input the code. </p>
-
+    <ol class="accordion" data-accordion>
+      <li class="accordion-navigation">
+        <a href="#q1">
+          <b>How do I register and how much does it cost?</b>
+        </a>
+        <div id="q1" class="content">
+          Early Bird Registration ends January 21st. Register beforehand to take advantage of the early bird price of $30. Regular registration begins on January 22nd and is $35. Additional discounts are available to attendees who are in the Boston area who are willing to house out-of-state attendees and to those who are volunteers from sponsoring chapters. The registration fee includes speakers, workshops, panels, networking, breakfast, lunch and snacks.
+          <br>The registration page can be found <a href="<?=base_url()?>conference/registration#attendee">here</a>.
+        </div>
+      </li>
+      <li class="accordion-navigation">
+        <a href="#q2">
+          <b>Where can I expect to find updates on the conference?</b>
+        </a>
+        <div id="q2" class="content">
+          Regularly check back on this website, our facebook event page and through email for updates! The website will always feature new items each day leading up to the conference. Do not hesitate to check back!
+        </div>
+      </li>
+      <li class="accordion-navigation">
+        <a href="#q3">
+          <b>I’m not from the Boston area. Where do I stay?</b>
+        </a>
+        <div id="q3" class="content">
+          Applications for receiving student-hosted housing have closed. If you submitted an application but have yet to receive a confirmation, you have been placed on a waitlist. Attendees who need housing but did not submit an application or are on the waitlist should refer to our <a href="<?=base_url()?>conference/logistics#housing">housing section</a> for hotel options.
+        </div>
+      </li>
+      <li class="accordion-navigation">
+        <a href="#q4">
+          <b>What is your refund policy?</b>
+        </a>
+        <div id="q4" class="content">
+          Due to the system that we are using, we will not be able to provide refunds. Any questions or concerns about this should be emailed to <a href="mailto:nesaseregionals2016@gmail.com">nesaseregionals2016@gmail.com</a>.
+        </div>
+      </li>
+      <li class="accordion-navigation">
+        <a href="#q5">
+          <b>Who is eligible for a discount?</b>
+        </a>
+        <div id="q5" class="content">
+          Only volunteers from sponsoring chapters and Boston attendees who are willing to house out-of-state attendees will receive a discount on registration. Do not register until you had received an email confirming your volunteering and/or housing status. You should expect to receive one about a week after filling out the volunteering and/or housing form.
+        </div>
+      </li>
+      <li class="accordion-navigation">
+        <a href="#q6">
+          <b>I received a discount code (from volunteering, housing or doing both), how do I use it when registering?</b>
+        </a>
+        <div id="q6" class="content">
+          If you had received a discount code, be sure to apply it on the registration website before paying. There will be a section where you will be able to input the code.
+        </div>
+      </li>
+      <li class="accordion-navigation">
+        <a href="#q7">
+          <b>What is there to do in Boston?</b>
+        </a>
+        <div id="q7" class="content">
+          Boston has many beautiful sights and places to see. Visit our <a href="<?=base_url()?>conference/logistics#boston">Exploring Boston</a> section for more information.
+        </div>
+      </li>
+      <li class="accordion-navigation">
+        <a href="#q8">
+          <b>How can I upload my résumé?</b>
+        </a>
+        <div id="q8" class="content">
+          To upload your resume to a database for employers to review, please complete this <a href="<?=base_url()?>conference/registration#resume">form</a>.
+        </div>
+      </li>
+      <li class="accordion-navigation">
+        <a href="#q9">
+          <b>My question is not listed, who do I ask?</b>
+        </a>
+        <div id="q9" class="content">
+          Send all immediate questions to our email: <a href="mailto:nesaseregionals2016@gmail.com">nesaseregionals2016@gmail.com</a> or send a message to our <a href="https://www.facebook.com/NortheasternSASE/">Facebook page</a>
+        </div>
+      </li>
+    </ul>
   </div>
 </div>
 

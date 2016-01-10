@@ -9,6 +9,7 @@
     <section class="top-bar-section">
       <ul>
         <li><a href="#attendee">Attendee Registration</a></li>
+        <li><a href="#discounts">Discount Options</a></li>
         <li><a href="#resume">Résumé Submission</a></li>
       </ul>
     </section>
@@ -48,6 +49,29 @@
       <li> Check out our <a href="<?=base_url()?>conference/programming">programming section</a> to see the incredible speakers and workshops we have lined up for you! Also,
       don't forget to read through the <a href="<?=base_url()?>conference/logistics">logistics section</a> to figure out any housing or travel plans.</li>
     </ol>
+  </div>
+</div>
+
+<div class="container light-grey" id="discounts">
+  <div class="row body-row">
+    <center>
+      <h3>Discount Options</h3>
+      <h4>Volunteering</h4>
+    </center>
+      <p>SASE conferences have many parts taking place all at the same time and it would be almost impossible for the committee to run everything by themselves. Volunteers help make up the backbone behind every conference, whether it is helping during check-ins or setting up for the next workshop. 
+      <br><b>If you would like to volunteer, please contact <a href="mailto:nesaseregionals2016@gmail.com">nesaseregionals2016@gmail</a>.com or contact your own SASE chapter for the volunteering form.</b></p>
+      <ul>
+        <li>Volunteers will be assigned a shift during the day and will receive a discount code for <b>$5 off registration</b>.</li>
+        <li>Restricted to NEU and sponsoring chapters.</li>
+      </ul>
+    <center>
+      <h4>Housing</h4>
+    </center>
+      <p>Many attendees are from out-of-city chapters and will require housing for the duration of the conference. If you are in the boston area and are willing to house attendees, please fill out this <a href="http://goo.gl/forms/AszcWomHPq" target="_blank">form</a>.</p>
+      <ul>
+        <li>Those who house out-of-city attendees will receive a discount code for <b>$5 off registration</b>.</li>
+        <li>Restricted to Boston chapters and residents.</li>
+      </ul>
   </div>
 </div>
 
