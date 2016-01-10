@@ -49,6 +49,11 @@ header.conference-subheader {
     padding-top:100px;
   }
 
+  ol, #discounts ul {
+      padding-left: 75px;
+      padding-right: 75px;
+  }
+
   .body-row {
     min-height: 100%;
 
@@ -60,11 +65,6 @@ header.conference-subheader {
     p{
       padding-left: 50px;
       padding-right: 50px;
-    }
-
-    ol, ul {
-      padding-left: 75px;
-      padding-right: 75px;
     }
   }
 
