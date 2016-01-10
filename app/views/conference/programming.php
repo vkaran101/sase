@@ -120,8 +120,8 @@
   <div class="row body-row">
     <center><h3>Workshops</h3></center>
 
-    <ul class="accordion" data-accordion>
-      <li class="accordion-navigation" id="breakout1">
+    <ol class="accordion" data-accordion>
+      <li class="accordion-navigation">
         <a href="#breakout1">
           <b>Breakout 1 - Collaborate</b>
           <br><i>Learn the importance of working in a team of people with diverse skills and experiences to solve multifaceted problems.</i>
@@ -143,7 +143,7 @@
           <br>The switch from STEM to management. Learn about how you can make a difference in a project with your experience and knowledge!
         </div>
       </li>
-      <li class="accordion-navigation" id="breakout2">
+      <li class="accordion-navigation">
         <a href="#breakout2">
           <b>Breakout 2 - Create</b>
           <br><i>Participate in interactive workshops that encourage creativity, independent thinking and coming up with original ideas.</i>
@@ -168,7 +168,7 @@
           <hr>
         </div>
       </li>
-      <li class="accordion-navigation" id="breakout3">
+      <li class="accordion-navigation">
         <a href="#breakout3">
           <b>Breakout 3 - Inspire</b>
           <br><i>How can one create a lasting impact? Panelists share their stories and inspire attendees to pursue their goals.</i>
@@ -198,7 +198,25 @@
 <div class="container smoke" id="speakers">
   <div class="row body-row">
     <center><h3>Speakers</h3></center>
-    <p>Under Construction</p>
+
+    <div class="small-6 columns b-right">
+      <center>
+        <a href="https://www.evernote.com/shard/s36/sh/d421c3f7-0914-434f-a476-ab6749263459/b78f4ac7eef2907e" target="_blank">
+          <img src="<?=base_url()?>public/img/conference/speakers/chang.jpg" style="height: 250px;"/>
+          <h4>David Chang</h4>
+        </a>
+      </center>
+      <p>he cool.</p>
+    </div>
+    <div class="small-6 columns">
+      <center>
+        <a href="http://www.coe.neu.edu/people/gouldstone-andrew" target="_blank">
+          <img src="<?=base_url()?>public/img/conference/speakers/gouldstone.jpg" style="height: 250px;"/>
+          <h4>Andrew Gouldstone</h4>
+        </a>
+      </center>
+      <p>he cool too.</p>
+    </div>
   </div>
 </div>
 
