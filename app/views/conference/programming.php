@@ -202,7 +202,7 @@
   </div>
 </div>
 
-<div class="container grey" id="humans">
+<div class="container porcelain" id="humans">
   <div class="row body-row">
     <center><h3>Humans of NE RC</h3></center>
     <p>"Humans of NE RC" is a weekly series where chapters from across the northeast region share their members' unique experiences collaborating in teams, creating solutions, and inspiring others. Through "Humans of NE RC", we hope to unearth amazing, yet often unshared, stories from everyday peers within the communities in our region. "Humans of NE RC" posts are made to the <a href="https://www.facebook.com/groups/501066289960765/" target="_blank">SASE NE Region Facebook Group</a>.</p>

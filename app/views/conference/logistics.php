@@ -1,17 +1,15 @@
 <header class="conference-subheader">
   <nav class="top-bar" data-topbar role="navigation">
     <ul class="title-area">
-      <li class="name"></li>
       <li class="toggle-topbar">
         <a class="left-off-canvas-toggle" href="#"><i class="fa fa-2x fa-navicon"></i></a>
-      </li>
     </ul>
     <section class="top-bar-section">
       <ul>
-        <li><a href="#gethere">Getting Here</a></li>
-        <li><a href="#housing">Housing</a></li>
-        <li><a href="#maps">Maps</a></li>
-        <li><a href="#boston">Explore Boston</a></li>
+
+
+
+
       </ul>
     </section>
   </nav>
@@ -69,9 +67,17 @@
   </div>
 </div>
 
-<div class="container grey" id="boston">
+<div class="container porcelain" id="boston">
   <div class="row body-row">
-    <center><h3>Explore Boston</h3>
-    <p>Under Construction</p></center>
+    <center><h3>Explore Boston</h3></center>
+    <p>
+      <b>Faneuil Hall Marketplace</b>
+      <br><b>The North-end & Waterfront</b>
+      <br><b>Museum of Science</b>
+      <br><b>Museum of Fine Arts</b>
+      <br><b>Fenway Park</b>
+      <br><b>Harvard Square</b>
+      <br><b>The Freedom Trail</b>
+    </p>
   </div>
 </div>
