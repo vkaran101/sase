@@ -296,7 +296,7 @@
       <li>
         <ul class="eboard-card">
           <li class="pic">
-            <img src="<?=base_url()?>public/img/committee/sub/missing.jpg"/>
+            <img src="<?=base_url()?>public/img/committee/sub/annie.jpg"/>
           </li>
           <li class="name">Annie Edge</li>
         </ul>
@@ -304,7 +304,7 @@
       <li>
         <ul class="eboard-card">
           <li class="pic">
-            <img src="<?=base_url()?>public/img/committee/sub/missing.jpg"/>
+            <img src="<?=base_url()?>public/img/committee/sub/akshay.jpg"/>
           </li>
           <li class="name">Akshay Kaushik</li>
         </ul>
@@ -312,7 +312,7 @@
       <li>
         <ul class="eboard-card">
           <li class="pic">
-            <img src="<?=base_url()?>public/img/committee/sub/missing.jpg"/>
+            <img src="<?=base_url()?>public/img/committee/sub/michelle.jpg"/>
           </li>
           <li class="name">Michelle Ng</li>
         </ul>
@@ -342,7 +342,7 @@
       <li>
         <ul class="eboard-card">
           <li class="pic">
-            <img src="<?=base_url()?>public/img/committee/sub/missing.jpg"/>
+            <img src="<?=base_url()?>public/img/committee/sub/christina.jpg"/>
           </li>
           <li class="name">Christina Nguyen</li>
         </ul>

@@ -206,7 +206,7 @@
           <h4>David Chang</h4>
         </a>
       </center>
-      <p>he cool.</p>
+      <p><i>David is an entrepreneur and angel investor with product, marketing and software development experience at internet and mobile startups. He is currently an EiR at Harvard Business School, Funding Champion at MassChallenge, and works closely with founders and investors in the Boston area. He was recently COO of the PayPal Media Network, led the PayPal Boston office, and the co-founder of the Start Tank innovation space. David holds a BS with Distinction in Computer Science from Cornell University and an MBA from Harvard Business School.</i></p>
     </div>
     <div class="small-6 columns">
       <center>
@@ -215,12 +215,12 @@
           <h4>Andrew Gouldstone</h4>
         </a>
       </center>
-      <p>he cool too.</p>
+      <p><i>Andrew Gouldstone is currently an Associate Professor at Northeastern University’s Department of Mechanical and Industrial Engineering with research interests in biomechanics. Among his research interests are the nature of incipient plasticity in engineering and biological systems, and initiation of fatigue in complex systems and design. Professor Gouldstone received both his B.S. and Ph.D. from the Department of Materials Science and Engineering (DMSE) at MIT, in 1996 and 2001, respectively.</i></p>
     </div>
   </div>
 </div>
 
-<div class="container porcelain" id="humans">
+<div class="container light-grey" id="humans">
   <div class="row body-row">
     <center><h3>Humans of NE RC</h3></center>
     <p>"Humans of NE RC" is a weekly series where chapters from across the northeast region share their members' unique experiences collaborating in teams, creating solutions, and inspiring others. Through "Humans of NE RC", we hope to unearth amazing, yet often unshared, stories from everyday peers within the communities in our region. "Humans of NE RC" posts are made to the <a href="https://www.facebook.com/groups/501066289960765/" target="_blank">SASE NE Region Facebook Group</a>.</p>

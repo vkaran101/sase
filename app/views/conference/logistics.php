@@ -77,7 +77,13 @@
 <div class="container light-grey" id="housing">
   <div class="row body-row">
     <center><h3>Housing</h3></center>
-    <p>For attendees looking for housing during the conference, we recommend getting a reservation at <a href="http://www.midtownhotel.com" target="_blank">The Midtown Hotel</a>. The Midtown Hotel is within walking distance of Northeastern University’s campus, and has allocated 50 two double bed rooms for conference attendees to reserve.</p>
+    <p>For attendees looking for housing during the conference, we recommend getting a reservation at <a href="http://www.midtownhotel.com" target="_blank">The Midtown Hotel</a>. The Midtown Hotel is within walking distance of Northeastern University’s campus, and has allocated 50 two double bed rooms for conference attendees to reserve. Also, free wifi is provided.</p>
+    <p>A price discount is available to conference attendees when reserving a room. The price discount is only guarenteed to be available for reservations prior to February 1st. To get this discount:</p>
+    <ol>
+      <li>If reserving by phone, mention that you are staying for the SASE Conference and request the discount.</li>
+      <li>If reserving through the Midtown Hotel website, please check with your SASE chapter president or your SASE Regional Manager for the discount promotional code.</li>
+    </ol>
+    <p>Cancellations must be made by 3pm, 24 hours prior to arrival to avoid a first night room and tax penalty.</p>
   </div>
 </div>
 
@@ -88,7 +94,7 @@
   </div>
 </div>
 
-<div class="container porcelain" id="boston">
+<div class="container light-grey" id="boston">
   <div class="row body-row">
     <center><h3>Explore Boston</h3></center>
     <p>
