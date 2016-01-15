@@ -77,13 +77,16 @@
 <div class="container light-grey" id="housing">
   <div class="row body-row">
     <center><h3>Housing</h3></center>
-    <p>For attendees looking for housing during the conference, we recommend getting a reservation at <a href="http://www.midtownhotel.com" target="_blank">The Midtown Hotel</a>. The Midtown Hotel is within walking distance of Northeastern University’s campus, and has allocated 50 two double bed rooms for conference attendees to reserve. Also, free wifi is provided.</p>
-    <p>A price discount is available to conference attendees when reserving a room. The price discount is only guarenteed to be available for reservations prior to February 1st. To get this discount:</p>
+    <p>For attendees looking for housing during the conference, we recommend getting a reservation at <a href="http://www.midtownhotel.com" target="_blank">The Midtown Hotel</a>. The Midtown Hotel is within walking distance of Northeastern University’s campus, and has allocated 50 two double bed rooms for conference attendees to reserve. Also, free wifi is provided. <b>To save on costs, we highly suggest that attendees work amongst themselves to share rooms and split the fee.</b></p>
+    <p>A price discount is available to conference attendees when reserving a room. The price discount is only guarenteed to be available for reservations prior to February 5th. To get this discount:</p>
     <ol>
-      <li>If reserving by phone, mention that you are staying for the SASE Conference and request the discount.</li>
-      <li>If reserving through the Midtown Hotel website, please check with your SASE chapter president or your SASE Regional Manager for the discount promotional code.</li>
+      <li>Guests can contact The Midtown Hotel (617-262-1000) and ask for a reservation into the block, by identifying the block name.</li>
+      <li>If reserving through the Midtown Hotel website,  they can log onto the hotel website and type in the indicated block code (SOCOFASIA).</li>
     </ol>
     <p>Cancellations must be made by 3pm, 24 hours prior to arrival to avoid a first night room and tax penalty.</p>
+    <br>
+    <center><h4>Parking</h4></center>
+    <p>Parking is available at Northeastern University’s Gainsborough and Renaissance Garages for $15.00/day and at the Midtown Hotel for $29.00/day. If you would like to park at Northeastern University’s parking garage, please email us at <a href="mailto:nesaseregionals2016@gmail.com">nesaseregionals2016@gmail</a>.com or contact your regional coordinator.</p>
   </div>
 </div>
 
