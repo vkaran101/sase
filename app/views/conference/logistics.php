@@ -86,7 +86,7 @@
     <p>Cancellations must be made by 3pm, 24 hours prior to arrival to avoid a first night room and tax penalty.</p>
     <br>
     <center><h4>Parking</h4></center>
-    <p>Parking is available at Northeastern University’s Gainsborough and Renaissance Garages for $15.00/day and at the Midtown Hotel for $29.00/day. If you would like to park at Northeastern University’s parking garage, please email us at <a href="mailto:nesaseregionals2016@gmail.com">nesaseregionals2016@gmail</a>.com or contact your regional coordinator.</p>
+<p>Complimentary parking passes for up to 2 days are available at Northeastern University’s Gainsborough and Renaissance Garages. Parking at the Midtown Hotel is available for $29.00/day. If you would like to park at Northeastern University’s parking garage, please fill out the <a href ="https://docs.google.com/a/husky.neu.edu/forms/d/1AAk2XaoQAppzMmWKe7dFlWjJ1hTCrVVO59ShD1tKP2Q/viewform" target="_blank"> Parking Pass Request form.</a></p>
   </div>
 </div>
 
@@ -100,14 +100,8 @@
 <div class="container light-grey" id="boston">
   <div class="row body-row">
     <center><h3>Explore Boston</h3></center>
-    <p>
-      <b>Faneuil Hall Marketplace</b>
-      <br><b>The North-end & Waterfront</b>
-      <br><b>Museum of Science</b>
-      <br><b>Museum of Fine Arts</b>
-      <br><b>Fenway Park</b>
-      <br><b>Harvard Square</b>
-      <br><b>The Freedom Trail</b>
-    </p>
+    <center><p>
+      More information to come!
+    </p></center>
   </div>
 </div>
