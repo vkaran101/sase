@@ -4,6 +4,7 @@
     <div class="row body-row">
     <center>
       <!-- <h2 class="blue-text">Get Excited!</h2> -->
+
     <h3><b class="blue-text">2016 SASE Northeast Regional Conference</b>
     <br>“Collaborate, Create, Inspire: We Are The Solution”</h3>
     </center>
@@ -19,13 +20,15 @@
     </center>
     </div>
   </div>
+</center>
 
-<div class="container grey">
-  <center>
-  <h2 class="blue-text">Registration is now open!</h2>
-  <div class="row body-row">
-    <p><b>Early bird registration is now open!</b></p>
-      <a href="<?=base_url()?>conference/registration#attendee" class="button btn-outline large radius">Register</a>
-  </div>
-  </center>
+ <div class="container grey">
+ <center>
+     <h2 class="blue-text">Registration is now open!</h2>
+       <div class="row body-row">
+       <p><b>Early bird registration is now open!</b></p>
+<a href="<?=base_url()?>conference/registration#attendee" class="button btn-outline large radius">Register</a>
 </div>
+</center>
+</div>
+

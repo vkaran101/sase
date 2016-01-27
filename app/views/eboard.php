@@ -22,7 +22,7 @@
     <?php foreach ($eboard->result() as $member): ?>
       <li>
         <ul class="eboard-card">
-          <li class="pic"><img src="<?=base_url().$member->pic?>" width="200"/></li>
+          <img class="img-circle" src="<?=base_url().$member->pic?>" width="200"/>
           <li class="position"><?=$member->position?></li>
           <li class="name"><?=$member->name?></li>
           <li class="major"><?=$member->major?></li>

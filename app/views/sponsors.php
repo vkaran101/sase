@@ -25,9 +25,6 @@
       <li><a href="http://www.shell.com/global/aboutshell/careers.html" target="_blank">
         <img src="<?=base_url()?>public/img/gold/shell.png"></a>
       </li>
-      <li><a href="http://www.toyota.com/usa/careers/" target="_blank">
-        <img src="<?=base_url()?>public/img/gold/toyota.png"></a>
-      </li>
     </ul>
   </div>
 </div>
