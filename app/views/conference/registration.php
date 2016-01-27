@@ -80,7 +80,7 @@
     <center>
       <h3>Résumé Submission</h3>
       <p>Please fill out the following form if you would like us to help pass your résumé to companies sponsoring our conference:</p>
-      <script type="text/javascript" src="https://form.jotform.com/jsform/60096917419160"></script>
+      <script type="text/javascript" src="https://form.jotform.com/jsform/60260381132140"></script>
     </center>
   </div>
 </div>
