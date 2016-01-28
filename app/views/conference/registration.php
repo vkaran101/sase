@@ -49,6 +49,10 @@
       <li> Check out our <a href="<?=base_url()?>conference/programming">programming section</a> to see the incredible speakers and workshops we have lined up for you! Also,
       don't forget to read through the <a href="<?=base_url()?>conference/logistics">logistics section</a> to figure out any housing or travel plans.</li>
     </ol>
+    <br>
+    <center>
+      <a href="https://commerce.cashnet.com/SFNESASE2016" target="_blank" class="button btn-outline large radius">Register</a>
+    </center>
   </div>
 </div>
 
@@ -80,7 +84,7 @@
     <center>
       <h3>Résumé Submission</h3>
       <p>Please fill out the following form if you would like us to help pass your résumé to companies sponsoring our conference:</p>
-      <script type="text/javascript" src="https://form.jotform.com/jsform/60096917419160"></script>
+      <script type="text/javascript" src="https://form.jotform.com/jsform/60260381132140"></script>
     </center>
   </div>
 </div>
