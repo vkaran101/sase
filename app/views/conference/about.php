@@ -133,6 +133,18 @@
 
     <ol class="accordion" data-accordion>
       <li class="accordion-navigation">
+        <a href="#q0">
+          <b>Where are the events being held?</b>
+        </a>
+        <div id="q0" class="content">
+          <ul>
+            <li>Check-in, Breakfast, and Lunch will be taking place in the Curry Student Center Indoor Quad.</li>
+            <li>Opening Ceremony, and Keynote will be taking place in Ell Hall’s Blackman Auditorium.</li>
+            <li>Breakout Sessions will be taking place in Shillman Hall, Snell Engineering Center, Hurtig Hall and Curry Student Center Classrooms.</li>
+          </ul>
+        </div>
+      </li>
+      <li class="accordion-navigation">
         <a href="#q1">
           <b>How do I register and how much does it cost?</b>
         </a>

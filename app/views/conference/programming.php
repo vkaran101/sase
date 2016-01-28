@@ -30,18 +30,22 @@
         <td><b>Location</b></td>
       </tr>
       <tr>
-        <td>8:00AM - 8:40AM</td>
-        <td>Breakfast</td>
-        <td>Indoor Quad + Pit</td>
-      </tr>
-      <tr>
         <td>8:00AM - 2:00PM</td>
         <td>Registration</td>
-        <td>Indoor Quad + Pit</td>
+        <td>Curry Indoor Quad</td>
+      </tr>
+      <tr>
+        <td>8:00AM - 8:40AM</td>
+        <td>Breakfast</td>
+        <td>Curry Indoor Quad</td>
       </tr>
       <tr>
         <td>8:50AM - 9:40AM</td>
-        <td>1st Speaker & Opening</td>
+        <td>
+          <span data-tooltip aria-haspopup="true" class="has-tip" title="8:55-9:10 Opening Remarks<br />9:10-9:40 Opening Keynote">
+            Morning Speaker & Opening
+          </span>
+        </td>
         <td>Blackman Auditorium</td>
       </tr>
       <tr>
@@ -57,7 +61,7 @@
       <tr>
         <td>12:10PM - 12:55PM</td>
         <td>Lunch</td>
-        <td>Indoor Quad + Mezzanine</td>
+        <td>Curry Indoor Quad + Mezzanine</td>
       </tr>
       <tr>
         <td>1:05PM - 2:05PM</td>
@@ -66,18 +70,27 @@
       </tr>
       <tr>
         <td>2:15PM-4:00PM</td>
-        <td>Keynote Speaker & Closing</td>
+        <td>
+          <span data-tooltip aria-haspopup="true" class="has-tip" title="2:15-2:35 Performances<br />2:35-2:50 Introductions<br />2:50-3:35 Keynote<br />3:35-4:00 Closing Remarks">
+            Keynote Speaker & Closing
+          </span>
+        </td>
         <td>Blackman Auditorium</td>
       </tr>
       <tr>
         <td>4:00PM - 6:00PM </td>
-        <td>Event/Window Shop Period</td>
-        <td>Mezzanine and Curry rooms</td>
+        <td>Company Fair</td>
+        <td>Curry Indoor Quad</td>
       </tr>
       <tr>
         <td>4:00PM - 6:00PM </td>
-        <td>Networking</td>
-        <td>Indoor Pit + Quad</td>
+        <td>Golden Sponsor Suites</td>
+        <td>Curry Student Center Rooms</td>
+      </tr>
+      <tr>
+        <td>4:00PM - 6:00PM </td>
+        <td>Networking Activites</td>
+        <td>Curry Mezzanine</td>
       </tr>
       </table>
 
@@ -89,7 +102,14 @@
         <td><b>Location</b></td>
       </tr>
       <tr>
-        <td>1:00PM - 6:00PM</td>
+        <td>9:50AM - 2:15PM</td>
+        <td><a href="https://www.cradlestocrayons.org/" target="_blank">Cradles to Crayons</a> Charity</td>
+        <td>Curry Indoor Quad</td>
+      </tr>
+      <tr>
+        <td>9:50AM - 2:15PM</td>
+        <td>Raffle Table</td>
+        <td>Curry Indoor Quad</td>
         <td>
           <span data-tooltip aria-haspopup="true" class="has-tip" title="Come in and receive constructive feedback on your resume from professionals.">
             Resume Reviews
@@ -100,8 +120,8 @@
       <tr>
         <td>1:00PM - 6:00PM</td>
         <td>
-          <span data-tooltip aria-haspopup="true" class="has-tip" title="Gain much needed experience in interviewing for positions.">
-            Mock Interviews
+          <span data-tooltip aria-haspopup="true" class="has-tip" title="Come in and receive constructive feedback on your resume from professionals.">
+            Resume Reviews
           </span>
         </td>
         <td>Curry Rooms</td>
@@ -118,7 +138,7 @@
 
 <div class="container light-grey" id="workshops">
   <div class="row body-row">
-    <center><h3>Workshops</h3></center>
+    <center><h3>Workshops*</h3></center>
 
     <ol class="accordion" data-accordion>
       <li class="accordion-navigation">
@@ -139,8 +159,8 @@
           <b>A Different Approach to Your Design</b>
           <br>When is it time for us to pivot and choose a new design? While many of us have attachment issues with our design, part of being a designer is adding onto our structure, and using different perspectives to assess our pitfalls and strengths. 
           <hr>
-          <b>Leadership Workshop</b>
-          <br>The switch from STEM to management. Learn about how you can make a difference in a project with your experience and knowledge!
+          <b>6E’s: Redefine your leadership</b>
+          <br>You probably have heard of or taken other leadership assessments, or models out there, such as the Myers-Briggs Type Indicator or Strengthsfinders. However, what makes our LSA (Leadership Self Assessment) different, is that we focus on continuous reflection and direct feedback from others to help track the growth of your leadership development. With the SASE 6E leadership model (Empower, Energize, Envision, Engage, Execute, Elastic), you can redefine and recognize the way you see leadership, as well as identify which of your leadership styles are stronger than others. Because when these 6 powers combine, they create senSASEtional leaders!
         </div>
       </li>
       <li class="accordion-navigation">
@@ -159,12 +179,10 @@
           <br>Everything you have ever wondered about a start-up, debunked. This panel of entrepreneurs will detail their own involvement in startups, as well as tips and tricks to those new to the game.
           <hr>
           <b>3D Printing</b>
-          <br>Learn the basics of 3D printing! OR Workshop about the current uses of 3D printing in rapid prototype product designs, structure models, etc. Maybe give out free 3D printed objects?
+          <br>Learn the basics of 3D printing! Attendees will learn how to use SolidWorks and create their own design. This workshop has limited space, up to 30 people only.
           <hr>
           <b>Auditing Algorithms: Towards Transparency in the Age of Big Data</b>
-          <br>In recent years, there has been growing awareness of and concern about powerful algorithms that mediate our daily lives. For example, Google Search and Facebook both personalize the information shown to each user, while e-commerce sites leverage purchase history to drive advertisements and product recommendations. In many cases, these algorithms make our lives simpler, more efficient, and delightful. However, opaque algorithms can also lead to harmful outcomes, such as politically-polarizing "echo chambers", price discrimination by e-commerce sites against consumers, and even racial discrimination.
-          <br><br>
-          In this workshop, we will discuss our work towards "auditing algorithms", were we use carefully controlled experiments to understand the data and algorithms used by companies, and assess the impact of these algorithms on normal people. Case studies on Google Search, e-commerce discrimination, and Uber's Surge Pricing will be discussed. Ultimately, we view algorithmic auditing as a way to increase transparency, and inform societal discussions about how our personal data is being collected and used.
+          <br>In recent years, there has been growing awareness of powerful algorithms that mediate our daily lives. For example,  Facebook personalizes the information shown to each user. While making our lives much simpler, opaque algorithms can lead to harmful outcomes. In this workshop, we will discuss our work towards "auditing algorithms", where we use carefully controlled experiments to understand the data and algorithms used by companies such as Google and Uber, increase transparency, and inform societal discussions about how our personal data is being collected and used.
           <hr>
         </div>
       </li>
@@ -178,12 +196,12 @@
           <br>Having lived under the mask of "Model Minority" in school, what is it like to finally end up as a professional after years of Model Minority stereotypes? What challenges do we face as Asian-Americans in the workplace? Come to this workshop to learn more about how your Asian American identity affects you as a professional
           <hr>
           <b>Assertive Communications</b>
-          <br>More Information to come!
+          <br>The workshop will focus on four types of communication: Aggressive, passive-aggressive, submissive, assertive. Pros and cons will be explored for each of these types of communication. The workshop will focus on the importance of assertive communications and how it helps build personal and professional relationships, while allowing tasks to be completed with a "win-win" in mind. The workshop ends with an interactive activity which allows the audience to put into action the skills they've learned in the workshop.
           <hr>
           <b>Where Do My Passions Intersect?</b>
           <br>As a professional, your career should not seem like a "chore", but should be something fulfilling and important to you. Come to this workshop to learn how you can take joy in your work through interweaving your passions in your day-to-day work life.
           <hr>
-          <b>Our Generation's Next Problems</b>
+          <b>Problems Our Generation Must Face</b>
           <br>Learn about what problems our generation is facing, and what you can do to help through the vehicles of science and engineering!
           <hr>
           <b>Panel: Academia vs. Industry</b>
@@ -191,7 +209,42 @@
         </div>
       </li>
     </ul>
-
+    <!-- <br>
+    <ul class="accordion" data-accordion>
+      <li class="accordion-navigation">
+        <a href="#breakout4">
+          <b>SASE Marketing Workshop</b>
+          <br><i>How can one create a lasting impact? Panelists share their stories and inspire attendees to pursue their goals.</i>
+        </a>
+        <div id="breakout4" class="content">
+          bla
+        </div>
+      </li>
+    </ul> -->
+    <br>
+    <center>
+      <p><b>Look out for workshops from our corporate sponsors!</b></p>
+      <br>
+      <div class="row body-row">
+        <div class="small-4 columns">
+          <a href="https://www.bostonscientific.com/en-US/home.html" target="_blank">
+            <img src="https://www.bostonscientific.com/content/dam/bostonscientific/corporate/logos/boston-scientific-logo.png"/>
+          </a>
+        </div>
+        <div class="small-4 columns">
+          <a href="http://us.pg.com/" target="_blank">
+            <img src="http://us.pg.com/-/media/PGCOMUS/Images/Common/Header/logo%20png.png"/>
+          </a>
+        </div>
+        <div class="small-4 columns">
+          <a href="http://www.jacobs.com/" target="_blank">
+            <img src="https://5percentclubblog.files.wordpress.com/2015/02/jacobs-logo_blue.jpg"/>
+          </a>
+        </div>
+      </div>
+      <br>
+      * workshops are subject to change
+    </center>
   </div>
 </div>
 

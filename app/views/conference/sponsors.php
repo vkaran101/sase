@@ -10,7 +10,8 @@
       <ul>
         <li><a href="#co-hosts">Co-Hosts</a></li>
         <li><a href="#chapters">Sponsoring Chapters</a></li>
-        <li><a href="#sponsors">Sponsors</a></li>
+        <li><a href="#corp">Corporate Sponsors</a></li>
+        <li><a href="#other">Other Sponsors</a></li>
       </ul>
     </section>
   </nav>
@@ -59,10 +60,48 @@
   </div>
 </div>
 
-<div class="container" id="sponsors">
+<div class="container" id="corp">
+<div class="row body-row">
+    <center>
+      <h3>Corporate Sponsors</h3>
+    </center>
+  </div>
+  <div class="row body-row gold">
+    <center>
+      <h4>Gold Sponsors</h4>
+      <div class="small-12 medium-10 medium-centered columns text-center">
+        <ul class="small-block-grid-1 medium-block-grid-2">
+          <li><a href="https://www.bostonscientific.com/en-US/home.html" target="_blank">
+            <img src="<?=base_url()?>public/img/conference/sponsors/bostonScientific.png"></a>
+          </li>
+          <li><a href="http://www.jacobs.com/" target="_blank">
+            <img src="<?=base_url()?>public/img/conference/sponsors/jacobs.jpg"></a>
+          </li>
+        </ul>
+      </div>
+    </center>
+  </div>
+  <div class="row body-row porcelain">
+    <center>
+      <h4>Silver Sponsors</h4>
+      <div class="small-12 medium-10 medium-centered columns text-center">
+        <ul class="small-block-grid-1 medium-block-grid-2">
+          <li><a href="http://us.pg.com/" target="_blank">
+            <img src="<?=base_url()?>public/img/gold/png.png"></a>
+          </li>
+          <li><a href="http://www.ge.com/" target="_blank">
+            <img src="<?=base_url()?>public/img/gold/ge.png"></a>
+          </li>
+        </ul>
+      </div>
+    </center>
+  </div>
+</div>
+
+<div class="container" id="other">
   <div class="row body-row">
     <center>
-      <h3>Sponsors</h3>
+      <h3>Other Sponsors</h3>
       <div class="small-12 medium-10 medium-centered columns text-center">
         <ul class="small-block-grid-1 medium-block-grid-2">
           <li><a href="http://www.sga.neu.edu/" target="_blank">
