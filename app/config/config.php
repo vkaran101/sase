@@ -15,7 +15,7 @@
 |
 */
 $config['base_url']	= 'http://localhost/sase/';
-
+    
 /*
 |--------------------------------------------------------------------------
 | Index File
@@ -182,6 +182,7 @@ $config['directory_trigger']	= 'd'; // experimental not currently in use
 */
 $config['log_threshold'] = 0;
 
+
 /*
 |--------------------------------------------------------------------------
 | Error Logging Directory Path
@@ -192,6 +193,7 @@ $config['log_threshold'] = 0;
 |
 */
 $config['log_path'] = '';
+
 
 /*
 |--------------------------------------------------------------------------
