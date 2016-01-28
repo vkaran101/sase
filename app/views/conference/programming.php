@@ -30,22 +30,18 @@
         <td><b>Location</b></td>
       </tr>
       <tr>
-        <td>8:00AM - 2:00PM</td>
-        <td>Registration</td>
-        <td>Curry Indoor Quad</td>
-      </tr>
-      <tr>
         <td>8:00AM - 8:40AM</td>
         <td>Breakfast</td>
-        <td>Curry Indoor Quad</td>
+        <td>Indoor Quad + Pit</td>
+      </tr>
+      <tr>
+        <td>8:00AM - 2:00PM</td>
+        <td>Registration</td>
+        <td>Indoor Quad + Pit</td>
       </tr>
       <tr>
         <td>8:50AM - 9:40AM</td>
-        <td>
-          <span data-tooltip aria-haspopup="true" class="has-tip" title="8:55-9:10 Opening Remarks<br />9:10-9:40 Opening Keynote">
-            Morning Speaker & Opening
-          </span>
-        </td>
+        <td>1st Speaker & Opening</td>
         <td>Blackman Auditorium</td>
       </tr>
       <tr>
@@ -61,7 +57,7 @@
       <tr>
         <td>12:10PM - 12:55PM</td>
         <td>Lunch</td>
-        <td>Curry Indoor Quad + Mezzanine</td>
+        <td>Indoor Quad + Mezzanine</td>
       </tr>
       <tr>
         <td>1:05PM - 2:05PM</td>
@@ -70,27 +66,18 @@
       </tr>
       <tr>
         <td>2:15PM-4:00PM</td>
-        <td>
-          <span data-tooltip aria-haspopup="true" class="has-tip" title="2:15-2:35 Performances<br />2:35-2:50 Introductions<br />2:50-3:35 Keynote<br />3:35-4:00 Closing Remarks">
-            Keynote Speaker & Closing
-          </span>
-        </td>
+        <td>Keynote Speaker & Closing</td>
         <td>Blackman Auditorium</td>
       </tr>
       <tr>
         <td>4:00PM - 6:00PM </td>
-        <td>Company Fair</td>
-        <td>Curry Indoor Quad</td>
+        <td>Event/Window Shop Period</td>
+        <td>Mezzanine and Curry rooms</td>
       </tr>
       <tr>
         <td>4:00PM - 6:00PM </td>
-        <td>Golden Sponsor Suites</td>
-        <td>Curry Student Center Rooms</td>
-      </tr>
-      <tr>
-        <td>4:00PM - 6:00PM </td>
-        <td>Networking Activites</td>
-        <td>Curry Mezzanine</td>
+        <td>Networking</td>
+        <td>Indoor Pit + Quad</td>
       </tr>
       </table>
 
@@ -102,20 +89,19 @@
         <td><b>Location</b></td>
       </tr>
       <tr>
-        <td>9:50AM - 2:15PM</td>
-        <td><a href="https://www.cradlestocrayons.org/" target="_blank">Cradles to Crayons</a> Charity</td>
-        <td>Curry Indoor Quad</td>
-      </tr>
-      <tr>
-        <td>9:50AM - 2:15PM</td>
-        <td>Raffle Table</td>
-        <td>Curry Indoor Quad</td>
-      </tr>
-      <tr>
         <td>1:00PM - 6:00PM</td>
         <td>
           <span data-tooltip aria-haspopup="true" class="has-tip" title="Come in and receive constructive feedback on your resume from professionals.">
             Resume Reviews
+          </span>
+        </td>
+        <td>Curry Rooms</td>
+      </tr>
+      <tr>
+        <td>1:00PM - 6:00PM</td>
+        <td>
+          <span data-tooltip aria-haspopup="true" class="has-tip" title="Gain much needed experience in interviewing for positions.">
+            Mock Interviews
           </span>
         </td>
         <td>Curry Rooms</td>
@@ -132,7 +118,7 @@
 
 <div class="container light-grey" id="workshops">
   <div class="row body-row">
-    <center><h3>Workshops*</h3></center>
+    <center><h3>Workshops</h3></center>
 
     <ol class="accordion" data-accordion>
       <li class="accordion-navigation">
@@ -205,42 +191,7 @@
         </div>
       </li>
     </ul>
-    <!-- <br>
-    <ul class="accordion" data-accordion>
-      <li class="accordion-navigation">
-        <a href="#breakout4">
-          <b>SASE Marketing Workshop</b>
-          <br><i>How can one create a lasting impact? Panelists share their stories and inspire attendees to pursue their goals.</i>
-        </a>
-        <div id="breakout4" class="content">
-          bla
-        </div>
-      </li>
-    </ul> -->
-    <br>
-    <center>
-      <p><b>Look out for workshops from our corporate sponsors!</b></p>
-      <br>
-      <div class="row body-row">
-        <div class="small-4 columns">
-          <a href="https://www.bostonscientific.com/en-US/home.html" target="_blank">
-            <img src="https://www.bostonscientific.com/content/dam/bostonscientific/corporate/logos/boston-scientific-logo.png"/>
-          </a>
-        </div>
-        <div class="small-4 columns">
-          <a href="http://us.pg.com/" target="_blank">
-            <img src="http://us.pg.com/-/media/PGCOMUS/Images/Common/Header/logo%20png.png"/>
-          </a>
-        </div>
-        <div class="small-4 columns">
-          <a href="http://www.jacobs.com/" target="_blank">
-            <img src="https://5percentclubblog.files.wordpress.com/2015/02/jacobs-logo_blue.jpg"/>
-          </a>
-        </div>
-      </div>
-      <br>
-      * workshops are subject to change
-    </center>
+
   </div>
 </div>
 
