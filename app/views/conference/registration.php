@@ -49,6 +49,10 @@
       <li> Check out our <a href="<?=base_url()?>conference/programming">programming section</a> to see the incredible speakers and workshops we have lined up for you! Also,
       don't forget to read through the <a href="<?=base_url()?>conference/logistics">logistics section</a> to figure out any housing or travel plans.</li>
     </ol>
+    <br>
+    <center>
+      <a href="https://commerce.cashnet.com/SFNESASE2016" target="_blank" class="button btn-outline large radius">Register</a>
+    </center>
   </div>
 </div>
 

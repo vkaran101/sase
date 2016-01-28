@@ -27,7 +27,7 @@
      <h2 class="blue-text">Registration is now open!</h2>
        <div class="row body-row">
        <p><b>Early bird registration is now open!</b></p>
-<a href="<?=base_url()?>conference/registration#attendee" class="button btn-outline large radius">Register</a>
+<a href="https://commerce.cashnet.com/SFNESASE2016" target="_blank" class="button btn-outline large radius">Register</a>
 </div>
 </center>
 </div>

@@ -100,8 +100,74 @@
 <div class="container light-grey" id="boston">
   <div class="row body-row">
     <center><h3>Explore Boston</h3></center>
-    <center><p>
-      More information to come!
-    </p></center>
+    <p>
+      Coming in early? Or staying a bit later? Well Boston has so many attractions and places to see! You could get lost and still find awesome things to do. Here are some of our favorite picks in Bean-Town!
+    </p>
+    <ol class="accordion" data-accordion>
+      <li class="accordion-navigation">
+        <a href="#bos1">
+          <b>Faneuil Hall Marketplace</b>
+        </a>
+        <div id="bos1" class="content">
+          Also known as Quincy Market, this shopping area features dozens upon dozens of hidden shops centered around a market where you can find authentic Bostonian food. Snag yourselves some lobster rolls and clam chowder!
+          <br><a href="http://www.faneuilhallmarketplace.com/" target="_blank">Website</a>
+        </div>
+      </li>
+      <li class="accordion-navigation">
+        <a href="#bos2">
+          <b>The Northend & Waterfront</b>
+        </a>
+        <div id="bos2" class="content">
+          Sometimes known as “Boston’s Little Italy,” the Northend is a mecca for Italian restaurants and cafes. There is a beautiful mix between old time shops and new boutiques.
+          <br><a href="http://www.northendboston.com/about/" target="_blank">Website</a>
+        </div>
+      </li>
+      <li class="accordion-navigation">
+        <a href="#bos3">
+          <b>Museum of Science</b>
+        </a>
+        <div id="bos3" class="content">
+          With over 700 interactive exhibits, the Museum of science is a landmark that features a number of live presentations throughout the building every day, along with shows at the Charles Hayden Planetarium and the Mugar Omni Theater, the only domed IMAX screen in New England.
+          <br><a href="http://www.mos.org/" target="_blank">Website</a>
+        </div>
+      </li>
+      <li class="accordion-navigation">
+        <a href="#bos4">
+          <b>Museum of Fine Arts</b>
+        </a>
+        <div id="bos4" class="content">
+          Situated next to Northeastern’s campus is one of the largest museums in the United States. It contains more than 450,000 works of art, making it one of the most comprehensive collections in the Americas.
+          <br><a href="http://www.mfa.org/" target="_blank">Website</a>
+        </div>
+      </li>
+      <li class="accordion-navigation">
+        <a href="#bos5">
+          <b>Fenway Park</b>
+        </a>
+        <div id="bos5" class="content">
+          Just North of Northeastern’s campus is Fenway park. Since 1912, it has been the home of the Boston Red Sox, the city's Major League Baseball franchise. It is the oldest ballpark in MLB!
+          <br><a href="http://boston.redsox.mlb.com/bos/ballpark/" target="_blank">Website</a>
+        </div>
+      </li>
+      <li class="accordion-navigation">
+        <a href="#bos6">
+          <b>Harvard Square</b>
+        </a>
+        <div id="bos6" class="content">
+          Located at the heart of Cambridge, you will be able to find a slew of shops ranging from cafes, restaurants and bookstores.
+          <br><a href="http://www.harvardsquare.com/" target="_blank">Website</a>
+        </div>
+      </li>
+      <li class="accordion-navigation">
+        <a href="#bos7">
+          <b>The Union Oyster House</b>
+        </a>
+        <div id="bos7" class="content">
+          Located on the Freedom Trail near Faneuil Hall is one of the oldest restaurants in Boston. Seafood can get no more authentic that this!
+          <br><a href="http://unionoysterhouse.com/" target="_blank">Website</a>
+        </div>
+      </li>
+    </ol>
+
   </div>
 </div>
