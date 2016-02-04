@@ -126,7 +126,7 @@
             <img src="<?=base_url()?>public/img/conference/sponsors/teachForAmerica.png" /></a>
           </li>
           <li><a href="http://www.sensata.com/" target="_blank">
-            <img src="<?=base_url()?>public/img/conference/sponsors/sensata.gif" /></a>
+            <img src="<?=base_url()?>public/img/conference/sponsors/sensata.png" /></a>
           </li>
           <li><a href="https://www1.nationalgridus.com/CorporateHub" target="_blank">
             <img src="<?=base_url()?>public/img/conference/sponsors/nationalgrid.png" /></a>
