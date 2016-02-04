@@ -3,11 +3,12 @@
 
 <footer>
 <div class="row">
-  <div class="small-12 medium-3 medium-push-3 columns small-only-text-center">
-    <p></p>
-  </div>
-  <div class="small-12 medium-3 medium-push-3 columns small-only-text-center">
-    <hr class="divider" />
+  <div class="small-12 medium-6 medium-push-3 columns small-only-text-center">
+    <center>
+      <h4>Register for Conference!</h4>
+      <br>
+      <a href="https://commerce.cashnet.com/SFNESASE2016" target="_blank" class="button btn-green btn-outline large radius">Register</a>
+    </center>
   </div>
   <div class="small-6 medium-3 medium-pull-6 columns small-only-text-center">
     <h3>Conference Affiliations</h3>
