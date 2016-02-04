@@ -107,17 +107,6 @@
         <td>Curry Indoor Quad</td>
       </tr>
       <tr>
-        <td>9:50AM - 2:15PM</td>
-        <td>Raffle Table</td>
-        <td>Curry Indoor Quad</td>
-        <td>
-          <span data-tooltip aria-haspopup="true" class="has-tip" title="Come in and receive constructive feedback on your resume from professionals.">
-            Resume Reviews
-          </span>
-        </td>
-        <td>Curry Rooms</td>
-      </tr>
-      <tr>
         <td>1:00PM - 6:00PM</td>
         <td>
           <span data-tooltip aria-haspopup="true" class="has-tip" title="Come in and receive constructive feedback on your resume from professionals.">

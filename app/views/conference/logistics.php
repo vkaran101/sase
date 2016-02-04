@@ -92,8 +92,11 @@
 
 <div class="container smoke" id="maps">
   <div class="row body-row">
-    <center><h3>Maps</h3>
-    <p>Under Construction</p></center>
+    <center>
+      <h3>Maps</h3>
+      <h4><b>Looking for a non-conference building? Refer to the <a href="http://www.northeastern.edu/berentlab/wp-content/uploads/2012/04/campusmap.jpg" target="_blank">Northeastern Campus Map</a>.</b></h4>
+      <img src="<?=base_url()?>public/img/conference/map.jpg" />
+    </center>
   </div>
 </div>
 

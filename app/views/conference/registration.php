@@ -10,6 +10,7 @@
       <ul>
         <li><a href="#attendee">Attendee Registration</a></li>
         <li><a href="#discounts">Discount Options</a></li>
+        <li><a href="#reviews">Résumé Reviews</a></li>
         <li><a href="#resume">Résumé Submission</a></li>
       </ul>
     </section>
@@ -76,6 +77,16 @@
         <li>Those who house out-of-city attendees will receive a discount code for <b>$5 off registration</b>.</li>
         <li>Restricted to Boston chapters and residents.</li>
       </ul>
+  </div>
+</div>
+
+<div class="container smoke" id="reviews">
+  <div class="row body-row">
+    <center>
+      <h3>Résumé Reviews</h3>
+      <p>Sponsoring companies will be conducting résumé reviews during the conference. 
+      <br>To sign up, fill out the <a href="https://docs.google.com/forms/d/1g-3WoFtqlHWr_TfV_W38GTm_7BbxIz2ivktlS0M-szY/viewform" target="_blank">Résumé Review form</a>.</p>
+    </center>
   </div>
 </div>
 
