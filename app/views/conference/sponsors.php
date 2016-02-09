@@ -104,9 +104,6 @@
           <li><a href="http://www.fikst.com/" target="_blank">
             <img src="<?=base_url()?>public/img/conference/sponsors/fikst.png" /></a>
           </li>
-          <li><a href="http://www.bio-rad.com/" target="_blank">
-            <img src="<?=base_url()?>public/img/conference/sponsors/biorad.png" /></a>
-          </li>
           <li><a href="http://www.sharkninja.com/" target="_blank">
             <img src="<?=base_url()?>public/img/conference/sponsors/sharkninja.png" /></a>
           </li>
@@ -121,7 +118,7 @@
     <center>
       <h4><b>Bronze Sponsors</b></h4>
       <div class="small-12 medium-10 medium-centered columns text-center">
-        <ul class="small-block-grid-5 medium-block-grid-6">
+        <ul class="small-block-grid-5 medium-block-grid-3">
           <li><a href="https://www.teachforamerica.org/" target="_blank">
             <img src="<?=base_url()?>public/img/conference/sponsors/teachForAmerica.png" /></a>
           </li>
