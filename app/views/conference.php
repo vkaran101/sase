@@ -1,4 +1,13 @@
 <section class="main">
+<div class="container grey">
+<center>
+<h2 class="blue-text">Registration is now open!</h2>
+<div class="row body-row">
+<p><b>Registration closes 02/12!</b></p>
+<a href="https://commerce.cashnet.com/SFNESASE2016" target="_blank" class="button btn-outline large radius">Register</a>
+</div>
+</center>
+</div>
 
   <div class="container">
     <div class="row body-row">
@@ -22,13 +31,4 @@
   </div>
 </center>
 
- <div class="container grey">
- <center>
-     <h2 class="blue-text">Registration is now open!</h2>
-       <div class="row body-row">
-       <p><b>Early bird registration is now open!</b></p>
-<a href="https://commerce.cashnet.com/SFNESASE2016" target="_blank" class="button btn-outline large radius">Register</a>
-</div>
-</center>
-</div>
 

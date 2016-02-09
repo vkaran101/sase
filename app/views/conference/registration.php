@@ -36,12 +36,12 @@
           </tr>
           <tr>
             <td>Early Bird</td>
-            <td>12/19 - 1/21</td>
+            <td>12/19 - 2/1</td>
             <td>$30</td>
           </tr>
            <tr>
             <td>Regular</td>
-            <td>1/22 - 2/12</td>
+            <td>2/2 - 2/12</td>
             <td>$35</td>
           </tr>
         </table>
