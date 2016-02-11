@@ -205,7 +205,7 @@
           <br>The workshop will focus on four types of communication: Aggressive, passive-aggressive, submissive, assertive. Pros and cons will be explored for each of these types of communication. The workshop will focus on the importance of assertive communications and how it helps build personal and professional relationships, while allowing tasks to be completed with a "win-win" in mind. The workshop ends with an interactive activity which allows the audience to put into action the skills they've learned in the workshop.
           <hr>
           <b>Finding Your Identity as an Asian-American Professional</b><br>
-          <i>Various; DG 050</i>
+          <i>Various; DG 119</i>
           <br>Having lived under the mask of "Model Minority" in school, what is it like to finally end up as a professional after years of Model Minority stereotypes? What challenges do we face as Asian-Americans in the workplace? Come to this workshop to learn more about how your Asian American identity affects you as a professional.
         </div>
       </li>
