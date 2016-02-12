@@ -12,6 +12,7 @@
         <li><a href="#chapters">Sponsoring Chapters</a></li>
         <li><a href="#corp">Corporate Sponsors</a></li>
         <li><a href="#other">Other Sponsors</a></li>
+        <li><a href="network">Networking Activities</a></li>
       </ul>
     </section>
   </nav>
@@ -146,5 +147,40 @@
         </ul>
       </div>
     </center>
+  </div>
+</div>
+
+<div class="container smoke" id="network">
+  <div class="row body-row">
+    <center>
+      <h3>Companies Attending Networking Activities</h3>
+    </center>
+    <div class="small-6 columns">
+      <ul>
+        <li>Jacobs</li>
+        <li>Boston Scientific</li>
+        <li>Urban Beekeeping Laboratory</li>
+        <li>P&G</li>
+        <li>NAAAP</li>
+        <li>GE</li>
+        <li>SASE Pro</li>
+        <li>Fikst</li>
+        <li>SharkNinja</li>
+        <li>ECAASU</li>
+      </ul>
+    </div>
+    <div class="small-6 columns">
+      <ul>
+        <li>Teach for America</li>
+        <li>Sensata</li>
+        <li>National Grid</li>
+        <li>Graduate School of Engineering</li>
+        <li>Door of Clubs</li>
+        <li>ScholarJet</li>
+        <li>Gingko Bioworks</li>
+        <li>Comodo</li>
+        <li>American Geotechincal and Environmental Services</li>
+      </ul>
+    </div>
   </div>
 </div>
