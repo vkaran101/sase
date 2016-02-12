@@ -12,7 +12,7 @@
         <li><a href="#chapters">Sponsoring Chapters</a></li>
         <li><a href="#corp">Corporate Sponsors</a></li>
         <li><a href="#other">Other Sponsors</a></li>
-        <li><a href="network">Networking Activities</a></li>
+        <li><a href="#network">Networking Fair</a></li>
       </ul>
     </section>
   </nav>
@@ -153,7 +153,7 @@
 <div class="container smoke" id="network">
   <div class="row body-row">
     <center>
-      <h3>Companies Attending Networking Activities</h3>
+      <h3>Companies Attending Networking Fair</h3>
     </center>
     <div class="small-6 columns">
       <ul>
