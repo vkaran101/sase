@@ -87,6 +87,7 @@
     <br>
     <center><h4>Parking</h4></center>
 <p>Complimentary parking passes for 1 night are available at Northeastern University’s Gainsborough and Renaissance Garages. If you require parking for an additional please specify in the parking form. Parking at the Midtown Hotel is available for $29.00/day. If you would like to park at Northeastern University’s parking garage, please fill out the <a href ="https://docs.google.com/a/husky.neu.edu/forms/d/1AAk2XaoQAppzMmWKe7dFlWjJ1hTCrVVO59ShD1tKP2Q/viewform" target="_blank"> Parking Pass Request form.</a></p>
+  <img src="<?=base_url()?>public/img/conference/map2.jpg" />
   </div>
 </div>
 
