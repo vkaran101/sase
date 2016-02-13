@@ -1,10 +1,10 @@
 <section class="main">
 <div class="container white">
 <center>
-<h2 class="blue-text">Registration is open!</h2>
+<h2 class="blue-text">Registration is closed!</h2>
 <div class="row body-row">
-<p><b>But it closes 02/12, so be quick!</b></p>
-<a href="https://commerce.cashnet.com/SFNESASE2016" target="_blank" class="button btn-outline large radius">Register</a>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/kYCbCDHpHEU" frameborder="0" allowfullscreen></iframe>
+<h4>Lose your booklet? Download a digital version <a href="<?=base_url()?>public/img/conference/booklet.pdf">here</a>!</h4>
 </div>
 </center>
   </div>

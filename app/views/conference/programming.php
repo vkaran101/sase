@@ -157,6 +157,10 @@
           <b>The "Everything Else": At the Intersection of Social Justice and Technology</b><br>
           <i>ECAASU; EL 312</i>
           <br>Innovations in STEM have introduced unprecedented changes in our world and our communities. While we celebrate such breakthroughs, we as people invested in STEM also need to understand the potential repercussions that our work can cumulatively have on our world and our communities. In this session, we will discuss the "everything else": instances where politics, economics, finance, ethics, disparities, equity, and public policy intersect with STEM. By examining case studies and the themes they exemplify, this session will bring a stronger awareness of our impacts, good and bad, as we continue to make progress in STEM.
+          <hr>
+          <b>Optimizing your Team</b><br>
+          <i>US Army; DG 150</i>
+          <br>What can you do to create a successful team? The most important element in starting a team is understanding your best quality that you can bring forward to the group. This workshop will teach about group mentality, and how a team can succeed.
         </div>
       </li>
       <li class="accordion-navigation">
@@ -168,6 +172,7 @@
           <b>Auditing Algorithms: Towards Transparency in the Age of Big Data</b><br>
           <i>Prof. Christo Wilson; DG 050</i>
           <br>In recent years, there has been growing awareness of powerful algorithms that mediate our daily lives. For example,  Facebook personalizes the information shown to each user. While making our lives much simpler, opaque algorithms can lead to harmful outcomes. In this workshop, we will discuss our work towards "auditing algorithms", where we use carefully controlled experiments to understand the data and algorithms used by companies such as Google and Uber, increase transparency, and inform societal discussions about how our personal data is being collected and used.
+          <hr>
           <b>3D Printing Workshop</b><br>
           <i>Jiaqing Qiu; SN 368</i>
           <br>The popularity and awareness of 3D Printing is exploding. It is breaking down barriers in design and manufacturing, and unlock the potential in every person to create, innovate and fabricate 
@@ -205,7 +210,7 @@
           <br>The workshop will focus on four types of communication: Aggressive, passive-aggressive, submissive, assertive. Pros and cons will be explored for each of these types of communication. The workshop will focus on the importance of assertive communications and how it helps build personal and professional relationships, while allowing tasks to be completed with a "win-win" in mind. The workshop ends with an interactive activity which allows the audience to put into action the skills they've learned in the workshop.
           <hr>
           <b>Finding Your Identity as an Asian-American Professional</b><br>
-          <i>Various; DG 119</i>
+          <i>Various; SN 168</i>
           <br>Having lived under the mask of "Model Minority" in school, what is it like to finally end up as a professional after years of Model Minority stereotypes? What challenges do we face as Asian-Americans in the workplace? Come to this workshop to learn more about how your Asian American identity affects you as a professional.
         </div>
       </li>
