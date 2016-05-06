@@ -1,3 +1,5 @@
+**This was forked from a repo that was previously private. To see the 
+see the original source, check out [https://github.com/yufengwng/sase] (https://github.com/yufengwng/sase).
 # Northeastern SASE Website
 
 ## Overview
